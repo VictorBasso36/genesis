@@ -38,7 +38,7 @@ if(location.pathname ==="/"){
         <div></div>
         
         {myCopytag}
-        <img className='animate__animated animate__fadeIn' src={mybgpath} alt="" />
+        <img className='animate__animated animate__fadeIn' src={mybgpath} alt="Familia feliz por comprar os empreendimentos e apartamento do grupo genesis" />
       </div>
     )
   }

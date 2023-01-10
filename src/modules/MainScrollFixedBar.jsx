@@ -122,7 +122,7 @@ function scrollTo(){
         <div className='scrollBarMainCotainer'>
             
                 <Link to="/"><div onClick={ScrollToTop()} className='myLogoGenesis'>
-                    <img src={ScrollBarLogo} alt="" />            
+                    <img src={ScrollBarLogo} alt="Logo simplificada genesis" />            
                 </div></Link>
             
             <div className='itemsNavHere'>

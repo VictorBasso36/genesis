@@ -16,14 +16,15 @@ function Contact() {
     <div className='preFooter'>
         <div className="contactWebBanner">
             <div className='opacityBackDiv'></div>
-            <img className='contactBg2' src={ContactBg2} alt="" />
-            <img className='contactBg' src={ContactBg} alt="" />
+            <img className='contactBg2' src={ContactBg2} alt="Empreendimentos Genesis Incorporadora e Construtora Contato Background" />
+            <img className='contactBg' src={ContactBg} alt="Empreendimentos Genesis Incorporadora e Construtora Contato Background" />
             <div className='infoContact'>
             <h1>Fale com um de nossos <span>especialistas.</span></h1>
                     <p>Nossos especialistas estão sempre a disposição para responder todas as suas dúvidas com o máximo de atenção.</p>
-                    <a href={myLinkWhatsApp[myLinkWhatsAppRandom]} target="_blank">
+                    <a href={myLinkWhatsApp[myLinkWhatsAppRandom]} title="empreendimentos genesis whatsapp" target="_blank">
                       <div className='myWhatsApp'>
-                        <img src={WhatsApp} alt="" />
+                        <img src={WhatsApp} alt="Empreendimentos Genesis Incorporadora e Construtora Whatsapp" />
+
                   
                       </div>
                     </a>
@@ -34,8 +35,8 @@ function Contact() {
                 <h1>Fale com um de nossos <span>especialistas.</span></h1>
                 <p>Nossos especialistas estão sempre a disposição para responder todas as suas dúvidas com o máximo de atenção.</p>
                 <div className='myWhatsApp'>
-                  <a href="https://api.whatsapp.com/send?phone=5511960653131" target="_blank">
-                    <img src={WhatsApp} alt="" />
+                  <a href="https://api.whatsapp.com/send?phone=5511960653131" title="empreendimentos genesis whatsapp"  target="_blank">
+                    <img src={WhatsApp} alt="Empreendimentos Genesis Whatsapp" />
                   </a>
                 </div>
         </div>

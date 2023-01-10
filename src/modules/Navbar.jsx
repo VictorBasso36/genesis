@@ -70,7 +70,7 @@ function Navbar() {
     <nav style={{zIndex:IIndex}} className="navBar">
       {menu}
       <div className="navBarLogo">
-        <Link to="/"><img src={mainLogo} alt="" /></Link>   
+        <Link to="/"><img src={mainLogo} alt="Logo e identidade da genesis construtora e incorporadora" /></Link>   
       </div>
       <div className="navBarLinks scrollNavBar">
         <Link to="/">{location.pathname === "/" ? <p><span>Home</span></p> : <p>Home</p>}</Link>   
@@ -85,7 +85,7 @@ function Navbar() {
         <div className='navBarMenuItem'></div>
       </div>
       <h1 className='number'>
-        <a href="tel:55+11 96065-3131">
+        <a href="tel:55+11 96065-3131" title="telefone genesis empreendimentos e incorporação">
         11 96065-3131
         </a>
       </h1>

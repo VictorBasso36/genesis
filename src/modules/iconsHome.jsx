@@ -18,17 +18,17 @@ function iconsHome() {
 return (
         <div className='iconHere'>
             <div className='iconsCard'>
-                <img src={IconChecked} alt="" />
+                <img src={IconChecked} alt="Confiança do grupo genesis" />
                 <p className='iconsCardTitle'>CONFIANÇA</p>
                 <p className='textIcon'>Transparência e ética são a base de sustentação das nossas obras.</p>
             </div>
             <div className='iconsCard'>
-                <img src={IconTimer} alt="" />
+                <img src={IconTimer} alt="eficiencia da genesis incorporadora" />
                 <p className='iconsCardTitle'>EFICIÊNCIA</p>
                 <p className='textIcon'>Garantia da entrega de projetos dentro do prazo.</p>
             </div>
             <div className='iconsCard'>
-                <img src={IconHouse} alt="" />
+                <img src={IconHouse} alt="apartamentos entregues por Genesis incorporadora" />
                 <p className='iconsCardTitle'>+ 300 lares</p>
                 <p className='textIcon'>Centenas de lares criados com excelência e qualidade.</p>
             </div>          

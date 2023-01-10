@@ -42,6 +42,10 @@ function Lazer () {
         return (
             <>
                 {/* modal */}
+                <a href="" class="linkcta" target="_blank" title="Se busca ajuda da Genesis empreendimentos clique aqui !">
+                    <div class="ctalazer"><h1>Ficou alguma dúvida? <span>Clique aqui.</span></h1>
+                    </div>
+                </a>
                 <div style={{display: displaySwiperLazerFullscreen}} className='modalSwiperPhotos'>
      
                     <div className='menuClose' onClick={() => setshowLazerSlide(!showLazerSlide)}>
@@ -56,10 +60,10 @@ function Lazer () {
 
                     <div className='swiperModalHere'>
                         <div className='ModalnextMain'>
-                            <img src={arrow} alt="" />
+                            <img src={arrow} alt="proxima foto" />
                         </div>
                         <div className='ModalprevMain'>
-                            <img src={arrow} alt="" />
+                            <img src={arrow} alt="foto anterior" />
                         </div>
                     <Swiper 
                             spaceBetween={0}
@@ -82,7 +86,7 @@ function Lazer () {
                                 return(
                                 <SwiperSlide className='testethis' key={index}>
                                     <div className='slideMainFull'>
-                                        <img src={url} alt="" />
+                                        <img src={url} alt={'Apartamento em '+myDataPage.seoName} />
                                     </div>
                                 </SwiperSlide>)
                             })}
@@ -99,7 +103,7 @@ function Lazer () {
                     <h1 className='lazerTitle'>Lazer para <span>sua família.</span> </h1>
                     <div className='ContentTopicscontainer'>  
                         <div className='gridSwiper' >
-                        <img className='fullscreenIcon' onClick={() => setshowLazerSlide(!showLazerSlide)} src={FullscreenIcon} alt="" />
+                        <img className='fullscreenIcon' onClick={() => setshowLazerSlide(!showLazerSlide)} src={FullscreenIcon} alt="fullscreen area de lazer genesis" />
                         <Swiper
                         spaceBetween={0}
                         slidesPerView={1}
@@ -112,7 +116,7 @@ function Lazer () {
                             { myDataPage.photoslazer && myDataPage.photoslazer.map( (url, index) => {
                                 console.log(url)
                                 return(
-                                    <SwiperSlide className='mainslide' style={{backgroundImage: `url('${(url)}')`}}  key={index}></SwiperSlide>
+                                    <SwiperSlide className='mainslide' role="img" aria-label={'Apartamento em '+myDataPage.seoName} style={{backgroundImage: `url('${(url)}')`}}  key={index}></SwiperSlide>
                                     )
                             })}
                             
