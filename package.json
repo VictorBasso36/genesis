@@ -1,7 +1,7 @@
 {
   "name": "genesis",
   "private": true,
-  "homepage" : "https://amply.tec.br/Teste/Genesis/" ,
+  "homepage": "https://amply.tec.br/Teste/Genesis/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -13,6 +13,7 @@
     "animate.css": "^4.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
     "react-router-dom": "^6.4.1",
     "react-router-hash-link": "^2.4.3",
     "swiper": "^8.4.3"

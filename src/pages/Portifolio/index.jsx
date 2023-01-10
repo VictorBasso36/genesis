@@ -13,6 +13,7 @@ function Portifolio() {
 
         return (
             <>
+              
               <MainScrollFixedBar/>
               <Navbar/>
               <MainBanner/>

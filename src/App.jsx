@@ -20,7 +20,6 @@ function App() {
       <BrowserRouter>
       <ScrollToTop/>
         <Routes>
-          
           <Route path="/"  element={<Home/>} />
           <Route path="/QuemSomos" onClick={scrollTo()} element={<QuemSomos/>} />
           <Route path="/Portifolio" element={<Portifolio/>} />

@@ -29,7 +29,7 @@ function Footer() {
                 </Link>
               
                 </div>
-                <div>
+                <div className='iconsiso'>
                   <a href={pdfLeft} title="Selo de confiança genesis incorporadora e construtora" target = "_blank">
                     <svg className='leftSelo'
                     xmlns="http://www.w3.org/2000/svg"

@@ -74,9 +74,12 @@
 .poweredBy p{
     width: 90%;
     max-width: 800px;
-    font-size: 1.4vw;
+    font-size:1.7vw;
     margin-top: 80px;
     margin-bottom: 80px;
+}
+.poweredBy p span{
+    font-size: 1.8vw;
 }
 .poweredBy img{
     width: 220px;
@@ -109,7 +112,7 @@
     .poweredBy p {
         width: 90%;
         max-width: 800px;
-        font-size: 2.9vw;
+        font-size: 3vw;
         margin-top: 6vw;
         margin-bottom: 6vw;
     }
@@ -153,8 +156,31 @@
     .poweredBy p {
         width: 90%;
         max-width: 800px;
-        font-size: 5vw;
+        font-size: 7vw;
         margin-top: 80px;
         margin-bottom: 80px;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .iconsiso{
+        margin-left: 8vw;
+    }
+}
+
+@media screen and (min-width:1550px){
+    .iconsiso{
+        margin-left: 8vw;
+    }
+    .poweredBy p{
+        width: 90%;
+        max-width: 800px;
+        font-size:35px;
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+    .poweredBy p span{
+        height: 100%;
+        font-size: 45px;
     }
 }

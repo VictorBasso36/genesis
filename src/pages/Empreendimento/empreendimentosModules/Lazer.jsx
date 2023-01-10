@@ -18,7 +18,7 @@ import FullscreenIcon from '../../../assets/logos/fullscreenIcon.png'
 
 
 //data
-import DataJSON from '../../../modules/empreendimentos.json'
+import DataJSON from '../../../../public/empreendimentos.json'
 
 import arrow from '../../../assets/logos/arrow.png'
 

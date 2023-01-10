@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import './BuildStatus.css'
 
-import DataJSON from '../../../modules/empreendimentos.json'
+import DataJSON from '../../../../public/empreendimentos.json'
 
 function BuildStatus () {
     const { empreendimentoNome } = useParams();

@@ -15,6 +15,7 @@ function Home() {
       
         return (
             <>
+       
               <div className="mainBgContainer">
                 <MainScrollFixedBar/>
                 <Navbar />
