@@ -1,0 +1,13 @@
+.textHerePlants::-webkit-scrollbar{
+    width: 5px;
+  }
+.textHerePlants::-webkit-scrollbar-thumb{
+    background-color: #efcb09;
+    border-radius: 30px;
+    margin-left: 10px;
+  }
+.textHerePlants::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+

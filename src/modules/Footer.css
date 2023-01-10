@@ -1,0 +1,160 @@
+.mainFooter{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+.bgSocialMedia{
+    background-color: #393831;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+.containerFooter{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+
+.socialIcons{
+    width: 15vw;
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+}
+.socialIcons img{
+    width: 40px;
+    margin-bottom: 20px;
+    height: 40px;
+}
+.socialIcons img:hover{
+    opacity: 0.8;
+}
+.rightSelo{
+    width: 10vw;
+    margin-left: 100px;
+}
+.leftSelo{
+    width: 10vw;
+}
+
+
+.logoFooter{
+    width: 12vw;
+    margin-right: 0px;
+}
+.logoFooter img{
+    width: 100%;
+}
+.logoFooter img:hover{
+    opacity: 0.8;
+}
+.poweredBy{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.poweredBy p{
+    width: 90%;
+    max-width: 800px;
+    font-size: 1.4vw;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.poweredBy img{
+    width: 220px;
+    margin-bottom: 80px;
+}
+.poweredBy img:hover{
+    opacity: 0.8;
+}
+
+@media screen and (min-width:550px) and (max-width:1024px){
+    .logoFooter {
+        width: 20vw;
+        margin-right: 0px;
+    }
+    .socialIcons {
+        width: 12vw;
+        display: flex;
+        align-items: flex-end;
+        height: 100%;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .leftSelo {
+        width: 15vw;
+    }
+    .rightSelo {
+        width: 15vw;
+        margin-left: 3vw;
+    }
+    .poweredBy p {
+        width: 90%;
+        max-width: 800px;
+        font-size: 2.9vw;
+        margin-top: 6vw;
+        margin-bottom: 6vw;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .containerFooter{
+        flex-direction: column;
+    }
+    .logoFooter {
+        width: 65vw;
+        margin-right: 0px;
+    }
+
+    .rightSelo {
+        width: 25vw;
+        margin-left: 10vw;
+        margin-top: 6vw;
+        height: unset;
+    }
+    .leftSelo {
+        width: 25vw;
+        margin-top: 6vw;
+        height: unset;
+    }
+    .socialIcons{
+        height: unset;
+        width: 50vw;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin-top: 30px;
+    }
+    .socialIcons img {
+        width: 10vw;
+        margin-bottom: 20px;
+        height: 10vw;
+        transition: all 500ms;
+    }
+  
+    .poweredBy p {
+        width: 90%;
+        max-width: 800px;
+        font-size: 5vw;
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+}

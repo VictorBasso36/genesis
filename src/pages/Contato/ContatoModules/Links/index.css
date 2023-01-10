@@ -1,0 +1,535 @@
+.LinksHere{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    width: 100%;
+  
+    
+}
+.MainSocialMedia{
+    min-width: 280px;
+    width: 50%;
+}
+.socialmediaHere{
+    display: flex;
+    align-items: center;
+    z-index: 50;
+    position: absolute;
+    top: 0;
+    margin-right: -30%;
+    right: 0;
+    width: 75%;
+    margin-top: 10%;
+    height: 80px;
+    background-color:#efcb09;
+    justify-content: space-evenly;
+}
+.cardSocialMedia{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.mainTitleContato{
+    background-color:#393831;
+    display: flex;
+    max-width: 410px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    margin-left: -100px;
+    height: 150px;
+    padding: 20px;
+}
+
+.mainTitleContato p{
+    text-align: left;
+    color: white;
+    font-size: 2rem;
+}
+
+.mainTitleContato h1{
+    color: #efcb09;
+    line-height: 100%;
+    font-size: 6rem;
+}
+.cardSocialMedia img{
+    width: 80%;
+}
+
+.cardSocialMedia img:hover{
+    width: 80%;
+    opacity: 0.8;
+}
+
+
+
+
+.MainChanells{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.MainChanells p:hover{
+    color: #efcb09;
+}
+.MyChannelCall h1{
+    color: #efcb09;
+    margin-top: 45px;
+}
+
+.MainSocialMedia{
+    max-width: 600px;
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    flex-direction: column;
+}
+
+@media screen and (min-width:850px) and (max-width:1024px) {
+    .LinksHere{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+        justify-content: center;
+        width: 90%;
+        max-width: 1200px;
+    }
+    .MainSocialMedia{
+        min-width: 280px;
+        width: 50%;
+    }
+    .socialmediaHere{
+        display: flex;
+        align-items: center;
+        z-index: 50;
+        position: absolute;
+        top: 0;
+        margin-right: -40%;
+        right: 0;
+        width: 90%;
+        margin-top: -30px;
+        height: 80px;
+        background-color:#efcb09;
+        justify-content: space-evenly;
+    }
+    .cardSocialMedia{
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    .mainTitleContato{
+        background-color:#393831;
+        display: flex;
+        max-width: 500px;
+        flex-direction: column;
+        width: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: left;
+        text-align: left;
+        height: 150px;
+        padding: 20px;
+    }
+    
+    .mainTitleContato p{
+        text-align: left;
+        color: white;
+        font-size: 2rem;
+    }
+    
+    .mainTitleContato h1{
+        color: #efcb09;
+        line-height: 100%;
+        font-size: 6rem;
+    }
+    .cardSocialMedia img{
+        width: 80%;
+    }
+    
+    .cardSocialMedia img:hover{
+        width: 80%;
+        opacity: 0.8;
+    }
+    
+    
+    
+    
+    .MainChanells{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    
+    .MyChannelCall h1{
+        color: #efcb09;
+        margin-top: 45px;
+    }
+    
+    .MainSocialMedia{
+        max-width: 500px;
+        display: flex;
+        margin-right: 20%;
+        position: relative;
+        flex-direction: column;
+    }
+}
+
+
+
+
+@media screen and (min-width:550px) and (max-width:850px) {
+    .LinksHere{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+        justify-content: center;
+        width: 90%;
+        max-width: 1200px;
+    }
+    .MainSocialMedia{
+        min-width: 280px;
+        width: 100%;
+    }
+    .socialmediaHere{
+        display: flex;
+        align-items: center;
+        z-index: 50;
+        position: absolute;
+        top: 0;
+        margin-right:-10%;
+        right: 0;
+        width: 60%;
+        margin-top: -60px;
+        height: 80px;
+        background-color:#efcb09;
+        justify-content: space-evenly;
+    }
+    .cardSocialMedia{
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    .mainTitleContato{
+        background-color:#393831;
+        display: flex;
+        max-width: 500px;
+        flex-direction: column;
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: left;
+        margin-left: 20px;
+        text-align: left;
+        height: 150px;
+        padding: 20px;
+        margin: 0 auto;
+    }
+    
+    .mainTitleContato p{
+        text-align: left;
+        color: white;
+        font-size: 2rem;
+    }
+    
+    .mainTitleContato h1{
+        color: #efcb09;
+        line-height: 100%;
+        font-size: 5rem;
+    }
+    .cardSocialMedia img{
+        width: 80%;
+    }
+    
+    .cardSocialMedia img:hover{
+        width: 80%;
+        opacity: 0.8;
+    }
+    
+    
+    
+    
+    .MainChanells{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    
+    .MyChannelCall h1{
+        color: #efcb09;
+        margin-top: 45px;
+    }
+    
+    .MainSocialMedia{
+        max-width: 500px;
+        display: flex;
+        margin-right: 20%;
+        position: relative;
+        flex-direction: column;
+    }
+}
+
+
+
+
+@media screen and (min-width:320px) and (max-width:550px) {
+    .LinksHere{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 160px;
+        justify-content: center;
+        width: 90%;
+        max-width: 1200px;
+    }
+    .MainSocialMedia{
+        min-width: 280px;
+        width: 100%;
+    }
+    .socialmediaHere{
+        display: flex;
+        align-items: center;
+        z-index: 50;
+        position: absolute;
+        top: 0;
+        margin-right:0%;
+        left: 0;
+        width: 90%;
+        margin-top: -70px;
+        height: 80px;
+        background-color:#efcb09;
+        justify-content: space-evenly;
+    }
+    .cardSocialMedia{
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    .mainTitleContato{
+        background-color:#393831;
+        display: flex;
+        max-width: 500px;
+        flex-direction: column;
+        width: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: left;
+        margin-left: 0px;
+        text-align: left;
+        height: 150px;
+        padding: 20px;
+        margin: unset;
+        width: 90%;
+    }
+    
+    .mainTitleContato p{
+        text-align: left;
+        color: white;
+        font-size: 8vw;
+    }
+    
+    .mainTitleContato h1{
+        color: #efcb09;
+        line-height: 100%;
+        font-size: 20vw;
+    }
+    .cardSocialMedia img{
+        width: 80%;
+    }
+    
+    .cardSocialMedia img:hover{
+        width: 80%;
+        opacity: 0.8;
+    }
+    
+    
+    
+    
+    .MainChanells{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    
+    .MyChannelCall h1{
+        color: #efcb09;
+        margin-top: 45px;
+    }
+    
+    .MainSocialMedia{
+        max-width: 500px;
+        display: flex;
+        margin-right: 0%;
+        position: relative;
+        flex-direction: column;
+    }
+    .MyChannelCall{
+        width: 100%!important;
+    }
+    .MyChannelCall p{
+        font-size: 6vw;
+    }
+}
+
+@media screen and (min-width:280px) and (max-width:320px) {
+    .infoContactSmartphone h1{
+     
+    }
+    .infoContactSmartphone p{
+        text-align: justify;
+        width: 90%;
+    }
+    .LinksHere{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 150px;
+        justify-content: center;
+        width: 90%;
+        max-width: 1200px;
+    }
+    .MyChannelCall{
+        width: 100%;
+        overflow: hidden;
+    }
+    .MyChannelCall{
+        width: 100%!important;
+    }
+    .MyChannelCall p{
+        font-size: 15px;
+    }
+    .MainSocialMedia{
+        min-width: 280px;
+        width: 100%;
+    }
+    .socialmediaHere{
+        display: flex;
+        align-items: center;
+        z-index: 50;
+        position: absolute;
+        top: 0;
+        margin-right:0%;
+        left: 0;
+        width: 90%;
+        margin-top: -70px;
+        height: 80px;
+        background-color:#efcb09;
+        justify-content: space-evenly;
+    }
+    .cardSocialMedia{
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    .mainTitleContato{
+        background-color:#393831;
+        display: flex;
+        max-width: 500px;
+        flex-direction: column;
+        width: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: left;
+        margin-left: 0px;
+        text-align: left;
+        height: 150px;
+        padding: 20px;
+        margin: unset;
+        width: 90%;
+    }
+    
+    .mainTitleContato p{
+        text-align: left;
+        color: white;
+        font-size: vw;
+    }
+    
+    .mainTitleContato h1{
+        color: #efcb09;
+        line-height: 100%;
+        font-size: 20vw;
+    }
+    .cardSocialMedia img{
+        width: 80%;
+    }
+    
+    .cardSocialMedia img:hover{
+        width: 80%;
+        opacity: 0.8;
+    }
+    
+    
+    
+    
+    .MainChanells{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    
+    .MyChannelCall h1{
+        color: #efcb09;
+        font-size: 12vw;
+        max-width: 100%;
+        margin-top: 45px;
+    }
+    .MyChannelCall p{
+        text-align: center;
+        font-size: 6vw;
+        max-width: 100%;
+
+    }
+    
+    .MainSocialMedia{
+        max-width: 500px;
+        display: flex;
+        margin-right: 0%;
+        position: relative;
+        flex-direction: column;
+    }
+}

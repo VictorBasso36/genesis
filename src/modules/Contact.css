@@ -1,0 +1,283 @@
+.contactWebBanner{
+    display: flex;
+    overflow: hidden;
+    min-height: 700px;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.opacityBackDiv{
+    opacity: 0;
+}
+.contactBg{
+    width: 60%;
+    height: 100%;
+    max-width: 1100px;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
+.infoContact{
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+    max-width: 1100px;
+    flex-direction: column;
+    text-align: right;
+    margin-right: 5%;
+}
+.infoContact a{
+    text-decoration: none;
+    color: #393831;
+}
+.infoContact h1{
+    font-size: 3.2rem;
+    margin-bottom: 30px;
+    max-width: 750px;
+    z-index: 2;
+    line-height: 40px;
+    text-align: right;
+}
+.infoContact p{
+    width: 100%;
+    max-width: 750px;
+}
+
+
+.preFooter{
+    margin-top: 90px;
+    width: 100%;
+}
+
+.myWhatsApp{
+    display: flex;
+    margin-top: 20%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    max-width: 240px;
+}
+
+.contactBg2{
+    display: none;
+}
+.myWhatsApp img{
+    width: 80px;
+}
+.myWhatsApp img:hover{
+    opacity: 0.8;
+}
+.infoContactSmartphone{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    margin: 30px auto;
+}
+.infoContactSmartphone h1{
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+@media screen and (min-width:800px) and (max-width:1024px) {
+    .contactBg{
+        width: 60%;
+        height: 100%;
+        object-fit: cover;
+        display: none;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        margin-left: -100px;
+        
+    }
+    .contactBg2{
+        display: flex;
+        width: 70%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        margin-left: 0px;
+    }
+    .infoContact{
+        width: 70%;
+        display: flex;
+        z-index: 2;
+        align-items: flex-end;
+        flex-direction: column;
+        text-align: right;
+        margin-right: 30px;
+    }
+    
+}
+
+@media screen and (min-width:550px) and (max-width:800px) {
+    .contactBg{
+        width: 60%;
+        height: 100%;
+        object-fit: cover;
+        display: none;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        margin-left: -100px;
+        
+    }
+    .contactBg2{
+        display: flex;
+        width: 70%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        margin-left: 0px;
+    }
+    .infoContact{
+        width: 70%;
+        display: flex;
+        z-index: 2;
+        align-items: flex-end;
+        flex-direction: column;
+        text-align: right;
+        margin-right: 20px;
+    }
+
+    .infoContact h1{
+        font-size: 2.8rem;
+        max-width: 750px;
+        text-align: right;
+    }
+}
+
+@media screen and (min-width:350px) and (max-width:550px) {
+    .infoContact h1{
+        font-size: 2.2rem;
+        max-width: 750px;
+        text-align: right;
+    }
+    .contactBg{
+        width: 650px;
+        height: 100%;
+        object-fit: cover;
+        display: flex;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        margin-left: 0px;
+        
+    }
+    .contactBg2{
+        display: none;
+        width: 92%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+ 
+    }
+    .infoContact{
+        width: 90%;
+        display: none;
+        z-index: 2;
+        align-items: center;
+        flex-direction: column;
+        text-align: right;
+        margin-right: 10px;
+    }
+    .contactWebBanner {
+        display: flex;
+        overflow: hidden;
+        min-height: 300px;
+        align-items: center;
+        position: relative;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .infoContactSmartphone {
+        display: flex;
+        
+    }
+
+
+}
+@media screen and (min-width:279px) and (max-width:350px) {
+    .infoContactSmartphone h1 {
+        line-height: 90%;
+        margin-bottom: 30px;
+        font-size: 13vw;
+    }
+    .infoContact h1{
+        font-size: 2.2rem;
+        max-width: 750px;
+        text-align: right;
+    }
+    .contactBg{
+        width: 450px;
+        height: 100%;
+        object-fit: cover;
+        display: flex;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        margin-left: 0px;
+        
+    }
+    .contactBg2{
+        display: none;
+        width: 92%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+ 
+    }
+    .infoContact{
+        width: 90%;
+        display: none;
+        z-index: 2;
+        align-items: center;
+        flex-direction: column;
+        text-align: right;
+        margin-right: 10px;
+    }
+    .contactWebBanner {
+        display: flex;
+        overflow: hidden;
+        min-height: 300px;
+        align-items: center;
+        position: relative;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .infoContactSmartphone {
+        display: flex;
+      
+    }
+}
+
+
+
+@media screen and (min-width:2000px) {
+    .LinksHere{
+        margin-top: 300px;
+    }
+}
+
+@media screen and (min-width:2500px) {
+    .LinksHere{
+        margin-top: 390px;
+    }
+}

@@ -1,0 +1,1410 @@
+.rightItem p::-webkit-scrollbar{
+    width: 5px;
+}
+
+.rightItem p::-webkit-scrollbar-thumb{
+    background-color: #efcb09;
+    border-radius: 30px;
+    margin-left: 1}
+.rightItem p::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+
+.noactivemaindiv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 300px;
+    justify-content: start;
+    
+}
+.noactiveIMGHERE{
+    width: 400px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 280px
+}
+.noactiveIMGHERE img{
+    background-color: #efcb09;
+    object-fit: cover;
+    min-width: 100%;
+    min-height: 100%;
+}
+.noactiveTextHere P{
+    max-height: 90px;
+    text-align: justify;
+    overflow: hidden;
+}
+.noactiveTextHere{
+    width: 60%;
+    height: 80%;
+    margin-left: 30px;
+}
+.titleNoActiveHere{
+    background-color: #393831;
+    margin-left: -80px;
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding: 8px 20px;
+    justify-content: start;
+    max-width: max-content;
+    text-align: left;
+    align-items: center;
+}
+.titleNoActiveHere h1{
+    color: white;
+    line-height: 100%;
+    font-size: 3rem;
+}
+
+
+.MainItems{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1250px;
+    margin: 0px auto 0px auto;
+}
+
+
+
+.imgHere img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.leftItem{
+    position: relative;
+    height: 100%;
+    width: 45vw;
+    margin-right: 2vw;
+}
+.textHere{
+    position: relative;
+    width: 100%;
+    margin-top: -20px;
+}
+.textPrice{
+    background-color: #393831;
+    width:26vw;
+    margin-left: 20px;
+    display: flex;
+    align-items: flex-start;
+    padding: 0px 20px 0px 20px;
+    flex-direction:column;
+    justify-content: center;
+    height: 10vw;
+}
+.textPrice p{
+    color: white;
+    font-size: 1.7vw;
+}
+.textPrice h1{
+    color: #f0cf27;
+    letter-spacing: 0px;
+    font-size: 4.5vw;
+    font-family: 'FigtreeBlack';
+}
+
+.textLink{
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    margin-top: -30px;
+    flex-direction: column;
+    margin-right: 20px;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.textLink img{
+    width: 3vw;
+    animation-name: topJump;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes topJump {
+    25%{
+        margin-top: 12px;
+    }
+    50%{
+        margin-top: 0px;
+    }
+    75%{
+        margin-top: 12px;
+    }
+    100%{
+        margin-top: 0;
+    }
+
+
+}
+.yellowBg{
+    background-color: #f0cf27;
+    width: 15vw;
+    height: 5vw;
+
+    margin-bottom: 1vw;
+    text-align: left;
+    padding: 0.8vw;
+    display: flex;
+    align-items: center;
+    color: #393831;
+}
+.yellowBg p{
+    font-size: 2.2vw;
+    line-height: 100%;
+    transition: all 500ms;
+}
+.yellowBg:hover p{
+    color: white;
+}
+.yellowBg:hover span{
+    color: white;
+}
+.spanBold{
+    font-weight: bolder;
+    color: #393831;
+}
+.yellowBg a{
+    color: #393831;
+}
+
+
+
+
+
+
+
+.rightItem{
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    max-height: 550px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+
+.itemEmpreendimento{
+    display: flex;
+    margin: 30px 0px;
+    align-items: flex-start;
+    cursor: pointer;
+    justify-content: space-between;
+}
+.itensInfoCard{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rightItem h1{
+    margin-bottom: 0vw;
+    line-height: 100%;
+    font-size: 5vw;
+}
+
+.strongtitle{
+    font-family: 'FigtreeLight';
+    font-weight: lighter;
+    font-size: 2vw;
+}
+
+.rightItem p{
+    font-weight: 590;
+    margin-bottom: 1.5vw;
+    text-align: justify;
+    font-size: 1.5vw;
+}
+
+.cardItens{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cardItens img{
+    max-height: 2.5vw;
+    margin-bottom: 0.3vw;
+}
+.cardItens p{
+    font-size: 1.5vw;
+}
+.imgherebg{
+    background-position: center;
+
+    background-size: cover;
+    height:30vw;
+    background-color: #393831;
+    
+}
+
+
+@media screen and (min-width:1250px){
+    .leftItem {
+        position: relative;
+        height: 100%;
+        width: 48%;
+        margin-right: 0vw;
+    }
+    .yellowBg{
+        background-color: #f0cf27;
+        width: 170px;
+        height: 60px;
+        margin-bottom: 10px;
+        text-align: left;
+        margin-top: -10px;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        color: #393831;
+    }
+    .yellowBg p{
+        font-size: 25px;
+      
+        line-height: 100%;
+    }
+    .textLink {
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        margin-top: -20px;
+        flex-direction: column;
+        margin-right: 20px;
+        justify-content: center;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .textPrice p {
+        color: white;
+        font-size: 23px;
+    }
+    .textLink img {
+        width: 40px;
+        margin-top: -60px;
+        animation-name: topJump;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+    .spanBold{
+        font-weight: bolder;
+        color: #393831;
+    }
+    .yellowBg a{
+        color: #393831;
+    }
+    
+    .rightItem{
+        position: relative;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        max-height: 550px;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    
+    .textPrice {
+        background-color: #393831;
+        width: 350px;
+        margin-left: 20px;
+        display: flex;
+        align-items: flex-start;
+        padding: 0px 20px 0px 20px;
+        flex-direction: column;
+        justify-content: center;
+        height: 140px;
+    }
+    .textPrice h1 {
+        color: #f0cf27;
+        letter-spacing: 0px;
+        font-size: 60px;
+        font-family: 'FigtreeBlack';
+    }
+    .itemEmpreendimento{
+        display: flex;
+        margin: 30px 0px;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .itensInfoCard{
+        display: flex;
+        width: 90%;
+        align-items: center;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+    
+    .rightItem h1{
+        margin-bottom: 0vw;
+        line-height: 100%;
+        font-size: 70px;
+    }
+    
+    .strongtitle{
+        font-family: 'FigtreeLight';
+        font-weight: lighter;
+        font-size: 30px;
+    }
+    
+    .rightItem p{
+        font-weight: 590;
+        margin-bottom: 1.5vw;
+        text-align: justify;
+        font-size: 25px;
+    }
+    
+    .cardItens{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .cardItens img{
+        max-height: 40px;
+        margin-bottom: 0.3vw;
+    }
+    .cardItens p{
+        font-size: 25px;
+        margin-top: 10px;
+    }
+    .imgherebg{
+        background-size: cover;
+        height: 365px;
+        background-color: #4d4829;
+        
+    }   
+}
+@media screen and (min-width: 280px) and (max-width:320px){
+    .iconHere{
+        margin-top: 50px;
+    }
+    .videoAndIcons {
+        width: 100%;
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .iconsCard {
+        width: 50vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0px 20px 0px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .noactivemaindiv{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        height: unset;
+        margin: 60px 0px;
+    
+        
+    }
+    .imgHere img{
+        width: 100vw;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+    .itemEmpreendimento{
+        flex-direction: column;
+        margin: 10px 0px;
+    }
+    .noactiveIMGHERE{
+        width: 100%;
+        height: 220px!important;
+    }
+    .noactiveIMGHERE img{
+        width: 100vw;
+    
+    }
+    .noactiveTextHere P{
+        max-height: 100px;
+        line-height:100%;
+        margin: 0 auto;
+      
+    }
+    .noactiveTextHere{
+        width: 90%;
+        height: 80%;
+        margin-left: 0px;
+        right: unset;
+        left: 0;
+        margin-left: 0%;
+        margin-top: -30px;
+        bottom: 0;
+        margin-bottom: -35%;
+        position: static;
+    }
+    .titleNoActiveHere{
+        background-color: #393831;
+        margin-left: 0px;
+        display: flex;
+        margin-bottom: 10px;
+        margin-top: 0px;
+        padding: 8px 10px;
+        justify-content: center;
+        max-width: 100%;
+        text-align: left;
+        align-items: center;
+    }
+    .titleNoActiveHere h1{
+        color: white;
+        line-height: 100%;
+        text-align: center;
+        font-size: 9vw;
+    }   
+    
+    /*  */
+
+       /*/*/
+       .itemEmpreendimento{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+        /*  */
+
+        .itemEmpreendimento{
+            flex-direction: column;
+            margin: 0px 0px 0px 0px;
+        }
+        .rightItem h1{
+            margin-top: 3vw;
+            text-align: center;
+            font-size: 2.5rem;
+            line-height: 100%;
+            margin-bottom: 3vw;
+        }
+        .rightItem span{
+            
+        }
+        .itensInfoCard {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .rightItem p{
+    
+            margin-bottom: 0px;
+            font-size: 20px;
+    
+        }
+        .cardItens{
+            margin: 3%;
+            width: 14vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content:center;
+            height: 12vw;
+        }
+        .textPrice {
+            background-color: #393831;
+            width: 60vw;
+            display: flex;
+            align-items: left;
+            padding: 0px 2vw 0px 2vw;
+            flex-direction: column;
+            margin: unset;
+            margin-top: 3vw;
+            margin-left: -1.5vw;
+            justify-content: center;
+            height: 24vw;
+        }
+        .textPrice p {
+            color: white;
+            font-size: 4vw;
+        }
+        .yellowBg {
+            background-color: #f0cf27;
+            width: 30vw;
+            height: 15vw;
+            
+            margin-bottom: -15vw;
+            margin-top: 3vw;
+            text-align: left;
+            margin-right: 2vw;
+            padding: 0px 10px;
+            display: flex;
+            align-items: center;
+            color: #393831;
+        }
+        .yellowBg p{
+            font-size:4vw;
+        }
+        .textLink img {
+            display: none;
+            width: 2vw;
+        }
+        .textPrice h1 {
+            color: #f0cf27;
+            letter-spacing: 0px;
+            font-size: 12vw;
+        
+            font-family: 'FigtreeBlack';
+        }
+        .rightItem{
+            position: relative;
+            height: 100%;
+            display: flex;
+            margin-left: 0px;
+            flex-direction: column;
+            width: 100%;
+            max-height: 5'50px';
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        
+        .leftItem{
+            position: relative;
+            height: 100%;
+            margin: 0 auto;
+            width: 90vw;
+            margin-right: 0vw;
+        }
+      
+        .rightItem h1{
+            margin-top: 6vw;
+            margin-bottom: 0vw;
+            line-height: unset;
+            font-size: 11vw;
+            text-align: left;
+            line-height: 100%;
+        }
+        
+        .strongtitle{
+            font-family: 'FigtreeLight';
+            font-weight: lighter;
+            font-size: 5vw;
+            margin-top: 3vw;
+        }
+        
+        .rightItem p{
+            font-weight: 590;
+            text-align: justify;
+            font-size: 4.5vw;
+        }
+        
+        .cardItens{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 25vw;
+            height: 19vw;
+            justify-content: center;
+            
+        }
+        .cardItens img{
+            max-height: 8.5vw;
+            margin-bottom: 1vw;
+        }
+        .cardItens p{
+
+            font-size: 5vw;
+        }
+        .imgherebg{
+            background-size: cover;
+            height: 60vw;
+            
+        }
+        .textHere {
+            position: relative;
+            width: 100%;
+            margin-top: -5vw;
+        }
+}
+@media screen and (max-width:390px){
+    .noactiveIMGHERE {
+        width: 100%;
+        height: 200px!important;
+    }    
+}
+@media screen and (min-width: 320px) and (max-width:550px){
+    .iconHere{
+        margin-top: 50px;
+    }
+    .videoAndIcons {
+        width: 100%;
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .iconsCard {
+        width: 50vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0px 20px 0px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .iconsCard img{
+        height: 70px;
+    }
+    .iconsCard p{
+        font-size: 27px;
+    }
+    .noactivemaindiv{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        height: unset;
+        margin: 60px 0px;
+    
+        
+    }
+    .MainItems{
+        margin: -10px 0px 30px 0px;
+    }
+    .noactivemaindiv{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        height: unset;
+        margin: 60px 0px;
+    
+        
+    }
+    .noactiveIMGHERE{
+        
+        width: 100%;
+        height: 280px;
+    }
+    .noactiveIMGHERE img{
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+
+    }
+    .noactiveTextHere P{
+        max-height: 100px;
+        line-height:100%;
+        margin: 0 auto;
+    
+    }
+    .noactiveTextHere{
+        width: 90%;
+        height: 80%;
+        margin-left: 0px;
+        right: unset;
+        left: 0;
+        margin-left: 0%;
+        margin-top: -30px;
+        bottom: 0;
+        margin-bottom: -35%;
+        position: static;
+    }
+    .titleNoActiveHere{
+        background-color: #393831;
+        margin-left: 0px;
+        display: flex;
+        margin-bottom: 10px;
+        margin-top: 0px;
+        padding: 8px 20px;
+        justify-content: center;
+        max-width: 100%;
+        text-align: left;
+        align-items: center;
+    }
+    .titleNoActiveHere h1{
+        color: white;
+        line-height: 100%;
+        text-align: center;
+        font-size: 2rem;
+    }   
+       /*  */
+  
+    /*/*/
+    .itemEmpreendimento{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+        /*  */
+
+        .itemEmpreendimento{
+            flex-direction: column;
+            margin: 0px 0px 0px 0px;
+        }
+        .rightItem h1{
+            margin-top: 3vw;
+            text-align: center;
+            font-size: 2.5rem;
+            line-height: 100%;
+            margin-bottom: 3vw;
+        }
+        .rightItem span{
+            
+        }
+        .itensInfoCard {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .rightItem p{
+    
+            margin-bottom: 0px;
+            font-size: 20px;
+    
+        }
+        .cardItens{
+            margin: 3%;
+            width: 14vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content:center;
+            height: 12vw;
+        }
+        .textPrice {
+            background-color: #393831;
+            width: 60vw;
+            display: flex;
+            align-items: left;
+            padding: 0px 2vw 0px 2vw;
+            flex-direction: column;
+            margin: unset;
+            margin-top: 3vw;
+            margin-left: -1.5vw;
+            justify-content: center;
+            height: 24vw;
+        }
+        .textPrice p {
+            color: white;
+            font-size: 4vw;
+        }
+        .yellowBg {
+            background-color: #f0cf27;
+            width: 30vw;
+            height: 15vw;
+            
+            margin-bottom: -15vw;
+            margin-top: -1vw;
+            text-align: left;
+            margin-right: 2vw;
+            padding: 0px 10px;
+            display: flex;
+            align-items: center;
+            color: #393831;
+        }
+        .yellowBg p{
+            font-size:4vw;
+        }
+        .textLink img {
+            display: none;
+            width: 2vw;
+        }
+        .textPrice h1 {
+            color: #f0cf27;
+            letter-spacing: 0px;
+            font-size: 12vw;
+        
+            font-family: 'FigtreeBlack';
+        }
+        .rightItem{
+            position: relative;
+            height: 100%;
+            display: flex;
+            margin-left: 0px;
+            flex-direction: column;
+            width: 100%;
+            max-height: 5'50px';
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        
+        .leftItem{
+            position: relative;
+            height: 100%;
+            margin: 0 auto;
+            width: 90vw;
+            margin-right: 0vw;
+        }
+      
+        .rightItem h1{
+            margin-top: 6vw;
+            margin-bottom: 0vw;
+            line-height: unset;
+            font-size: 11vw;
+            text-align: left;
+            line-height: 100%;
+        }
+        
+        .strongtitle{
+            font-family: 'FigtreeLight';
+            font-weight: lighter;
+            font-size: 5vw;
+            margin-top: 3vw;
+        }
+        
+        .rightItem p{
+            font-weight: 590;
+            text-align: justify;
+            font-size: 4.5vw;
+        }
+        
+        .cardItens{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 25vw;
+            height: 19vw;
+            justify-content: center;
+            
+        }
+        .cardItens img{
+            max-height: 8.5vw;
+            margin-bottom: 1vw;
+        }
+        .cardItens p{
+
+            font-size: 5vw;
+        }
+        .imgherebg{
+            background-size: cover;
+            height: 60vw;
+            
+        }
+}
+@media screen and (min-width: 550px) and (max-width:850px){
+    .noactivemaindiv{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        position: relative;
+        height: unset;
+        margin: 90px 0px;
+    
+        
+    }
+    .textPrice h1 {
+        color: #f0cf27;
+        letter-spacing: 0px;
+        font-size: 3.4rem;
+        font-family: 'FigtreeBlack';
+    }
+    .textLink {
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        margin-top: -35px;
+        flex-direction: column;
+        margin-right: 10px;
+        justify-content: center;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .noactiveIMGHERE{
+        width: 400px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 250px
+    }
+    .noactiveIMGHERE img{
+        min-width: 100%;
+        min-height: 100%;
+        background-color: #efcb09;
+        min-width: 100%;
+    }
+    .noactiveTextHere P{
+        max-height: 100px;
+        line-height:100%;
+       
+    }
+    .noactiveTextHere{
+        width: 100%;
+        height: 80%;
+        max-width: 350px;
+        /* margin-left: -30px; */
+        right: 0;
+        margin-right: -60px;
+        bottom: 0;
+        margin-bottom: -55%;
+        position: absolute;
+    }
+    .titleNoActiveHere{
+        background-color: #393831;
+        margin-left: 0px;
+        display: flex;
+        margin-bottom: 10px;
+        margin-top: -80px;
+        padding: 8px 20px;
+        justify-content: start;
+        max-width: 100%;
+        text-align: left;
+        align-items: center;
+    }
+    .titleNoActiveHere h1{
+        color: white;
+        line-height: 100%;
+        font-size: 2rem;
+    }   
+     /*  */
+     .itemEmpreendimento{
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .rightItem h1{
+        margin-top: 30px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .rightItem{
+        position: relative;
+        height: 100%;
+        display: flex;
+        margin-left: 0px;
+        flex-direction: column;
+        width: 100%;
+        max-height: 550px;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    .leftItem{
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+    .imgHere {
+        max-width:900px;
+        max-height: 480px;
+    }
+
+
+
+
+
+
+
+
+    /*/*/
+    .itemEmpreendimento{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+        /*  */
+
+        .itemEmpreendimento{
+            flex-direction: column;
+            margin: 0px 0px 0px 0px;
+        }
+        .rightItem h1{
+            margin-top: 3vw;
+            text-align: center;
+            font-size: 2.5rem;
+            line-height: 100%;
+            margin-bottom: 3vw;
+        }
+        .rightItem span{
+            
+        }
+        .itensInfoCard {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .rightItem p{
+    
+            margin-bottom: 0px;
+            font-size: 20px;
+    
+        }
+        .cardItens{
+            margin: 3%;
+            width: 14vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content:center;
+            height: 12vw;
+        }
+        .textPrice {
+            background-color: #393831;
+            width: 50vw;
+            display: flex;
+            align-items: left;
+            padding: 0px 2vw 0px 2vw;
+            flex-direction: column;
+            margin: unset;
+            margin-top: -9vw;
+            margin-left: -1.5vw;
+            justify-content: center;
+            height: 18vw;
+        }
+        .textPrice p {
+            color: white;
+            font-size: 4vw;
+        }
+        .yellowBg {
+            background-color: #f0cf27;
+            width: 20vw;
+            height: 10vw;
+            
+            margin-bottom: -10vw;
+            margin-top: 7vw;
+            text-align: left;
+            margin-right: 5vw;
+            padding: 0px 10px;
+            display: flex;
+            align-items: center;
+            color: #393831;
+        }
+        .yellowBg p{
+            font-size:3vw;
+        }
+        .textLink img {
+            display: none;
+            width: 2vw;
+        }
+        .textPrice h1 {
+            color: #f0cf27;
+            letter-spacing: 0px;
+            font-size: 9vw;
+        
+            font-family: 'FigtreeBlack';
+        }
+        .rightItem{
+            position: relative;
+            height: 100%;
+            display: flex;
+            margin-left: 0px;
+            flex-direction: column;
+            width: 100%;
+            max-height: 5'50px';
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        
+        .leftItem{
+            position: relative;
+            height: 100%;
+            width: 80vw;
+            margin-right: 0vw;
+        }
+        .imgHere {
+            max-width:900px;
+            max-height: 480px;
+        }
+        .rightItem h1{
+            margin-top: 6vw;
+            margin-bottom: 0vw;
+            line-height: unset;
+            font-size: 8vw;
+            text-align: left;
+            line-height: 100%;
+        }
+        
+        .strongtitle{
+            font-family: 'FigtreeLight';
+            font-weight: lighter;
+            font-size: 4vw;
+            margin-top: 3vw;
+        }
+        
+        .rightItem p{
+            font-weight: 590;
+            text-align: justify;
+            font-size: 3.5vw;
+        }
+        
+        .cardItens{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .cardItens img{
+            max-height: 5.5vw;
+            margin-bottom: 0.3vw;
+        }
+        .cardItens p{
+            font-size: 2.8vw;
+        }
+        .imgherebg{
+            background-size: cover;
+            height: 50vw;
+            
+        }
+
+}
+@media screen and (min-width: 850px) and (max-width:1024px){
+    .noactivemaindiv{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        height: 300px;
+    
+        
+    }
+    .noactiveIMGHERE{
+        width: 400px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 250px
+    }
+    .noactiveIMGHERE img{
+        min-width: 100%;
+        min-height: 100%;
+        min-width: 100%;
+    }
+    .noactiveTextHere P{
+        max-height: 90px;
+        
+    }
+    .noactiveTextHere{
+        width: 70%;
+        height: 80%;
+        margin-left: 30px;
+    }
+    .titleNoActiveHere{
+        background-color: #393831;
+        margin-left: -80px;
+        display: flex;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        padding: 8px 20px;
+        justify-content: start;
+        max-width: max-content;
+        text-align: left;
+        align-items: center;
+    }
+    .titleNoActiveHere h1{
+        color: white;
+        line-height: 100%;
+        font-size: 2.5rem;
+    }
+
+    /*  */
+    .itemEmpreendimento{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+        /*  */
+
+        .itemEmpreendimento{
+            flex-direction: column;
+            margin: 0px 0px 0px 0px;
+        }
+        .rightItem h1{
+            margin-top: 3vw;
+            text-align: center;
+            font-size: 2.5rem;
+            line-height: 100%;
+            margin-bottom: 3vw;
+        }
+        .rightItem span{
+            
+        }
+        .itensInfoCard {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .rightItem p{
+    
+            margin-bottom: 0px;
+            font-size: 20px;
+    
+        }
+        .cardItens{
+            margin: 3%;
+            width: 14vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content:center;
+            height: 12vw;
+        }
+        .textPrice {
+            background-color: #393831;
+            width: 50vw;
+            display: flex;
+            align-items: left;
+            padding: 0px 2vw 0px 2vw;
+            flex-direction: column;
+            margin: unset;
+            margin-top: -9vw;
+            margin-left: -1.5vw;
+            justify-content: center;
+            height: 18vw;
+        }
+        .textPrice p {
+            color: white;
+            font-size: 4vw;
+        }
+        .yellowBg {
+            background-color: #f0cf27;
+            width: 20vw;
+            height: 10vw;
+            
+            margin-bottom: -10vw;
+            margin-top: 7vw;
+            text-align: left;
+            margin-right: 5vw;
+            padding: 0px 10px;
+            display: flex;
+            align-items: center;
+            color: #393831;
+        }
+        .yellowBg p{
+            font-size:3vw;
+        }
+        .textLink img {
+            display: none;
+            width: 2vw;
+        }
+        .textPrice h1 {
+            color: #f0cf27;
+            letter-spacing: 0px;
+            font-size:9vw;
+        
+            font-family: 'FigtreeBlack';
+        }
+        .rightItem{
+            position: relative;
+            height: 100%;
+            display: flex;
+            margin-left: 0px;
+            flex-direction: column;
+            width: 100%;
+            max-height: 5'50px';
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        
+        .leftItem{
+            position: relative;
+            height: 100%;
+            width: 80vw;
+            margin-right: 0vw;
+        }
+        .imgHere {
+            max-width:900px;
+            max-height: 480px;
+        }
+        .rightItem h1{
+            margin-top: 6vw;
+            margin-bottom: 0vw;
+            line-height: unset;
+            font-size: 8vw;
+            text-align: left;
+            line-height: 100%;
+        }
+        
+        .strongtitle{
+            font-family: 'FigtreeLight';
+            font-weight: lighter;
+            font-size: 4vw;
+            margin-top: 3vw;
+        }
+        
+        .rightItem p{
+            font-weight: 590;
+            text-align: justify;
+            font-size: 3.5vw;
+        }
+        
+        .cardItens{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .cardItens img{
+            max-height: 5.5vw;
+            margin-bottom: 0.3vw;
+        }
+        .cardItens p{
+            font-size: 2.8vw;
+        }
+        .imgherebg{
+            background-size: cover;
+            height: 50vw;
+            
+        }
+}
+@media screen and (min-width: 1024px) and (max-width:1280px){
+    /* .itemEmpreendimento{
+        flex-direction: column;
+    }
+    .rightItem h1{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .rightItem{
+        position: relative;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        max-height: 550px;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    .leftItem{
+        position: relative;
+        height: 100%;
+        width: 60%;
+    }
+    .imgHere {
+        max-width:900px;
+        max-height: 480px;
+    } */
+}

@@ -1,0 +1,109 @@
+.scrollBarMain{
+    width: 100%;
+    height: 60px;
+    background-color:#efcb09 ;
+    position: fixed;
+    box-shadow: rgb(0 0 0 / 20%) 0px 12px 28px 0px, rgb(0 0 0 / 10%) 0px 2px 4px 0px, rgb(255 255 255 / 5%) 0px 0px 0px 1px inset;
+    z-index: 999;
+    display: flex;
+    transition: all 1000ms;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    margin-top: -100px;
+}
+.scrollBarMainCotainer{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.myLogoGenesis{
+    height: 54px;
+    width: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.myLogoGenesis a{
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.myLogoGenesis img{
+    margin-top: 8px;
+    height: 54px;
+}
+
+
+
+
+
+
+
+.HambScrollBar{
+    height: 54px;
+    width: 54px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    z-index: 550;
+    display: none;
+    cursor: pointer;
+
+}
+
+
+
+.HambScrollBarItem{
+    height: 8px;
+    pointer-events: none;
+    opacity: 1;
+    transform: translateX(0px);
+    cursor: pointer;
+    border-radius: 20px;
+
+    width: 100%;
+    transition: all 500ms;
+    background-color: #393831;   
+}
+.HambScrollBar:hover .HambScrollBarItem{
+    background-color: white;  
+}
+
+
+
+
+.itemsNavHere{
+    display: flex;
+}
+
+
+.itemsNavHere p{
+    margin: 0px 20px;
+    font-size: 20px;
+    color: white!important;
+}
+
+.itemsNavHere span{
+    color: #393831;
+}
+.itemsNavHere span:hover{
+    color: white!important;
+}
+.itemsNavHere p:hover{
+    color: #393831!important;
+}
+
+@media screen and (max-width:1024px){
+.HambScrollBar{
+    display: flex;
+}
+
+.itemsNavHere{
+    display: none;
+}
+}

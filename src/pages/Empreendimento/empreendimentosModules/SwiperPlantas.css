@@ -1,0 +1,691 @@
+.myPagination{
+    background-color: #393831;
+    height: 20px;
+    width: 20px;
+
+    
+    border-radius: 300px;
+}
+.swiper-pagination{
+
+    display: flex;
+    position: static!important;
+    align-items: center!important;
+    justify-content: center!important;
+    margin: 0 auto;
+}
+
+.houseplant{
+    width: 100%;
+    max-width: 1550px;
+    margin-top: 120px;
+    display: flex;
+    margin-bottom: 100px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.twoicons{
+    display: none!important;
+}
+.titlePlantas{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    width: 90%;
+    text-align: right;
+}
+.titlePlantas h1{
+    text-align: center!important;
+    font-size: 85px;
+    line-height: 100%;
+}
+.SwiperHere{
+    max-width: 1550px;
+    width: 90%;
+    cursor:grab;
+
+}
+
+/* headersControlls */
+.HeaderSlider{
+    
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.ControllerSwiper{
+    display: flex;
+
+}
+.MyButton{
+    background-color: #fdc805;
+    width: 60px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: all 500ms;
+    justify-content: center;
+    height: 60px;
+}
+.MyButton:hover{
+    background-color: #ba9205;
+}
+
+.SwiperReturn{
+    transform: rotate(-90deg);
+    width: 70%;
+}
+.SwiperNext{
+    transform: rotate(90deg);
+    width: 70%;
+  
+}
+
+.ControllerSwiper{
+    width: 150px;
+    justify-content: space-between;
+
+}
+/* FheadersControlls */
+.SliderHere{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+}
+.plantPlaceholder{
+    font-family: 'FigtreeRegular';
+    font-size: 45px;
+    font-weight: lighter;
+}
+
+/* ///////////////////// */
+
+.plantIconCard{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 20px;
+    align-items: center;
+}
+.plantIconCard p{
+    font-size: 20px;
+    width: 90px;
+}
+
+.plantIconCard img{
+    height: 40px;
+    margin-bottom: 2px;
+}
+
+.SlideHousePlant img{
+    max-width: 80%;
+    max-height: 450px;
+  
+}
+
+.SlideHousePlant{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 300px;
+}
+
+
+.HousePlantIconsHere{
+    display: flex;
+    max-width: 900px;
+    width: 90%;
+    justify-content: space-evenly;
+    height: 100px;
+    margin-top: 10px ;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+.HousePlantData{
+
+    justify-self: center;
+    display: flex;
+    max-width: 1050px;
+    justify-content: center;
+    width: 100%;
+}
+
+.valueDiv{
+    max-width: 550px;
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #393831;
+}
+
+.LinkPlantsHere{
+    position: relative;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.LinkPlantsHereDiv{
+    background-color: #fdc805;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-right: -130px;
+    margin-top: -55px;
+    transition: all 500ms;
+}
+.LinkPlantsHereDiv:hover p{
+    color: white;
+}
+.valueDiv p{
+    color: white;
+    width: 90%;
+    margin-left: 5%;
+  
+
+}
+.valueDiv h1{
+    font-size: 5rem;
+    margin-left: 5%;
+}
+
+.textHerePlants p{
+    text-align: justify;
+    max-width: 500px;
+}
+
+.HousePlantasLeft{
+    width: 50%;
+} 
+ 
+ .HousePlantasRight{
+    margin-left: 30px;
+    width: max-content;
+}
+
+
+
+@media screen and (min-width:850px) and (max-width:1024px){
+    
+    .HousePlantData {
+        justify-content: center;
+        display: flex;
+        max-width: 900px;
+        align-items: self-start;
+        justify-content: flex-end;
+        width: 100%;
+        flex-direction: column;
+    }
+    .valueDiv {
+        max-width: 450px;
+        width: 100%;
+        height: 180px;
+        display: flex;
+        align-items:center;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #393831;
+    }
+    .valueDiv p {
+        color: white;
+        width: unset;
+        margin-left: 5%;
+    }
+    .HousePlantasRight {
+        margin-left: 0px;
+        width: 100%;
+    }
+    .textHerePlants{
+        width: 100%;
+    }
+    .HousePlantasLeft {
+        width: 80%;
+        max-width: 600px;
+       
+        display: flex;
+        flex-direction: column;
+   
+    }
+    .LinkPlantsHereDiv {
+        background-color: #fdc805;
+        height: 100%;
+        display: flex;
+        max-width: 500px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 450px;
+        margin-right: -20px;
+        margin-top: -55px;
+    }
+    .textHerePlants p {
+        text-align: justify;
+        max-width: unset;
+        width: 100%;
+    }
+    .titlePlantas h1 {
+        text-align: right;
+        font-size: 7vw;
+        line-height: 3.5rem;
+    }
+    .titlePlantas {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        width: 90%;
+        text-align: right;
+    }
+}
+
+@media screen and (min-width:550px) and (max-width:850px){
+    .HousePlantData {
+        justify-content: center;
+        display: flex;
+        max-width: 900px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        flex-direction: column;
+    }
+    .valueDiv {
+        max-width: 550px;
+        width: 100%;
+        height: 180px;
+        display: flex;
+        align-items:center;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #393831;
+    }
+    .valueDiv p {
+        color: white;
+        width: unset;
+        margin-left: unset;
+    }
+    .HousePlantasRight {
+        margin-left: 0px;
+        width: 90%;
+    }
+    .textHerePlants{
+        width: 100%;
+    }
+    .HousePlantasLeft {
+        width: 90%;
+        max-width: 600px;
+       
+        display: flex;
+        flex-direction: column;
+   
+    }
+    .plantIconCard {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0px 0px;
+        align-items: center;
+    }
+    .LinkPlantsHereDiv {
+        background-color: #fdc805;
+        height: 100%;
+        display: flex;
+        max-width: 500px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 450px;
+        margin-right: -130px;
+        margin-top: -55px;
+    }
+    .textHerePlants p {
+        text-align: justify;
+        max-width: unset;
+        width: 100%;
+    }
+
+    .valueDiv h1 {
+        font-size: 5rem;
+        margin-left: unset;
+    }
+    .HousePlantIconsHere {
+        display: flex;
+        max-width: 1300px;
+        width: 90%;
+        justify-content: space-evenly;
+        margin-bottom: 10px;
+        height: unset;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .SlideHousePlant img {
+        max-width: 100%;
+        max-height: 450px;
+    }
+    .titlePlantas h1 {
+        text-align: right;
+        font-size: 2.5rem;
+        line-height: 2.2rem;
+    }
+    .titlePlantas {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        width: 90%;
+        text-align: right;
+    }
+
+}
+
+@media screen and (min-width:320px) and (max-width:550px){
+    .houseplant{
+        margin-top: 12vw!important;
+    }
+    .HousePlantData {
+        justify-content: center;
+        display: flex;
+        max-width: 900px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        flex-direction: column;
+    }
+    .valueDiv {
+        max-width: 550px;
+        margin-top: 15px;
+        width: 100%;
+        height: 150px;
+        display: flex;
+        align-items:center;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #393831;
+    }
+    .valueDiv p {
+        color: white;
+        width:300px;
+        margin-left: unset;
+        font-size: 5vw;
+        margin: 0 auto;
+        width: max-content;
+        
+    }
+    .HousePlantasRight {
+        margin-left: 0px;
+        width: 90%;
+    }
+    .textHerePlants{
+        width: 100%;
+    }
+    .HousePlantasLeft {
+        width: 90%;
+        max-width: 600px;
+       
+        display: flex;
+        flex-direction: column;
+   
+    }
+    .plantIconCard {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0px 0px;
+        align-items: center;
+    }
+    .LinkPlantsHereDiv {
+        background-color: #fdc805;
+        height: 100%;
+        display: flex;
+        max-width: 500px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 450px;
+        margin-right: -30px;
+        margin-top: -35px;
+    }
+    .textHerePlants p {
+        text-align: justify;
+        max-width: unset;
+        font-size: 20px ;
+        width: 100%;
+    }
+    .HousePlantIconsHere{
+        display: none!important
+    }
+    .valueDiv h1 {
+        font-size: 15vw;
+        margin-left: unset;
+    }
+    .HousePlantIconsHere {
+        display: flex;
+        max-width: 1300px;
+        width: 90%;
+        justify-content: space-evenly;
+        margin-bottom: 10px;
+        height: unset;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .SlideHousePlant img {
+        max-width: 100%;
+        max-height: 450px;
+    }
+    .MyButton {
+        background-color: #fdc805;
+        width: 50px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        transition: all 500ms;
+        justify-content: center;
+        height: 50px;
+    }
+    .ControllerSwiper {
+        width: 120px;
+        justify-content: space-between;
+    }
+    .HeaderSlider {
+        width: 90%;
+        display: flex;
+        margin-bottom: 10px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .SwiperHere {
+        max-width: 1550px;
+        width: 95%;
+    }
+    .LinkPlantsHereDiv p{
+        font-size: 5vw;
+    }
+    .twoicons{
+        display: flex!important;
+        margin-top: 30px;
+    }
+    .titlePlantas h1 {
+        text-align: center;
+        font-size: 11vw;
+        line-height: 100%;
+    }
+    .titlePlantas {
+        margin-top: 0px;
+        margin-bottom: 40px;
+        width: 90%;
+        text-align: right;
+    }
+}
+@media screen and (max-width:1600px){
+    .HeaderSlider{
+        width: 90%;
+    }
+}
+@media screen and (min-width:240px) and (max-width:320px){
+    .houseplant{
+        margin-top: 3vw!important;
+    }
+    .HousePlantData {
+        justify-content: center;
+        display: flex;
+        max-width: 900px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        flex-direction: column;
+    }
+    .valueDiv {
+        max-width: 550px;
+        width: 100%;
+        height: 120px;
+        display: flex;
+        align-items:center;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #393831;
+    }
+    .valueDiv p {
+        color: white;
+        width:300px;
+        margin-left: unset;
+        font-size: 5vw;
+        margin: 0 auto;
+        width: max-content;
+        
+    }
+    .plantPlaceholder {
+        font-family: 'FigtreeRegular';
+        font-size: 35px;
+        font-weight: lighter;
+    }
+    .HousePlantasRight {
+        margin-left: 0px;
+        width: 90%;
+    }
+    .textHerePlants{
+        width: 100%;
+    }
+    .HousePlantasLeft {
+        width: 90%;
+        max-width: 600px;
+       
+        display: flex;
+        flex-direction: column;
+   
+    }
+    .plantIconCard {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px 0px;
+        align-items: center;
+    }
+    .LinkPlantsHere {
+        position: relative;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .LinkPlantsHereDiv {
+        background-color: #fdc805;
+        height: 100%;
+        display: flex;
+        max-width: 500px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 450px;
+        margin-right: -30px;
+        margin-top: -35px;
+    }
+    .textHerePlants p {
+        text-align: justify;
+        max-width: unset;
+        font-size: 20px ;
+        width: 100%;
+    }
+    .HousePlantIconsHere{
+        display: none!important
+    }
+    .valueDiv h1 {
+        font-size: 15vw;
+        margin-left: unset;
+    }
+    .HousePlantIconsHere {
+        display: flex;
+        max-width: 1300px;
+        width: 90%;
+        justify-content: space-evenly;
+        margin-bottom: 10px;
+        height: unset;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .SlideHousePlant img {
+        max-width: 100%;
+        max-height: 450px;
+    }
+    .MyButton {
+        background-color: #fdc805;
+        width: 50px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        transition: all 500ms;
+        justify-content: center;
+        height: 50px;
+    }
+    .ControllerSwiper {
+        width: 120px;
+        justify-content: space-between;
+    }
+    .HeaderSlider {
+        width: 90%;
+        display: flex;
+        margin-bottom: 10px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .SwiperHere {
+        max-width: 1550px;
+        width: 95%;
+    }
+    .LinkPlantsHereDiv p{
+        font-size: 5vw;
+    }
+    .twoicons{
+        display: flex!important;
+        margin-top: 30px;
+        justify-content: space-between;
+    }
+    .titlePlantas h1 {
+        text-align: center;
+        font-size: 10vw;
+        line-height: 100%;
+    }
+}
+.textHerePlants {
+    width: 100%;
+    max-height: 150px;
+
+}
+
+

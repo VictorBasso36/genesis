@@ -1,0 +1,696 @@
+
+
+/*aboutlocation*/
+
+
+.maindivAboutLocation{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+.maindivAboutLocationMainTitle{
+    font-size: 8vw;
+    text-align: center;
+    line-height: 100%;
+}
+
+.itenLocationHere{
+    width: 100%;
+    max-width: 1250px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 45px;
+}
+
+.itenLocationCard{
+    width: 280px;
+    height: 300px;
+    display: flex;
+    margin: 5px;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+
+}
+.itenLocationCard svg{
+    height: 60px;
+
+}
+.itenLocationCard h1{
+    font-size: 30px;
+}
+.itenLocationHere{
+    margin-top: 3vw;
+    margin-bottom:3vw;
+}
+
+
+
+
+
+
+
+/*localmaps*/
+
+.titleLocal{
+    width: 100%;
+    display: flex;
+    color: white;
+    align-items: center;
+    background-color: #393831;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.titleLocal pre{
+    height: max-content;
+    white-space: unset;
+    padding: 3vw 0px;
+}
+.titleLocal pre h1{
+    line-height: 100%;
+    color: white;
+    font-size: 5vw;
+}
+
+.titleLocal pre span{
+    line-height: 100%;
+    font-size: 5vw;
+}
+
+
+.Local{
+    display: flex;
+    align-items: center;
+    margin-bottom: 3vw;
+    margin-top: 3vw;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    max-width: 1250px;
+}
+
+.localConteiner{
+    width: 90%;
+    max-width: 1250px;
+}
+.localContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.localContainer pre {
+    width: 100%;
+    height: max-content;
+    white-space: unset;
+    padding: 3vw 0vw;
+    }
+
+.localContainer pre p{
+    font-size: 2.5vw;
+    text-align: center;
+}
+
+.mapsContent{
+    width: 100%;
+}
+
+.mapsContent iframe{
+    width: 100%;
+    height: 40vw;
+}
+
+.aboutMap{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.aboutMap p{
+    font-size: 2vw;
+    text-align: left;
+}
+
+.routeMap{
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw;
+    background-color:#efcb09;
+}
+
+.routeMap h1{
+    font-size: 2.5vw;
+    transition: all 500ms;
+}
+.routeMap:hover h1{
+    color: white;
+}
+
+@media screen and (min-width:1250px){
+    .maindivAboutLocationMainTitle{
+        font-size: 85px;
+        text-align: center;
+        line-height: 100%;
+    }
+    .itenLocationHere {
+        width: 100%;
+        max-width: 1250px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 60px;
+    }
+    .itenLocationCard{
+        width: 280px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+ 
+    }
+    .itenLocationCard svg{
+        height: 60px;
+    }
+    .itenLocationCard h1{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+    .itenLocationHere{
+        margin-bottom: 80px;
+    }
+
+
+    /*localmaps*/
+
+.titleLocal{
+    width: 100%;
+    display: flex;
+    color: white;
+    align-items: center;
+    background-color: #393831;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.titleLocal pre{
+    padding: 3vw 0px;
+}
+.titleLocal pre h1{
+    line-height: 100%;
+    color: white;
+    font-size: 75px;
+}
+
+.titleLocal pre span{
+    line-height: 100%;
+    font-size: 85px;
+}
+
+
+.Local{
+    display: flex;
+    margin-top: 0px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+}
+
+.localConteiner{
+    width: 90%;
+    max-width: 1250px;
+}
+.localContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.localContainer pre {
+    width: 100%;
+    height: max-content;
+    white-space: unset;
+    padding: 30px 0vw;
+    }
+
+.localContainer pre p{
+    font-size: 30px;
+    text-align: center;
+}
+
+.mapsContent{
+    width: 100%;
+}
+
+.mapsContent iframe{
+    width: 100%;
+    height: 500px;
+}
+
+.aboutMap{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.aboutMap p{
+    font-size: 25px;
+    text-align: left;
+}
+
+.routeMap{
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw;
+    background-color:#efcb09;
+}
+
+.routeMap h1{
+    font-size: 40px;
+}
+}
+
+@media screen and (min-width:800px) and (max-width:1024px){
+
+
+
+
+    .maindivAboutLocation{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    
+    
+    .maindivAboutLocationMainTitle{
+        font-size: 8vw;
+        text-align: center;
+        line-height: 100%;
+    }
+    
+    .itenLocationHere{
+        width: 100%;
+        max-width: 1250px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 45px;
+    }
+    
+    .itenLocationCard{
+        width: 280px;
+        display: flex;
+        margin: 5px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    
+    }
+    .itenLocationCard svg{
+        height: 60px;
+    }
+    .itenLocationCard h1{
+        font-size: 30px;
+    }
+    .itenLocationHere{
+        margin-top: 3vw;
+        margin-bottom:3vw;
+    }
+    
+    
+    
+    
+    
+    
+    
+    /*localmaps*/
+    
+    .titleLocal{
+        width: 100%;
+        display: flex;
+        color: white;
+        align-items: center;
+        background-color: #393831;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .titleLocal pre{
+        padding: 3vw 0px;
+    }
+    .titleLocal pre h1{
+        line-height: 100%;
+        color: white;
+        font-size: 6vw;
+    }
+    
+    .titleLocal pre span{
+        line-height: 100%;
+        font-size: 8vw;
+    }
+    
+    
+    .Local{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 90%;
+        max-width: 1250px;
+    }
+    
+    .localConteiner{
+        width: 90%;
+        max-width: 1250px;
+    }
+    .localContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .localContainer pre {
+        width: 100%;
+        height: max-content;
+        white-space: unset;
+        padding: 3vw 0vw;
+        }
+    
+    .localContainer pre p{
+        font-size: 3.5vw;
+        text-align: center;
+    }
+    
+    .mapsContent{
+        width: 95%;
+    }
+    
+    .mapsContent iframe{
+        
+        height: 50vw;
+    }
+    
+    .aboutMap{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .aboutMap p{
+        font-size: 3vw;
+        margin-top: 1vw;
+        text-align: left;
+    }
+    
+    .routeMap{
+        width: 20vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1vw;
+        background-color:#efcb09;
+    }
+    
+    .routeMap h1{
+        font-size: 2.5vw;
+    } 
+}
+
+@media screen and (min-width:550px) and (max-width:800px){
+      /*localmaps*/
+    
+      .titleLocal{
+        width: 100%;
+        display: flex;
+        color: white;
+        align-items: center;
+        background-color: #393831;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .titleLocal pre{
+        padding: 3vw 0px;
+    }
+    .titleLocal pre h1{
+        line-height: 100%;
+        color: white;
+        font-size: 7vw;
+    }
+    
+    .titleLocal pre span{
+        line-height: 100%;
+        font-size: 8vw;
+    }
+    
+    
+    .Local{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 90%;
+        max-width: 1250px;
+    }
+    
+    .localConteiner{
+        width: 90%;
+        max-width: 1250px;
+    }
+    .localContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .localContainer pre {
+        width: 100%;
+        height: max-content;
+        white-space: unset;
+        padding: 3vw 0vw;
+        }
+    
+    .localContainer pre p{
+        font-size: 3.5vw;
+        text-align: center;
+    }
+    
+    .mapsContent{
+        width: 105%;
+    }
+    
+    .mapsContent iframe{
+        
+        height: 50vw;
+    }
+    
+    .aboutMap{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .aboutMap p{
+        font-size: 3.5vw;
+        margin-top: 1vw;
+        text-align: left;
+    }
+    
+    .routeMap{
+        width: 20vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2vw;
+        background-color:#efcb09;
+    }
+    
+    .routeMap h1{
+        font-size: 3.5vw;
+    } 
+}
+
+@media screen and (min-width: 0px) and (max-width:550px){
+    
+/*aboutlocation*/
+
+
+.maindivAboutLocation{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+.maindivAboutLocationMainTitle{
+    font-size: 10vw;
+    text-align: center;
+    line-height: 100%;
+}
+
+.itenLocationHere{
+    width: 100%;
+    max-width: 1250px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 45px;
+}
+
+.itenLocationCard{
+    width: 280px;
+    display: flex;
+    margin: 3vw;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+
+}
+.itenLocationCard svg{
+    height: 30vw;
+}
+.itenLocationCard h1{
+    font-size:10vw;
+}
+.itenLocationCard p{
+    font-size: 8vw;
+    text-align: center;
+}
+.itenLocationHere{
+    margin-top: 3vw;
+    margin-bottom:3vw;
+}
+
+      /*localmaps*/
+    
+      .titleLocal{
+        width: 100%;
+        display: flex;
+        padding: 30px 0px;
+        color: white;
+        align-items: center;
+        background-color: #393831;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .titleLocal pre{
+        padding: 0vw 0px;
+    }
+    .titleLocal pre h1{
+        line-height: 100%;
+        color: white;
+        font-size: 7vw;
+    }
+    
+    .titleLocal pre span{
+        line-height: 100%;
+        font-size: 8vw;
+    }
+    
+    
+    .Local{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 90%;
+        max-width: 1250px;
+    }
+    
+    .localConteiner{
+        width: 90%;
+        max-width: 1250px;
+    }
+    .localContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .localContainer pre {
+        width: 100%;
+        height: max-content;
+        white-space: unset;
+        padding: 3vw 0vw;
+        margin-bottom: 5vw;
+        }
+    
+    .localContainer pre p{
+        font-size: 5vw;
+        text-align: justify;
+    }
+    
+    .mapsContent{
+        width: 110%;
+    }
+    
+    .mapsContent iframe{
+        
+        height: 60vw;
+    }
+    
+    .aboutMap{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        width: 100%;
+        margin: 0 auto;
+    }
+    .aboutMap p{
+        width: 95%;
+        font-size: 5.5vw;
+        margin-top: 1.5vw;
+        margin-bottom: 1vw;
+        text-align: center;
+    }
+    
+    .routeMap{
+        width: 30vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2vw;
+        background-color:#efcb09;
+    }
+    
+    .routeMap h1{
+        font-size: 4.5vw;
+    }     
+}

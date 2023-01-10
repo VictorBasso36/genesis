@@ -1,0 +1,159 @@
+.navBar{
+    display: flex;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    z-index: 999;
+    top:0;
+    position: relative;
+    justify-content: space-between;
+}
+.number{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 30px;
+    font-size: 25px;
+}
+.number:hover{
+    color: #f0c71a;
+}
+.ModalFixed{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 998;
+    text-decoration: none;
+    color: white;
+    justify-content: space-evenly;
+}
+.ModalFixed a{
+    text-decoration: none;
+}
+
+.navBarLinks{
+    height: 50px;
+}
+.noMargin{
+    margin-right: 0px!important;
+}
+
+.navBarLinks{
+    display: flex;
+}
+.navBarLinks p{
+    margin: 0 20px 0px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    height: fit-content;
+}
+.navBarLinks p:hover{
+    color: #f0c71a;
+}
+.navBarLinks p span:hover{
+    color: #393831;
+}
+
+.navBarLogo{
+    width: 250px;
+    height: 250px;
+    z-index: 2;
+}
+.navBarLogo img{
+    width: 100%;
+    z-index: 990;
+}
+.navBarLogo img:hover{
+    opacity: 0.8;
+}
+
+.activeNav .navBarMenuItem{
+    position: absolute;
+}
+
+.activeNav:hover .navBarMenuItem{
+    transform: scale(1);
+   
+}
+.activeNav .navBarMenuItem:nth-child(1){
+    position: absolute;
+    transform: rotate(-45deg);
+    transition: all 1000ms;
+}
+.activeNav .navBarMenuItem:nth-child(2){
+    position: absolute;
+    transition: all 100ms;
+    opacity: 0;
+   
+}
+.activeNav .navBarMenuItem:nth-child(3){
+    position: absolute;
+    transform: rotate(45deg);
+}
+/* hamb */
+
+.navBarMenu{
+    height: 60px;
+    cursor: pointer;
+    z-index: 999;
+    position: relative;
+    width: 60px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    display: none;
+}
+.navBarMenuItem{
+    height: 8px;
+    pointer-events: none;
+    opacity: 1;
+    transform:translateX(0px);
+    border-radius: 20px;
+    z-index: 550;
+    width: 100%;
+    transition: all 500ms;
+    background-color: #f0c71a;
+
+}
+
+.navBarMenu:hover .navBarMenuItem{
+    background-color: #393831;
+}
+
+
+
+
+
+@media screen and (max-width:1024px) {
+
+.navBarMenu{
+    display: flex;
+}
+.navBarLinks{
+    display: none;
+}
+.number{
+    display: none;
+}
+
+}
+
+
+@media screen and (max-width:550px) {
+
+.navBarLogo{
+    width: 150px;
+    height: 150px;
+}
+.navBarLogo img{
+    width: 100%;
+    }
+
+}

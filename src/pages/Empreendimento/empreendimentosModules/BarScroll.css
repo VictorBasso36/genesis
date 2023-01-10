@@ -1,0 +1,45 @@
+.topScrollBar{
+    position: fixed;
+    width: 100%;
+    justify-content:space-evenly;
+    align-items: center;
+    padding: 5px 0px;
+    display: flex;
+    top: 0;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    transition: all 1000ms;
+    z-index: 996;
+    flex-wrap: wrap;
+    margin-top: 260px;
+    background-color: #efcb09;
+}
+.topScrollBar span{
+    color: #393831;
+}
+.topScrollBar a{
+    cursor: pointer;
+    margin: 5px 15px;
+    text-decoration: none;
+    color: #393831;
+    font-family: 'FigtreeLight';
+    font-weight: 600;
+    
+}
+
+
+
+@media screen and (min-width:0px) and (max-width:550px) {
+    .topScrollBar{
+        position: fixed;
+        width: 100%;
+        justify-content:space-evenly;
+        align-items: center;
+        padding: 5px 0px;
+        display: flex;
+        top: 0;
+        z-index: 996;
+        flex-wrap: wrap;
+        margin-top: 180px;
+        background-color: #efcb09;
+    }  
+}

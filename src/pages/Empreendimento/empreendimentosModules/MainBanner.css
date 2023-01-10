@@ -1,0 +1,1260 @@
+.cta{
+    background-color: #393831;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.ctaContainer h1{
+    font-size: 5.2vw;
+    color: white;
+    text-align: center;
+
+}
+.ctaContainer h1 span{
+    font-size: 5.2vw;
+    height: 100%;
+}
+.modalSwiperPhotos{
+    position: fixed;
+    width: 100%;
+    top:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 2000;
+    flex-direction: column;
+}
+
+.ModalnextMain{
+    position: absolute;
+    z-index: 3000;
+    cursor: pointer;
+    background-color: #efcb09;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    right: 0;
+    margin-right: 4%;
+}
+
+
+.ModalnextMain:hover{
+    background-color: #f9e054;
+}
+.ModalnextMain img{
+    transform: rotate(90deg);
+    transition: all 500ms;
+    width: 100%;
+}
+.ModalprevMain{
+    position: absolute;
+    z-index: 3000;
+    background-color: #efcb09;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    transition: all 500ms;
+    left: 0;
+    margin-left: 4%;
+}
+.ModalprevMain:hover img{
+    width: 80%;
+
+}
+.ModalnextMain:hover img{
+    width: 80%;
+
+}
+
+.ModalprevMain:hover{
+    background-color: #f9e054;
+}
+.ModalprevMain img{
+    transition: all 500ms;
+    width: 100%;
+    transform: rotate(-90deg);
+}
+
+
+.scrollText::-webkit-scrollbar{
+    width: 5px;
+  }
+
+  .scrollText::-webkit-scrollbar-thumb{
+    background-color: #efcb09;
+    border-radius: 30px;
+    margin-left: 10px;
+  }
+
+  .scrollText::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+.menuClose{
+
+    width: 60px;
+    z-index: 2500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-right: 5%;
+    flex-direction: column;
+    padding: 10px;
+    height: 60px;
+    position: absolute;
+    transition: all 500ms;
+    top: 0;
+    right: 0;
+
+}
+.meuCloseItem{
+    width: 100%;
+    position: absolute;
+    cursor: pointer;
+    height: 10px;
+    background-color: #efcb09;
+    transition: all 500ms;
+}
+.menuClose:hover .meuCloseItem{
+    background-color: #393831;
+}
+.meuCloseItem:nth-child(1){
+    transform: rotate(45deg);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    border-radius: 30px;
+}
+.meuCloseItem:nth-child(2){
+    transform: rotate(-45deg);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    border-radius: 30px;
+}
+.swiperModalHere {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    overflow: hidden;
+    z-index: 2003;
+    position: relative;
+    max-height: 90%;
+    max-width: 1450px;
+    justify-content: center;
+}
+.slideMainFull{
+    display: flex;
+    width: 90%;
+    height: 80%;
+    max-height: 80%;
+    max-width: 90%;
+    overflow: hidden;
+    margin: 0 auto;
+ 
+}
+.slideMainFull img{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    
+}
+/*  */
+.slideMain{
+    width: 100%;
+    height: 100%;
+}
+
+
+.BannerMain{
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+    max-width: 1550px;
+}
+
+
+
+
+
+
+.titleResponsive h1{
+    text-align: left;
+    margin-bottom: 5px;
+    display: none;
+    font-size: 7vw;
+}
+.leftPicturesAndPrices{
+    width: 50%;
+    z-index: 2;
+    position: relative;
+}
+.leftPicturesAndPrices:hover .fullscreenIcon{
+    transform:scale(1.2);
+}
+.paddingFornameAndTexts{
+    position: relative;
+    height: 90%;
+    width: 90%;
+    margin: 0 auto;
+}
+.paddingFornameAndTexts h1{
+    font-size:5.2vw;
+    margin-bottom: 10px;
+}
+.paddingFornameAndTexts p{
+    text-align: justify;
+}
+
+
+
+
+.priceAndDetails{
+    margin-top: -80px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: end;
+    height: 150px;
+    z-index: 100;
+
+}
+.priceHere{
+    z-index: 10;
+    height: 100%;
+    display: flex;
+    width:50%;
+    position: relative;
+    min-width: 380px;
+    margin-right: 60px;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #393831;
+}
+.priceHere p{
+    color: white;
+    margin-left: 5%;
+}
+.priceHere h1{
+    color: #efcb09;
+    font-size:65px;
+    margin-left: 5%;
+
+}
+
+.yellowClick
+{
+    z-index: 11;
+    margin-right: -20px;
+    margin-top: -30px;
+    width: 200px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    font-size: 22px;
+    max-height: 70px;
+    background-color: #efcb09;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+.yellowClick:hover p{
+    color: white;
+}
+.yellowClick p{
+    transition: all 500ms;
+    margin: 5px 5px 5px 15px;
+}
+
+
+
+
+.iconsHereGenesis{
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.iconsHereGenesis div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 90px;
+}
+.iconsHereGenesis div img{
+    height: 40px;
+}
+.scrollText{
+    max-height: unset;
+    overflow: hidden;
+}
+.scrollText p{
+    font-size: 25px;
+    width: 98%;
+    margin: 0 auto;
+}
+.iconsHereGenesis div p{
+    font-size: 20px;
+    width: 90px;
+    text-align: center;
+
+}
+.nameAndTexts{
+    position: relative;
+    width: 50%;
+}
+
+.myZAPicon{
+    right: 0;
+    width: 60px;
+    margin-bottom: -150px;
+    bottom:0;
+    position: absolute;
+}
+.myZAPicon:hover{
+    opacity: 0.8;
+}
+
+
+.swiperHere{
+    background-color: #5052d0;
+    width: 100%;
+    height: 500px;
+    cursor:grab;
+    justify-content: center;
+    object-fit: cover;
+    overflow: hidden;
+    display: flex;
+    
+    z-index: -1;
+    position: relative;
+}
+
+.slideMain{
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.slideMain img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.fullscreenIcon{
+    position: absolute;
+    right: 0;
+    z-index: 100;
+    cursor: pointer;
+    transition: all 500ms;
+    top: 0;
+    margin-top: 20px;
+    margin-right: 20px;
+
+}
+.fullscreenIcon:hover{
+    transform:scale(1.2);
+} 
+
+
+
+.tagnameCaixa{
+    margin-top: 150px;
+    background-color: #393831;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2vw 0px;
+}
+.tagnameCaixa h1{
+    color: white;
+    font-size: 5vw;
+}
+.tagnameCaixa p{
+    color: white;
+}
+.tagnameCaixa svg{
+    width: 11vw;
+    margin-left: 0.5vw;
+}
+.caixaImage{
+    color: white;
+    font-family: 'FigtreeLight';
+    font-size: 2vw;
+}
+
+.caixaImage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.paddingFornameAndTexts h1 strong{
+    
+    font-family: FigtreeLight;
+    font-weight: lighter;
+    font-size: 2vw;
+
+}
+
+@media  screen and (min-width:850px) and (max-width:1024px) {
+    .ctaContainer h1{
+        font-size: 7.2vw;
+        color: white;
+        text-align: center;
+    
+    }
+    .ctaContainer h1 span{
+        font-size: 8.2vw;
+        height: 100%;
+    }
+    .titleResponsive h1{
+        text-align: left;
+        margin-bottom: 5px;
+        display: inline;
+        font-size: 7vw;
+    }
+    .titleResponsive h1 strong{
+    font-family: FigtreeLight;
+    font-weight: lighter;
+    font-size: 2vw;
+}
+    .BannerMain{
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+        max-width: 1550px;
+        margin-top: 30px;
+        justify-content: space-between;
+    }   
+    .leftPicturesAndPrices {
+        width: 100%;
+        position: relative;
+        
+    }
+    .priceAndDetails {
+        margin-top: -80px;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: start;
+        height: 150px;
+        z-index: 100;
+    }
+    .priceHere {
+        z-index: 10;
+        height: 100%;
+        display: flex;
+        width: 50%;
+        position: relative;
+        min-width: 380px;
+        margin-right: unset;
+        align-items: flex-start;
+        justify-content: center;
+        
+        flex-direction: column;
+        background-color: #393831;
+    }
+    .yellowClick {
+        z-index: 11;
+        margin-right: unset;
+        margin-top: -30px;
+        width: 200px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        font-size: 22px;
+        max-height: 70px;
+        background-color: #efcb09;
+        position: absolute;
+        top: 0;
+        right: unset;
+        margin-left: 280px;
+  
+    }
+    .paddingFornameAndTexts h1 {
+        display: none;
+        font-size: 5.2vw;
+        margin-bottom: 10px;
+    }
+
+
+
+    .nameAndTexts {
+        position: relative;
+        width: 100%;
+    }
+    .paddingFornameAndTexts {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        margin: 30px 0px 0px 0px;
+    }
+    .myZAPicon{
+        display: none;
+
+    }
+
+
+
+    /*tagcaixa*/
+    .tagnameCaixa{
+        margin-top: 150px;
+        background-color: #393831;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 30px 0px;
+    }
+    .tagnameCaixa h1{
+        color: white;
+        font-size: 70px;
+    }
+    .tagnameCaixa p{
+        color: white;
+    }
+    .tagnameCaixa svg{
+        width: 250px;
+        margin-left: 0.5vw;
+    }
+    .caixaImage{
+        color: white;
+        font-family: 'FigtreeLight';
+        font-size: 30px;
+    }
+    
+    .caixaImage{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /*tagcaixa*/
+}
+
+@media screen and (min-width:550px) and (max-width:650px){
+    .swiperHere {
+        background-color: #5052d0;
+        width: 100%;
+        height: 400px!important;
+        z-index: -1;
+        position: relative;
+    }
+    .ctaContainer h1{
+        width: 90%;
+        margin: 0 auto;
+
+        font-size: 8.2vw;
+        color: white;
+        text-align: center;
+    
+    }
+    .ctaContainer h1 span{
+        font-size: 13vw;
+        height: 100%;
+    }
+}
+@media screen and (min-width:0px) and (max-width:550px){
+    .ctaContainer h1{
+        width: 90%;
+        margin: 0 auto;
+
+        font-size: 8vw;
+        color: white;
+        text-align: center;
+    
+    }
+    .ctaContainer h1 span{
+        font-size: 12vw;
+        height: 100%;
+    }
+    .BannerMain{
+      
+        margin-top: 0px!important;
+        
+    }
+}
+@media screen and (min-width:550px) and (max-width:850px){
+    .titleResponsive h1{
+        text-align: left;
+        margin-bottom: 5px;
+        display: inline;
+        font-size: 10vw;
+    }
+    .swiperHere {
+        background-color: #5052d0;
+        width: 100%;
+        height: 500px;
+        z-index: -1;
+        position: relative;
+    }
+    .BannerMain{
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+        max-width: 1550px;
+        margin-top: 30px;
+        justify-content: space-between;
+    }   
+    .leftPicturesAndPrices {
+        width: 100%;
+        position: relative;
+        
+    }
+    .priceAndDetails {
+        margin-top: -80px;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: start;
+        height: 150px;
+        z-index: 100;
+    }
+    .priceHere {
+        z-index: 10;
+        height: 100%;
+        display: flex;
+        width: 50%;
+        position: relative;
+        min-width: 380px;
+        margin-right: unset;
+        align-items: flex-start;
+        justify-content: center;
+        
+        flex-direction: column;
+        background-color: #393831;
+    }
+    .yellowClick {
+        z-index: 11;
+        margin-right: unset;
+        margin-top: -30px;
+        width: 200px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        font-size: 22px;
+        max-height: 70px;
+        background-color: #efcb09;
+        position: absolute;
+        top: 0;
+        right: unset;
+        margin-left: 280px;
+  
+    }
+    .paddingFornameAndTexts h1 {
+        display: none;
+        font-size: 5.2vw;
+        margin-bottom: 10px;
+    }
+
+
+
+    .nameAndTexts {
+        position: relative;
+        width: 100%;
+    }
+    .paddingFornameAndTexts {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        margin: 30px 0px 0px 0px;
+    }
+    .myZAPicon{
+        display: none;
+    }
+
+
+
+
+        /*tagcaixa*/
+        .tagnameCaixa{
+            margin-top: 150px;
+            background-color: #393831;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 30px 0px;
+        }
+        .tagnameCaixa h1{
+            color: white;
+            font-size: 7vw;
+        }
+        .tagnameCaixa p{
+            color: white;
+        }
+        .tagnameCaixa svg{
+            width: 20vw;
+            margin-left: 2vw;
+        }
+        .caixaImage{
+            color: white;
+            font-family: 'FigtreeLight';
+            font-size: 3vw;
+        }
+        
+        .caixaImage{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /*tagcaixa*/
+}
+@media screen and (min-width:350px) and (max-width:550px){
+    .titleResponsive{
+        margin-top: 45px;
+        margin-bottom: 30px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .titleResponsive h1{
+        text-align: center;
+        margin: unset;
+        line-height: 100%;
+        width: 90%;
+        display: inline;
+        font-size: 10vw;
+    }
+    .swiperHere {
+        background-color: #5052d0;
+        width: 100%;
+        height: 300px;
+        z-index: -1;
+        position: relative;
+    }
+    .BannerMain{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        max-width: 1550px;
+        margin-top: 30px;
+        justify-content: space-between;
+    }   
+    .leftPicturesAndPrices {
+        width: 100%;
+        position: relative;
+        
+    }
+    .priceAndDetails {
+        margin-top: -70px;
+        display: flex;
+        position: relative;
+
+        align-items: center;
+        justify-content: flex-end;
+        height: 130px;
+        z-index: 100;
+    }
+    .priceHere {
+        z-index: 10;
+        height: 100%;
+        display: flex;
+        width: 90%;
+        position: relative;
+        min-width: unset;
+        margin-right: unset;
+        max-width: 320px;
+        align-items: center;
+        justify-content: center;
+        margin-right: 30px;
+        flex-direction: column;
+        background-color: #393831;
+    }
+    .priceHere h1 {
+        color: #efcb09;
+        font-size: 55px;
+        margin-left: 0%;
+    }
+    .priceHere p {
+        color: white;
+        margin-left:0%;
+    }
+    .yellowClick {
+        z-index: 11;
+        margin-right: unset;
+        margin-top: -30px;
+        width: 200px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        font-size: 22px;
+        max-height: 70px;
+        background-color: #efcb09;
+        position: absolute;
+        top: unset;
+        margin-bottom: -55px;
+        bottom: 0;
+        right: 0;
+        margin-left: 280px;
+  
+    }
+    .paddingFornameAndTexts h1 {
+        display: none;
+        font-size: 5.2vw;
+        margin-bottom: 10px;
+    }
+
+
+
+    .nameAndTexts {
+        position: relative;
+        width: 90%;
+        margin: 50px auto;
+    }
+    .paddingFornameAndTexts {
+
+        position: relative;
+        height: 100%;
+        width: 100%;
+        margin: 30px 0px 0px 0px;
+    }
+    .myZAPicon{
+        display: none;
+    }
+    .iconsHereGenesis {
+        display: flex;
+        margin-top: 20px;
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .iconsHereGenesis div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 90px;
+        margin: 3%;
+    }
+    .scrollText p {
+        font-size: 25px;
+        width: 100%;
+        margin:unset;
+    }
+    .scrollText {
+    
+        width: 100%;
+        margin: 0 auto;
+      
+        overflow-x: hidden;
+    }
+
+
+                /*tagcaixa*/
+                .tagnameCaixa{
+                    margin-top: 3vw;
+                    background-color: #393831;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    padding: 30px 0px;
+                }
+                .tagnameCaixa h1{
+                    text-align: center;
+                    color: white;
+                    font-size: 10vw;
+                }
+                .tagnameCaixa p{
+                    color: white;
+                }
+                .tagnameCaixa svg{
+                    width: 25vw;
+                    margin-left: 2vw;
+                }
+                .caixaImage{
+                    color: white;
+                    font-family: 'FigtreeLight';
+                    font-size: 6vw;
+                }
+                
+                .caixaImage{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                /*tagcaixa*/
+}
+
+@media screen and (min-width:350px) and (max-width:450px) {
+    .twoicons{
+        display: flex;
+    }
+    .priceAndDetails {
+        margin-top: -50px;
+        display: flex;
+        position: relative;
+
+        align-items: center;
+        justify-content: center;
+        height: 130px;
+        z-index: 100;
+    }    
+    .priceHere {
+        z-index: 10;
+        height: 100%;
+        display: flex;
+        width: 90%;
+        position: relative;
+        min-width: unset;
+        margin-right: unset;
+        max-width: unset;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0px;
+        flex-direction: column;
+        background-color: #393831;
+    }
+
+
+
+
+}
+
+@media screen and (min-width:279px) and (max-width:350px){
+    .titleResponsive{
+        margin-top: 45px;
+        margin-bottom: 30px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .titleResponsive h1{
+        text-align: center;
+        margin: unset;
+        line-height: 100%;
+        width: 90%;
+        display: inline;
+        font-size: 10vw;
+    }
+    .swiperHere {
+        background-color: #5052d0;
+        width: 100%;
+        height: 300px;
+        z-index: -1;
+        position: relative;
+    }
+    .BannerMain{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        max-width: 1550px;
+        margin-top: 30px;
+        justify-content: space-between;
+    }   
+    .leftPicturesAndPrices {
+        width: 100%;
+        position: relative;
+        
+    }
+    .priceAndDetails {
+        margin-top: -70px;
+        display: flex;
+        position: relative;
+
+        align-items: center;
+        justify-content: center;
+        height: 130px;
+        z-index: 100;
+    }
+    .priceHere {
+        z-index: 10;
+        height: 100%;
+        display: flex;
+        width: 90%;
+        position: relative;
+        min-width: unset;
+        margin-right: unset;
+        max-width: 320px;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0px;
+        flex-direction: column;
+        background-color: #393831;
+    }
+    .priceHere h1 {
+        color: #efcb09;
+        font-size: 15vw;
+        margin-left: 0%;
+    }
+    .priceHere p {
+        color: white;
+        margin-left:0%;
+        font-size: 7vw;
+    }
+    .yellowClick {
+        z-index: 11;
+        margin-right: unset;
+        margin-top: -30px;
+        width: 200px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        font-size: 22px;
+        max-height: 70px;
+        background-color: #efcb09;
+        position: absolute;
+        top: unset;
+        margin-bottom: -55px;
+        bottom: 0;
+        right: 0;
+        margin-left: 280px;
+  
+    }
+    .paddingFornameAndTexts h1 {
+        display: none;
+        font-size: 5.2vw;
+        margin-bottom: 10px;
+    }
+
+
+
+    .nameAndTexts {
+        position: relative;
+        width: 90%;
+        margin: 50px auto;
+    }
+    .paddingFornameAndTexts {
+
+        position: relative;
+        height: 100%;
+        width: 100%;
+        margin: 30px 0px 0px 0px;
+    }
+    .myZAPicon{
+        display: none;
+    }
+    .iconsHereGenesis {
+        display: flex;
+        margin-top: 20px;
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .iconsHereGenesis div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 90px;
+        margin: 3%;
+    }
+    .scrollText p {
+        font-size: 25px;
+        width: 100%;
+        margin:unset;
+    }
+    .scrollText {
+     
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        
+    } 
+    
+
+
+                /*tagcaixa*/
+                .tagnameCaixa{
+                    margin-top: 3vw;
+                    background-color: #393831;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    padding: 30px 0px;
+                }
+                .tagnameCaixa h1{
+                    color: white;
+                    text-align: center;
+                    font-size:11vw;
+                }
+                .tagnameCaixa p{
+                    color: white;
+                }
+                .tagnameCaixa svg{
+                    width: 30vw;
+                    margin-left: 2vw;
+                }
+                .caixaImage{
+                    color: white;
+                    font-family: 'FigtreeLight';
+                    font-size: 6vw;
+                }
+                
+                .caixaImage{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                /*tagcaixa*/
+}
+
+
+@media screen and (min-width: 1550px) {
+
+    .paddingFornameAndTexts h1 {
+        font-size: 85px;
+        margin-bottom: 10px;
+    }
+    .paddingFornameAndTexts h1 strong{
+    
+            font-family: FigtreeLight;
+            font-weight: lighter;
+            font-size: 30px;
+        
+    }
+    .ctaContainer h1{
+        font-size: 60px;
+    }
+    .ctaContainer h1 span {
+        font-size: 85px;
+        height: 100%;
+    }
+  }
+
+
+
+@media screen and (max-width:1024px){
+    .ModalnextMain{
+        position: absolute;
+        z-index: 3000;
+        background-color: #efcb09;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 6vw;
+        height: 6vw;
+        right: 0;
+        margin-right: 4%;
+    }
+    .meuCloseItem {
+        width: 100%;
+        position: absolute;
+        height: 2vw;
+        background-color: #efcb09;
+        transition: all 500ms;
+    }
+    .menuClose {
+        width: 6vw;
+        z-index: 2500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+        margin-right: 5%;
+        flex-direction: column;
+        padding: 10px;
+        height: 6vw;
+        position: absolute;
+        transition: all 500ms;
+        top: 0;
+        right: 0;
+    }
+    
+    .ModalnextMain:hover{
+        background-color: #f9e054;
+    }
+    .ModalnextMain img{
+        transform: rotate(90deg);
+        transition: all 500ms;
+        width: 100%;
+    }
+    .ModalprevMain{
+        position: absolute;
+        z-index: 3000;
+        background-color: #efcb09;
+        cursor: pointer;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 6vw;
+        height: 6vw;
+        transition: all 500ms;
+        left: 0;
+        margin-left: 4%;
+    }
+
+
+
+
+    
+  }
+
+
+
+@media screen and (min-width:1250px){
+
+    .tagnameCaixa{
+        margin-top: 150px;
+        background-color: #393831;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 30px 0px;
+    }
+    .tagnameCaixa h1{
+        color: white;
+        font-size: 75px;
+    }
+    .tagnameCaixa p{
+        color: white;
+    }
+    .tagnameCaixa svg{
+        width: 220px;
+        margin-left: 0.5vw;
+    }
+    .caixaImage{
+        color: white;
+        font-family: 'FigtreeLight';
+        font-size: 30px;
+    }
+    
+    .caixaImage{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+  }

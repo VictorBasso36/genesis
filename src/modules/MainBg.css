@@ -1,0 +1,204 @@
+.bgMain{
+position: relative;
+min-height: 600px;
+
+display: flex;
+align-items: center;
+max-height: 601px;
+text-align: right;
+width: 100%;
+
+}
+
+
+.bgMain img{
+z-index: -1;
+    margin-top: -300px;
+    width: 70%;
+
+}
+
+.bgMain h1{
+    z-index: 3;
+    right: 0;
+    margin-right: 5%;
+    line-height: 100%;
+    top: 20%;
+    font-size: 4rem;
+    bottom: 0;
+    position: absolute;
+}
+@media screen and (min-width:280px) and (max-width:350px) {
+    .bgMain{
+        position: relative;
+        min-height: 300px;
+        display: flex;
+        align-items: center;
+        text-align: right;
+        width: 100%;
+        
+        }
+
+    .iconsCard{
+        width: 50vw!important;
+    }
+    .iconsCard img{
+        max-width: 50px!important;
+        height: 50px!important;
+    }
+    .iconsCardTitle {
+        margin-top: 20px;
+        font-size: 6vw!important;
+    }
+    
+    
+    .bgMain h1{
+        z-index: 3;
+        right: 0;
+        margin-right: 5%;
+        top: unset;
+        font-size: 12vw;
+        line-height: 100%;
+        bottom: 0;
+        width: 100%;
+        margin: 0 auto;
+
+        text-align: center;
+    
+        margin-bottom: 0px;
+        position: absolute;
+}
+    .bgMain img{
+
+        margin-top: -180px;
+        width: 120%;
+        max-width: 1300px;
+    }
+}
+
+@media screen and (min-width:350px) and (max-width:550px) {
+    .bgMain{
+        position: relative;
+        min-height: 400px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        
+        }
+    .bgMain h1{
+        z-index: 3;
+        right: 0;
+        left: 0;
+        margin-right: 5%;
+        top: unset;
+        font-size: 2.8rem;
+        bottom: 0;
+        margin: 0 auto;
+        position: absolute;
+}
+    .bgMain img{
+
+        margin-top: -180px;
+        width: 120%;
+        max-width: 1300px;
+    }
+}
+
+@media screen and (max-width:540px){
+    .bgMain{
+         margin-top:0px;
+    }
+   
+}
+
+@media screen and (min-width:550px) and (max-width:800px) {
+    .bgMain{
+        position: relative;
+        min-height: 400px;
+        margin-top: 100px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        
+        }
+    .bgMain h1{
+        z-index: 3;
+        margin: 0 auto;
+        top: unset;
+        bottom: 0;
+        right: 0;
+        left:0 ;
+        font-size: 4rem;
+        line-height: 4rem;
+    
+        position: absolute;
+}
+    .bgMain img{
+
+        margin-top: -400px;
+        width: 120%;
+        max-width: 1300px;
+    }
+}
+
+@media screen and (min-width:800px) and (max-width:1024px) {
+    .bgMain{
+        position: relative;
+        min-height: 400px;
+        display: flex;
+        margin-top: 180px;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        
+        }
+    .bgMain h1{
+        z-index: 3;
+        right: 0;
+        left: 0;
+        margin-right: 5%;
+        top: unset;
+        font-size: 4rem;
+        bottom: 0;
+        margin: 0 auto 0px auto;
+        position: absolute;
+}
+    .bgMain img{
+
+        margin-top: -450px;
+        width: 120%;
+        max-width: 1200px;
+    }    
+}
+
+@media screen and (min-width:1024px) and (max-width:1500px) {
+    
+}
+
+@media screen and (min-width:1500px) and (max-width:2000px) {
+    
+}
+
+@media screen and (min-width:2000px) {
+    .responsivebrock{
+        display: none;
+    }
+    .bgMain h1 {
+        z-index: 3;
+        right: 0;
+        margin-right: 5%;
+        top: 40%;
+        font-size: 4rem;
+        bottom: 0;
+        position: absolute;
+    }
+}
+
+
+@media screen and (max-width:550px){
+    .bgMain h1{
+        margin-bottom: -40px!important;
+    }
+}
