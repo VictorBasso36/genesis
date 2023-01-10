@@ -46,11 +46,11 @@ function BarScroll () {
         return (
             <>
                 <div className='topScrollBar' style={{marginTop: scrollStylesMargin + "px",}} >
-                    <a href="#">Projeto</a>
-                    <a href="#Plantas">Plantas</a>
-                    <a href="#idhere">Lazer</a>
-                    <a href="#Localizacao">Localização</a>
-                    <a href="#ObraScroll">Obra</a>
+                    <a href="#" title="Projeto genesis incorporadora">Projeto</a>
+                    <a href="#Plantas" title="Plantas genesis incorporadora">Plantas</a>
+                    <a href="#idhere" title="Lazer genesis incorporadora">Lazer</a>
+                    <a href="#Localizacao" title="Localização genesis incorporadora">Localização</a>
+                    <a href="#ObraScroll" title="Obra genesis incorporadora">Obra</a>
                 </div>
            </>
         )

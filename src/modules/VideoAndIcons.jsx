@@ -72,7 +72,7 @@ return (
             <img src={PlayerVideo} alt="" />
             <p>Somos o futuro</p>
         </div>
-        <a href="" className='linkfirlyrircs'>
+        <a href="" title="whatsapp genesis" className='linkfirlyrircs'>
              <div id='Lancamentos' style={{display: mybottommargin }} className='videoLyrics'>
                 <h1>Seu futuro lar te espera <span onClick={()=> window.open(myLinkWhatsApp[myLinkWhatsAppRandom], "_blank")}>aqui.</span></h1>
                 <p>Conheça os nossos empreendimentos.</p>
