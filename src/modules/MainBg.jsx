@@ -15,7 +15,7 @@ function MainBg() {
 
   useEffect(() => {
 
-    console.log(location)
+    // console.log(location)
   }, [location]);
 
 

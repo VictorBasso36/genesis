@@ -41,6 +41,38 @@
 }
 
 @media screen and (min-width:0px) and (max-width:550px){
-
-
+    .btnConvert {
+        width: 60px;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        margin-bottom: 30px;
+        margin-right: 30px;
+        flex-direction: row;
+        z-index: 99999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        fill: #fff;
+        transition: all .5s;
+        height: 60px;
+        background: #00d45e;
+        background: linear-gradient(90deg,rgba(0,212,94,1) 100%,rgba(57,56,49,1) 28%);
+    }
+    .btnConvert:hover{
+        background: #efcb09;
+        background-color: linear-gradient(90deg,#efcb09 100%,rgba(57,56,49,1) 28%)!important;
+    }
+    .btnConvert h1{
+        display: none;
+    }
+    .btnConvert p{
+        display: none;
+    }
+    .mylefticons{
+        display: none;
+    }
+    .btnConvert svg{
+        margin-left: 0px;
+    }
 }

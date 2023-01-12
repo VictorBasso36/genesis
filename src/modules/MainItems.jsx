@@ -35,8 +35,8 @@ function ImgSrcMainPhoto(props) {
 const imagesMainPhoto = DataJSON.map( (dataSrc) => {
     DataJSON.mainPhoto
 })
-
-console.log(imagesMainPhoto)
+// 
+// console.log(imagesMainPhoto)
 
 
 

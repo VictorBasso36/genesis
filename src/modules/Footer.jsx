@@ -16,8 +16,8 @@ import pdfRight from '../../public/certificadoPBQP-Hfrente-GENESIS.pdf'
 const myLinkWhatsApp = ["https://api.whatsapp.com/send?phone=5511979525548&text=Ol%C3%A1%2C%20quero%20ser%20uma%20das%20primeiras%20pessoas%20a%20saber%20sobre%20o%20projeto%20Altos%20do%20Pinheirinho.", "https://api.whatsapp.com/send?phone=5511976105023&text=Ol%C3%A1%2C%20quero%20ser%20uma%20das%20primeiras%20pessoas%20a%20saber%20sobre%20o%20projeto%20Altos%20do%20Pinheirinho."];
 
 const myLinkWhatsAppRandom = Math.floor(Math.random() * myLinkWhatsApp.length);
-console.log(myLinkWhatsApp[myLinkWhatsAppRandom]);//=> a random element
-//
+// console.log(myLinkWhatsApp[myLinkWhatsAppRandom]);//=> a random element
+// //
 function Footer() {
   return (
     <div className="mainFooter">

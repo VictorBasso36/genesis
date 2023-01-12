@@ -88,6 +88,11 @@
 .poweredBy img:hover{
     opacity: 0.8;
 }
+@media screen and (min-width:280px) and (max-width:550px){
+    .poweredBy p span {
+        font-size: 8.8vw;
+    }
+}
 
 @media screen and (min-width:550px) and (max-width:1024px){
     .logoFooter {
@@ -112,9 +117,12 @@
     .poweredBy p {
         width: 90%;
         max-width: 800px;
-        font-size: 3vw;
+        font-size: 5vw;
         margin-top: 6vw;
         margin-bottom: 6vw;
+    }
+    .poweredBy p span {
+        font-size: 4.8vw;
     }
 }
 
@@ -182,5 +190,13 @@
     .poweredBy p span{
         height: 100%;
         font-size: 45px;
+    }
+    .socialIcons{
+        width: 15vw;
+        display: flex;
+        align-items: flex-end;
+        height: 100%;
+        justify-content: center;
+        flex-direction: column;
     }
 }

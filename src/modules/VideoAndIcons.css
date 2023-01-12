@@ -122,8 +122,8 @@
 }
 .iconsCard img{
 
+
     height: 120px;
-    max-width: 120px;
 }
 .iconsCardTitle{
     margin-top: 20px;
@@ -230,8 +230,8 @@
 @media screen and (max-width:500px) {
     .iconsCard img{
 
-        height: unset;
-        max-width: 3vw;
+     
+    height: 3vw;
     }
     .iconsCard {
         width: 50vw;
@@ -272,8 +272,8 @@
         display: none;
     }
     .iconsCard img {
+      
         height: 90px;
-        max-width: 90px;
     }
 }
 @media screen and (min-width:1024px){

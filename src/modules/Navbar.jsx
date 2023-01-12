@@ -40,7 +40,7 @@ function Navbar() {
 
   useEffect(() => {
 
-    console.log(location)
+    // console.log(location)
   }, [location]);
   const [showMenu, setShowMenu] = useState(false);
 

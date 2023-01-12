@@ -42,8 +42,8 @@ function Lazer () {
         return (
             <>
                 {/* modal */}
-                <a href="" class="linkcta" target="_blank" title="Se busca ajuda da Genesis empreendimentos clique aqui !">
-                    <div class="ctalazer"><h1>Ficou alguma dúvida? <span>Clique aqui.</span></h1>
+                <a href="" className="linkcta" target="_blank" title="Se busca ajuda da Genesis empreendimentos clique aqui !">
+                    <div className="ctalazer"><h1>Ficou alguma dúvida? <span>Clique aqui.</span></h1>
                     </div>
                 </a>
                 <div style={{display: displaySwiperLazerFullscreen}} className='modalSwiperPhotos'>

@@ -10,8 +10,8 @@ function BuildStatus () {
                     myDataPage.idNomeUrl === empreendimentoNome)
         return (
             <>
-            <a href=""  class="linkcta" target="_blank" title="Se busca ajuda da genesis empreemdimentos clique aqui !">
-                <div class="ctalazer"><h1>Perfeito né? <span>Clique aqui.</span> para conversar conosco.</h1>
+            <a href=""  className="linkcta" target="_blank" title="Se busca ajuda da genesis empreemdimentos clique aqui !">
+                <div className="ctalazer"><h1>Perfeito né? <span>Clique aqui.</span> para conversar conosco.</h1>
                 </div>
             </a>
             <div className='BuildStatus' id="ObraScroll">
