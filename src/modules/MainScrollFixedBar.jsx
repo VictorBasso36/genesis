@@ -94,22 +94,23 @@ window.addEventListener('scroll', function(){
        
     }
 
-
+    if(window.scrollY < scrollStylesMargin){
+        
+            margintoprefine = "-100"
+            mydisplay = "none"
+        } else{
+            margintoprefine = "0"
+        }
     if(window.scrollY > scrollStylesMargin){
         setNavScroll(true)
         margintoprefine = "0"
         mydisplay = "flex"
     } else{
         setNavScroll(false)
+        margintoprefine = "-100"
     } 
     
-    if(window.scrollY < scrollStylesMargin){
-       
-        margintoprefine = "-100"
-        mydisplay = "none"
-    } else{
-      
-    }
+ 
 })
 
 function scrollTo(){

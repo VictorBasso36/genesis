@@ -1,20 +1,26 @@
 {
   "name": "genesis",
   "private": true,
-  "homepage" : "https://amply.tec.br/Teste/Genesis/" ,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "postbuild": "react-snap"
+  },
+  "reactSnap": {
+    "source": "dist",
+    "inlineCss": true
   },
   "dependencies": {
     "animate.css": "^4.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.4.1",
+    "react-helmet": "^6.1.0",
+    "react-router-dom": "^6.6.2",
     "react-router-hash-link": "^2.4.3",
+    "react-snap": "^1.23.0",
     "swiper": "^8.4.3"
   },
   "devDependencies": {

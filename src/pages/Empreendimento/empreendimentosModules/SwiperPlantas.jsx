@@ -14,7 +14,7 @@ import suiteIcon from '../../../assets/logos/suiteIcon.png'
 import roomIcon from '../../../assets/logos/roomIcon.png'
 import arrow from '../../../assets/logos/arrow.png'
 
-import DataJSON from '../../../modules/empreendimentos.json'
+import DataJSON from '../../../../public/empreendimentos.json'
 let myindexSwiepr = 1
 
 function SwiperPlantas () {

@@ -13,6 +13,10 @@ import { HashLink  } from 'react-router-hash-link';
   let bottuonstate
   // let styleBody
 //
+import ContactLinks from '../../public/contatonumber.json'
+const TelRandom = Math.floor(Math.random() * (ContactLinks[0].telefones).length);
+// console.log(ContactLinks[0].telefones[TelRandom]);//=> a random element
+
 function Navbar() {
   const [Lancamentos, setLancamentos] = useState(false)
   const observer = new IntersectionObserver (entries => {
@@ -36,7 +40,7 @@ function Navbar() {
 
   useEffect(() => {
 
-    console.log(location)
+    // console.log(location)
   }, [location]);
   const [showMenu, setShowMenu] = useState(false);
 
@@ -85,8 +89,8 @@ function Navbar() {
         <div className='navBarMenuItem'></div>
       </div>
       <h1 className='number'>
-        <a href="tel:55+11 96065-3131" title="telefone genesis empreendimentos e incorporação">
-        11 96065-3131
+        <a href="tel:55+ContactLinks[0].telefones[TelRandom]" title="telefone genesis empreendimentos e incorporação">
+        {ContactLinks[0].telefones[TelRandom]}
         </a>
       </h1>
     </nav>

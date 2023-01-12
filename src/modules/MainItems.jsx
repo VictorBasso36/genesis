@@ -21,7 +21,7 @@ const myLinkWhatsAppRandom = Math.floor(Math.random() * myLinkWhatsApp.length);
 
 
 //dataTemporary
-import DataJSON from './empreendimentos.json'
+import DataJSON from '../../public/empreendimentos.json'
 
 function ImgSrcMainPhoto(props) {
     return(
@@ -35,8 +35,8 @@ function ImgSrcMainPhoto(props) {
 const imagesMainPhoto = DataJSON.map( (dataSrc) => {
     DataJSON.mainPhoto
 })
-
-console.log(imagesMainPhoto)
+// 
+// console.log(imagesMainPhoto)
 
 
 

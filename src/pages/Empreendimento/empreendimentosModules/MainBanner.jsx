@@ -15,7 +15,7 @@ import FullscreenIcon from '../../../assets/logos/fullscreenIcon.png'
 import arrow from '../../../assets/logos/arrow.png'
 //dataTemporary
 
-import DataJSON from '../../../modules/empreendimentos.json'
+import DataJSON from '../../../../public/empreendimentos.json'
 const myLinkWhatsApp = ["https://api.whatsapp.com/send?phone=5511979525548&text=Ol%C3%A1%2C%20quero%20ser%20uma%20das%20primeiras%20pessoas%20a%20saber%20sobre%20o%20projeto%20Altos%20do%20Pinheirinho.", "https://api.whatsapp.com/send?phone=5511976105023&text=Ol%C3%A1%2C%20quero%20ser%20uma%20das%20primeiras%20pessoas%20a%20saber%20sobre%20o%20projeto%20Altos%20do%20Pinheirinho."];
 
 const myLinkWhatsAppRandom = Math.floor(Math.random() * myLinkWhatsApp.length);
