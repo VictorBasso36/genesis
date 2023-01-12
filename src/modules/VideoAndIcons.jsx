@@ -8,7 +8,9 @@ import IconChecked from  '../assets/logos/iconChecked.png'
 import IconTimer from  '../assets/logos/iconTimer.png'
 import PlayerVideo from  '../assets/logos/playerVideo.png'
 
+import VideoBg from "reactjs-videobg";
 
+let url = "https://www.arque.art.br/genesisemp/video/VideoClient.mp4"
 //imgs//
 const myLinkWhatsApp = ["https://api.whatsapp.com/send?phone=5511979525548&text=Ol%C3%A1%2C%20quero%20ser%20uma%20das%20primeiras%20pessoas%20a%20saber%20sobre%20o%20projeto%20Altos%20do%20Pinheirinho.", "https://api.whatsapp.com/send?phone=5511976105023&text=Ol%C3%A1%2C%20quero%20ser%20uma%20das%20primeiras%20pessoas%20a%20saber%20sobre%20o%20projeto%20Altos%20do%20Pinheirinho."];
 const myLinkWhatsAppRandom = Math.floor(Math.random() * myLinkWhatsApp.length);
@@ -39,7 +41,7 @@ if(location.pathname === "/QuemSomos"){
 const [showMenuVideo, setShowMenuVideo] = useState(false);
 if(showMenuVideo){
     displayVideo = "flex"
-    videoHeree=  <video src="https://www.arque.art.br/genesisemp/video/VideoClient.mp4" className='Iframe' preload="none" muted  loop autoPlay type="video/mp4">
+    videoHeree=  <video src="https://www.arque.art.br/genesisemp/video/VideoClient.mp4" className='Iframe' preload="none" controls  loop autoPlay type="video/mp4">
  
 </video>
 
@@ -47,6 +49,7 @@ if(showMenuVideo){
     displayVideo = "none"
     videoHeree=null;
 }
+
 
 
 return (
@@ -67,9 +70,12 @@ return (
             {/* <iframe style={{display:displayVideo}} src="https://youtu.be/XcweXIX2gco?&playversion=3&autoplay=1&loop=1&rel=0&showinfo=0&color=white&iv_load_policy=3" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; loop;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
         </div>
         <div className='videoHere' onClick={() => setShowMenuVideo(!showMenuVideo)}>
-            <video className='myVideo' preload="metadata" loop autoPlay muted type="video/mp4">
+            {/* <video className='myVideo' preload="metadata" loop autoPlay muted type="video/mp4">
                 <source src="https://www.arque.art.br/genesisemp/video/VideoClient.mp4" type="video/mp4"/> 
-            </video>
+            </video> */}
+            <VideoBg className='myVideo' poster={PlayerVideo}>
+                <VideoBg.Source src={url} type="video/mp4" />
+            </VideoBg>
             <div className='bgOpacity'></div>
             <img src={PlayerVideo} alt="" />
             <p>Somos o futuro</p>

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './MainItems.css'
 import 'animate.css';
-import {useParams, Link} from 'react-router-dom'
+import {useParams, Link, Navigate} from 'react-router-dom'
 // img
 
 //icons
@@ -80,8 +80,8 @@ function MainItems() {
                         
                         <div className='leftItem animate__animated animate__fadeInLeft'>
                         <div className='imgHere'>
-                            <Link to={`/Empreendimento/${empreedimentoData.idNomeUrl}`}> 
-                                <div className='imgherebg' style={{ 
+                            <Link to={`/Empreendimento/${empreedimentoData.idNomeUrl}`} title={"Apartamento em "+ empreedimentoData.seoName}> 
+                                <div className='imgherebg' title={"Apartamento em "+ empreedimentoData.seoName} style={{ 
                                     backgroundImage: `url("${empreedimentoData.photos[1]}")` }}>
                                 </div>
                             </Link>
@@ -92,13 +92,13 @@ function MainItems() {
                                 <h1>R$ {empreedimentoData.price} mil</h1>
                             </div>
                             <div className='textLink'>
-                                <Link to={`/Empreendimento/${empreedimentoData.idNomeUrl}`}> 
+                                <Link to={`/Empreendimento/${empreedimentoData.idNomeUrl}`} title={"Apartamento em "+ empreedimentoData.seoName}> 
                                 <div className='yellowBg'>
                                     <p><span className='spanBold'>Clique aqui</span> e Saiba Mais.</p>
                                 </div>
                                 </Link>
                                 <div>
-                                    <img src={arrow} alt="" />
+                                    <img src={arrow} alt={"Comprar apartamento em "+ empreedimentoData.seoName} />
                                 </div>
                             </div>
                         </div>

@@ -674,7 +674,7 @@
     .twoicons{
         display: flex!important;
         margin-top: 30px;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
     .titlePlantas h1 {
         text-align: center;

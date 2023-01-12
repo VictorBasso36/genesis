@@ -7,22 +7,24 @@
 @font-face {
   font-family: 'FigtreeBlack';
   src: url('./fonts/FigtreeBlack.ttf') format('truetype');
+  font-display: swap;
   }
 
 @font-face {
   font-family: 'FigtreeLight';
   src: url('./fonts/FigtreeLight.ttf') format('truetype');
-  
+  font-display: swap;
 }
 @font-face {
   font-family: 'FigtreeRegular';
   src: url('./fonts/FigtreeRegular.ttf') format('truetype');
-  
+  font-display: swap;
 }
 @font-face {
   font-family: 'FigtreeMedium';
   src: url('./fonts/FigtreeMedium.ttf') format('truetype');
-  }
+  font-display: swap;  
+}
 html{
   scroll-behavior: smooth;
 }
