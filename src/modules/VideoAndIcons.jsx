@@ -12,8 +12,10 @@ import VideoBg from "reactjs-videobg";
 
 let url = "https://www.arque.art.br/genesisemp/video/VideoClient.mp4"
 //imgs//
-const myLinkWhatsApp = ["https://api.whatsapp.com/send?phone=5511979525548&text=Ol%C3%A1%2C%20quero%20ser%20uma%20das%20primeiras%20pessoas%20a%20saber%20sobre%20o%20projeto%20Altos%20do%20Pinheirinho.", "https://api.whatsapp.com/send?phone=5511976105023&text=Ol%C3%A1%2C%20quero%20ser%20uma%20das%20primeiras%20pessoas%20a%20saber%20sobre%20o%20projeto%20Altos%20do%20Pinheirinho."];
-const myLinkWhatsAppRandom = Math.floor(Math.random() * myLinkWhatsApp.length);
+
+import ContactLinks from '../../public/contatonumber.json'
+const WhatsappRandom = Math.floor(Math.random() * (ContactLinks[0].whatsapp).length);
+// console.log(ContactLinks[0].whatsapp[WhatsappRandom]);//=> a random element
 
 var displayVideo
 
@@ -80,9 +82,9 @@ return (
             <img src={PlayerVideo} alt="" />
             <p>Somos o futuro</p>
         </div>
-        <a href="" title="whatsapp genesis" className='linkfirlyrircs'>
+        <a href={ContactLinks[0].whatsapp[WhatsappRandom]} title="whatsapp genesis" target="_blank" className='linkfirlyrircs'>
              <div id='Lancamentos' style={{display: mybottommargin }} className='videoLyrics'>
-                <h1>Seu futuro lar te espera <span onClick={()=> window.open(myLinkWhatsApp[myLinkWhatsAppRandom], "_blank")}>aqui.</span></h1>
+                <h1>Seu futuro lar te espera <span onClick={()=> window.open(ContactLinks[0].whatsapp[WhatsappRandom], "_blank")}>aqui.</span></h1>
                 <p>Conheça os nossos empreendimentos.</p>
             </div>
         </a>

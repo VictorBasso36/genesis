@@ -89,7 +89,7 @@ function Navbar() {
         <div className='navBarMenuItem'></div>
       </div>
       <h1 className='number'>
-        <a href="tel:55+ContactLinks[0].telefones[TelRandom]" title="telefone genesis empreendimentos e incorporação">
+        <a href={"tel:55"+ContactLinks[0].telefones[TelRandom]} title="telefone genesis empreendimentos e incorporação">
         {ContactLinks[0].telefones[TelRandom]}
         </a>
       </h1>

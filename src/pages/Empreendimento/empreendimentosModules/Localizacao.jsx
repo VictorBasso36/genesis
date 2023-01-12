@@ -2,6 +2,12 @@ import { useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import './Localizacao.css'
 
+
+import ContactLinks from '../../../../public/contatonumber.json'
+const WhatsappRandom = Math.floor(Math.random() * (ContactLinks[0].whatsapp).length);
+// console.log(ContactLinks[0].whatsapp[WhatsappRandom]);//=> a random element
+
+
 function Localizacao () {
         return (
             <>

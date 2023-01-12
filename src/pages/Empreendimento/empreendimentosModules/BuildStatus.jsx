@@ -3,6 +3,10 @@ import { Link, useParams } from 'react-router-dom'
 import './BuildStatus.css'
 
 import DataJSON from '../../../../public/empreendimentos.json'
+import ContactLinks from '../../../../public/contatonumber.json'
+const WhatsappRandom = Math.floor(Math.random() * (ContactLinks[0].whatsapp).length);
+// console.log(ContactLinks[0].whatsapp[WhatsappRandom]);//=> a random element
+
 
 function BuildStatus () {
     const { empreendimentoNome } = useParams();
@@ -10,7 +14,7 @@ function BuildStatus () {
                     myDataPage.idNomeUrl === empreendimentoNome)
         return (
             <>
-            <a href=""  className="linkcta" target="_blank" title="Se busca ajuda da genesis empreemdimentos clique aqui !">
+            <a href={ContactLinks[0].whatsapp[WhatsappRandom]}  className="linkcta" target="_blank" title="Se busca ajuda da genesis empreemdimentos clique aqui !">
                 <div className="ctalazer"><h1>Perfeito né? <span>Clique aqui.</span> para conversar conosco.</h1>
                 </div>
             </a>

@@ -3,5 +3,5 @@ Allow: /
 
 
 
-Sitemap: https://grupogenesis.com.br/assets/sitemap.xml
+Sitemap: https://grupogenesis.com.br/sitemap.xml
 

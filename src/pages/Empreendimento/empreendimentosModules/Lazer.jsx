@@ -22,6 +22,12 @@ import DataJSON from '../../../../public/empreendimentos.json'
 
 import arrow from '../../../assets/logos/arrow.png'
 
+
+import ContactLinks from '../../../../public/contatonumber.json'
+const WhatsappRandom = Math.floor(Math.random() * (ContactLinks[0].whatsapp).length);
+// console.log(ContactLinks[0].whatsapp[WhatsappRandom]);//=> a random element
+
+
 function Lazer () {
         const [showLazerSlide, setshowLazerSlide] = useState(false);    
         let displaySwiperLazerFullscreen
@@ -42,7 +48,7 @@ function Lazer () {
         return (
             <>
                 {/* modal */}
-                <a href="" className="linkcta" target="_blank" title="Se busca ajuda da Genesis empreendimentos clique aqui !">
+                <a href={ContactLinks[0].whatsapp[WhatsappRandom]} className="linkcta" target="_blank" title="Se busca ajuda da Genesis empreendimentos clique aqui !">
                     <div className="ctalazer"><h1>Ficou alguma dúvida? <span>Clique aqui.</span></h1>
                     </div>
                 </a>
@@ -114,7 +120,7 @@ function Lazer () {
                         modules={[Pagination, Navigation]}
                         >
                             { myDataPage.photoslazer && myDataPage.photoslazer.map( (url, index) => {
-                                console.log(url)
+                               
                                 return(
                                     <SwiperSlide className='mainslide' role="img" aria-label={'Apartamento em '+myDataPage.seoName} style={{backgroundImage: `url('${(url)}')`}}  key={index}></SwiperSlide>
                                     )

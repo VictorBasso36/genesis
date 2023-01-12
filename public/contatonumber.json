@@ -1,7 +1,8 @@
 [
     {   
         "whatsapp":["https://api.whatsapp.com/send?phone=5511979525548&text=%22Ol%C3%A1%2C+gostei+muito+dos+projetos+da+incorporadora+G%C3%AAnesis%2C+gostaria+de+tirar+algumas+d%C3%BAvidas%2C+pode+me+ajudar%3F"],
-        "telefones":["11 97952-5548","11 97610-5023"]
+        "telefones":["11 97952-5548","11 97610-5023"],
+        "whatsappSite":["https://api.whatsapp.com/send?phone=5511979525548&text=%22Ol%C3%A1%2C+gostei+muito+dos+projetos+da+incorporadora+G%C3%AAnesis%2C+gostaria+de+tirar+algumas+d%C3%BAvidas%2C+pode+me+ajudar%3F"]
       }
     
     ]

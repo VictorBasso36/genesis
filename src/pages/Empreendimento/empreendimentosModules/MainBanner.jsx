@@ -18,9 +18,10 @@ import arrow from '../../../assets/logos/arrow.png'
 import DataJSON from '../../../../public/empreendimentos.json'
 const myLinkWhatsApp = ["https://api.whatsapp.com/send?phone=5511979525548&text=Ol%C3%A1%2C%20quero%20ser%20uma%20das%20primeiras%20pessoas%20a%20saber%20sobre%20o%20projeto%20Altos%20do%20Pinheirinho.", "https://api.whatsapp.com/send?phone=5511976105023&text=Ol%C3%A1%2C%20quero%20ser%20uma%20das%20primeiras%20pessoas%20a%20saber%20sobre%20o%20projeto%20Altos%20do%20Pinheirinho."];
 
-const myLinkWhatsAppRandom = Math.floor(Math.random() * myLinkWhatsApp.length);
-console.log(myLinkWhatsApp[myLinkWhatsAppRandom]);//=> a random element
-//
+import ContactLinks from '../../../../public/contatonumber.json'
+const WhatsappRandom = Math.floor(Math.random() * (ContactLinks[0].whatsapp).length);
+// console.log(ContactLinks[0].whatsapp[WhatsappRandom]);//=> a random element
+
 
 function MainBanner () {
         const [showMenuSlider, setShowMenuSlider] = useState(false);
@@ -151,7 +152,7 @@ function MainBanner () {
                     </div>
                     <div className='nameAndTexts'>
                         <div className='paddingFornameAndTexts'>
-                                <a href="" title="Whatsapp da Grupo genesis incorporadora e construtora ">
+                                <a href={ContactLinks[0].whatsapp[WhatsappRandom]} target="_blank" title="Whatsapp da Grupo genesis incorporadora e construtora ">
                                     <img className='myZAPicon' src={IconWhatsApp} alt="Whatsapp da Grupo genesis incorporadora e construtora" />
                                 </a>
                                 <h1>Gênesis <span>{myDataPage.title}</span><strong> (2ª fase)</strong></h1>
@@ -182,7 +183,7 @@ function MainBanner () {
                 </div>  
                 {
                     myDataPage.financimanentoCaixa == true ? 
-                    <a href={myLinkWhatsApp[myLinkWhatsAppRandom]} title="Whatsapp da Grupo genesis incorporadora e construtora " style={{width:"100%"}} target="_blank">
+                    <a href={ContactLinks[0].whatsapp[WhatsappRandom]}  title="Whatsapp da Grupo genesis incorporadora e construtora " style={{width:"100%"}} target="_blank">
                         <div className='tagnameCaixa' >
                             <h1>Entrada <span>Facilitada</span> </h1>
                             <div className='caixaImage'>Financiamento pela     

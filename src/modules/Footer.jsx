@@ -13,10 +13,10 @@ import MainLogo from '../assets/logos/mainLogoFooter.png'
 import pdfLeft from '../../public/certificadoISO9001-GENESIS.pdf'
 import pdfRight from '../../public/certificadoPBQP-Hfrente-GENESIS.pdf'
 
-const myLinkWhatsApp = ["https://api.whatsapp.com/send?phone=5511979525548&text=Ol%C3%A1%2C%20quero%20ser%20uma%20das%20primeiras%20pessoas%20a%20saber%20sobre%20o%20projeto%20Altos%20do%20Pinheirinho.", "https://api.whatsapp.com/send?phone=5511976105023&text=Ol%C3%A1%2C%20quero%20ser%20uma%20das%20primeiras%20pessoas%20a%20saber%20sobre%20o%20projeto%20Altos%20do%20Pinheirinho."];
+import ContactLinks from '../../public/contatonumber.json'
+const WhatsappRandom = Math.floor(Math.random() * (ContactLinks[0].whatsapp).length);
+// console.log(ContactLinks[0].whatsapp[WhatsappRandom]);//=> a random element
 
-const myLinkWhatsAppRandom = Math.floor(Math.random() * myLinkWhatsApp.length);
-// console.log(myLinkWhatsApp[myLinkWhatsAppRandom]);//=> a random element
 // //
 function Footer() {
   return (
@@ -67,7 +67,7 @@ function Footer() {
                 </div>
                 <div className='socialIcons'>
                     <a title="Instagram grupo genesis" href="https://www.instagram.com/grupogenesisconstrutora/" target="_blank"><img src={Instagram} alt="instagram genesis incorporadora e construtora." /></a>
-                    <a title="Whatsapp grupo genesis" href={myLinkWhatsApp[myLinkWhatsAppRandom]} target="_blank"><img src={WhatsApp} alt="whatsapp genesis incorporadora e construtora" /></a>
+                    <a title="Whatsapp grupo genesis" href={ContactLinks[0].whatsapp[WhatsappRandom]} target="_blank"><img src={WhatsApp} alt="whatsapp genesis incorporadora e construtora" /></a>
                     {/* <a href=""><img src={Facebook} alt="" /></a>         */}
                 </div>
             </div>
