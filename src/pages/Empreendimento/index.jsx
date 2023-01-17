@@ -26,6 +26,7 @@ function Empreedimento () {
               <title>Apartamento em {myDataPage.seoName} - Grupo Gênesis - Incorporadora e Construtora.</title>
               <meta content="Guilherme Luziac, Marcus Vinicius Baldoo, Victor Henrique Basso, Arqué Lab, Ousía Arqué, Arque Bricks, Grupo Gênesis Construtora e Incorporadora, amply" name="author"/>
               <meta name="description" content={myDataPage.seoDescription}/>
+              <link rel="canonical" href={"https://grupogenesis.com.br/Empreendimento/"+myDataPage.idNomeUrl+"/"} />
               <meta name="keywords" content={myDataPage.keywords}/>
               <meta content="index, follow" name="robots"/>
               <meta content="Portuguese" name="language"/>

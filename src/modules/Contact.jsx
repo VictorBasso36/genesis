@@ -2,8 +2,8 @@ import { useState } from 'react'
 import './Contact.css'
 
 //imgs
-import ContactBg from '../assets/bgs/bgContact.png'
-import ContactBg2 from '../assets/bgs/bgContact1024.png'
+import ContactBg from '../assets/bgs/bgContact.webp'
+import ContactBg2 from '../assets/bgs/bgContact1024.webp'
 import WhatsApp from '../assets/logos/iconWhatsAPPblack.png'
 
 //imgs//

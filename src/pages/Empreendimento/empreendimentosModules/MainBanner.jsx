@@ -129,7 +129,7 @@ function MainBanner () {
                                 return(
                                 <SwiperSlide key={index}>
                                     <div className='slideMain'>
-                                        <img onClick={() => setShowMenuSlider(!showMenuSlider)} src={url} alt={'Foto do Apartamento em' + myDataPage.seoName + ' - Genesis incorporadora e construtora'} />
+                                        <img onClick={() => setShowMenuSlider(!showMenuSlider)} src={url} alt={'Foto do Apartamento em ' + myDataPage.seoName + ' - Genesis incorporadora e construtora'} />
                                     </div>
                                 </SwiperSlide>)
                             })}
@@ -166,7 +166,7 @@ function MainBanner () {
                                     </div>
                                     <div>
                                         <img src={suiteIcon} alt={'Grupo genesis incoporadora, Numero de Suíte do apartamento em '+ myDataPage.seoName} />
-                                        <p>{myDataPage.suite} Suíte</p>
+                                        <p>{myDataPage.suites} Suíte</p>
                                     </div>
                                     <div>
                                         <img src={carIcon} alt={'Grupo genesis incoporadora, Numero de Vagas do apartamento em '+ myDataPage.seoName} />

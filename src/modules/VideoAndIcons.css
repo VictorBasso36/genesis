@@ -1,6 +1,9 @@
 
 /*modalvideo*/
-
+.Iframe{
+    width: 90%;
+    max-width: 1450px;
+}
 .videoModalHere{
     background-color: white;
     position: fixed;

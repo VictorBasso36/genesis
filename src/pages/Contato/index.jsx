@@ -35,6 +35,7 @@ function Contato() {
                 <meta name="keywords" content="Contato Grupo Genesis incorporadora e construtora, Apartamento na planta, Empreendimento Imobiliário,Empreendimentos Imobiliários, Incorporadora, Incorporação, Construtora, Construção, Engenharia Civil, Imóveis, Residências, Apartamentos, Empreendimentos imobiliários, Residencial, Residencial Altos da Serra, Venda de imóveis, Construção de imóveis, Administração de imóveis, Grupo Gênesis Construtora, Empreendimentos na Planta, predios na planta" data-react-helmet="true" />
                 <meta content="index, follow" name="robots"/>
                 <meta content="Portuguese" name="language"/>
+                <link rel="canonical" href="https://grupogenesis.com.br/Contato/" />
                 <meta content="1 days" name="revisit-after"/>
               </Helmet>
               <MainScrollFixedBar/>
