@@ -167,8 +167,8 @@
         text-align: right;
     }
     .contactBg{
-        width: 650px;
-        height: 100%;
+        width: 100%;
+        height: unset;
         object-fit: cover;
         display: flex;
         position: absolute;
@@ -224,8 +224,8 @@
         text-align: right;
     }
     .contactBg{
-        width: 450px;
-        height: 100%;
+        width: 100%;
+        height: unset;
         object-fit: cover;
         display: flex;
         position: absolute;

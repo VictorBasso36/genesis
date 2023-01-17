@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useParams, Link, useLocation } from 'react-router-dom'
-import MainBgimg from  '../assets/bgs/bgMain.jpg'
+import MainBgimg from  '../assets/bgs/bgMain.webp'
 import MainBgimgContato from  '../assets/bgs/bgContatoMain.jpg'
 import './MainBg.css';
 import 'animate.css';

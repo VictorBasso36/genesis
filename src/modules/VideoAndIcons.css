@@ -1,6 +1,9 @@
 
 /*modalvideo*/
-
+.Iframe{
+    width: 90%;
+    max-width: 1450px;
+}
 .videoModalHere{
     background-color: white;
     position: fixed;
@@ -148,6 +151,20 @@
     right: 0;
     bottom: 0;
 }
+.videoHere div{
+    position: absolute!important;
+    z-index: 1;
+    width: 100%;
+    overflow: unset;
+}
+.videoHere div video{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    object-fit: cover;    
+}
+
 .videoHere{
     background-color: #393831;
     width: 100%;

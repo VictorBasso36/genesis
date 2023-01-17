@@ -19,6 +19,11 @@ import IconTelBlack from '../../assets/logos/iconTel.png'
 
 import './linkscontatos.css'
 
+import ContactLinks from '../../../public/contatonumber.json'
+const WhatsappRandom = Math.floor(Math.random() * (ContactLinks[0].whatsapp).length);
+// console.log(ContactLinks[0].whatsapp[WhatsappRandom]);//=> a random element
+
+
 function Contato() {
       
         return (
@@ -30,6 +35,7 @@ function Contato() {
                 <meta name="keywords" content="Contato Grupo Genesis incorporadora e construtora, Apartamento na planta, Empreendimento Imobiliário,Empreendimentos Imobiliários, Incorporadora, Incorporação, Construtora, Construção, Engenharia Civil, Imóveis, Residências, Apartamentos, Empreendimentos imobiliários, Residencial, Residencial Altos da Serra, Venda de imóveis, Construção de imóveis, Administração de imóveis, Grupo Gênesis Construtora, Empreendimentos na Planta, predios na planta" data-react-helmet="true" />
                 <meta content="index, follow" name="robots"/>
                 <meta content="Portuguese" name="language"/>
+                <link rel="canonical" href="https://grupogenesis.com.br/Contato/" />
                 <meta content="1 days" name="revisit-after"/>
               </Helmet>
               <MainScrollFixedBar/>
@@ -46,7 +52,7 @@ function Contato() {
                                 </a>
                             </div>
                             <div className='cardSocialMedia'>
-                                <a href="https://api.whatsapp.com/send?phone=5511960653131" target="_blank">
+                                <a href={ContactLinks[0].whatsapp[WhatsappRandom]} target="_blank">
                                     <img src={WhatsAppIcon} alt="" />
                                 </a>
                             </div>
@@ -56,8 +62,8 @@ function Contato() {
                                 </a>
                             </div> */}
                             <div className='cardSocialMedia'>
-                                <a href="tel:+55 11 96065-3131">
-                                    <img src={IconTelBlack} alt="" />
+                                <a href={"tel:+55"+ ContactLinks[0].telefones[WhatsappRandom]}>
+                                    <img src={IconTelBlack} alt="Telefone do grupo genesis incorporadora e construtora" />
                                 </a>
                             </div> 
 
@@ -74,8 +80,8 @@ function Contato() {
                                 <a target="_blank" title="genesis empreendimentos email de contato" href="mailto:contato@grupogenesis.com.br">
                                     <p>contato@grupogenesis.com.br</p>
                                 </a>
-                                <a href="tel:+55 11 96065-3131" title="genesis empreendimentos telefone de contato">
-                                    <p>(11) 96065-3131</p>
+                                <a href={"tel:+55"+ ContactLinks[0].telefones[WhatsappRandom]} title="genesis empreendimentos telefone de contato">
+                                    <p>(11) {ContactLinks[0].telefones[WhatsappRandom]}</p>
                                 </a>
                                
                             </div>  

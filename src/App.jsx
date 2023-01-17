@@ -22,11 +22,11 @@ function App() {
       <ScrollToTop/>
         <Routes>
           <Route path="/"  element={<Home/>} />
-          <Route path="/QuemSomos" onClick={scrollTo()} element={<QuemSomos/>} />
-          <Route path="/Portifolio" element={<Portifolio/>} />
-          <Route path="/Contato" element={<Contato/>} />
-          <Route path="/Empreendimento/:empreendimentoNome"  element={<Empreendimento/>} />
-          <Route path="*" element={<Navigate to=""/>}/>
+          <Route path="/QuemSomos/" onClick={scrollTo()} element={<QuemSomos/>} />
+          <Route path="/Portifolio/" element={<Portifolio/>} />
+          <Route path="/Contato/" element={<Contato/>} />
+          <Route path="/Empreendimento/:empreendimentoNome/"  element={<Empreendimento/>} />
+          <Route path="*" element={<Navigate to="/"/>}/>
         </Routes>
       </BrowserRouter>
       

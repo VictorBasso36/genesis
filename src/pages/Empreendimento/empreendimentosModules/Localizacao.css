@@ -571,6 +571,7 @@
 
 .itenLocationCard{
     width: 280px;
+    height: 200px;
     display: flex;
     margin: 3vw;
     flex-direction: column;
@@ -580,13 +581,13 @@
 
 }
 .itenLocationCard svg{
-    height: 30vw;
+    height: 60px;
 }
 .itenLocationCard h1{
-    font-size:10vw;
+    font-size:7vw;
 }
 .itenLocationCard p{
-    font-size: 8vw;
+    font-size: 7vw;
     text-align: center;
 }
 .itenLocationHere{

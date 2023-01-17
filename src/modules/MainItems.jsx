@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './MainItems.css'
 import 'animate.css';
-import {useParams, Link} from 'react-router-dom'
+import {useParams, Link, Navigate} from 'react-router-dom'
 // img
 
 //icons
@@ -16,8 +16,10 @@ import arrow from '../assets/logos/arrow.png'
 
 
 
-const myLinkWhatsApp = ["https://api.whatsapp.com/send?phone=5511979525548&text=Ol%C3%A1%2C%20quero%20ser%20uma%20das%20primeiras%20pessoas%20a%20saber%20sobre%20o%20projeto%20Altos%20do%20Pinheirinho.", "https://api.whatsapp.com/send?phone=5511976105023&text=Ol%C3%A1%2C%20quero%20ser%20uma%20das%20primeiras%20pessoas%20a%20saber%20sobre%20o%20projeto%20Altos%20do%20Pinheirinho."];
-const myLinkWhatsAppRandom = Math.floor(Math.random() * myLinkWhatsApp.length);
+
+import ContactLinks from '../../public/contatonumber.json'
+const WhatsappRandom = Math.floor(Math.random() * (ContactLinks[0].whatsapp).length);
+// console.log(ContactLinks[0].whatsapp[WhatsappRandom]);//=> a random element
 
 
 //dataTemporary
@@ -80,8 +82,8 @@ function MainItems() {
                         
                         <div className='leftItem animate__animated animate__fadeInLeft'>
                         <div className='imgHere'>
-                            <Link to={`/Empreendimento/${empreedimentoData.idNomeUrl}`}> 
-                                <div className='imgherebg' style={{ 
+                            <Link to={`/Empreendimento/${empreedimentoData.idNomeUrl}/`} title={"Apartamento em "+ empreedimentoData.seoName}> 
+                                <div className='imgherebg' title={"Apartamento em "+ empreedimentoData.seoName} style={{ 
                                     backgroundImage: `url("${empreedimentoData.photos[1]}")` }}>
                                 </div>
                             </Link>
@@ -92,13 +94,13 @@ function MainItems() {
                                 <h1>R$ {empreedimentoData.price} mil</h1>
                             </div>
                             <div className='textLink'>
-                                <Link to={`/Empreendimento/${empreedimentoData.idNomeUrl}`}> 
+                                <Link to={`/Empreendimento/${empreedimentoData.idNomeUrl}/`} title={"Apartamento em "+ empreedimentoData.seoName}> 
                                 <div className='yellowBg'>
                                     <p><span className='spanBold'>Clique aqui</span> e Saiba Mais.</p>
                                 </div>
                                 </Link>
                                 <div>
-                                    <img src={arrow} alt="" />
+                                    <img src={arrow} alt={"Comprar apartamento em "+ empreedimentoData.seoName} />
                                 </div>
                             </div>
                         </div>
@@ -110,19 +112,19 @@ function MainItems() {
         
                         <div className='itensInfoCard'>
                             <div className='cardItens'>
-                                <img src={RoomIcon} alt="" />
+                                <img src={RoomIcon} alt={"Quantidade de Quartos do apartamento em " + empreedimentoData.seoName} />
                                 <p>{empreedimentoData.room} Quartos</p>
                             </div>
                             <div className='cardItens'>
-                                <img src={SuiteIcon} alt="" />
+                                <img src={SuiteIcon} alt={"Quantidade de Suites do apartamento em " + empreedimentoData.seoName}  />
                                 <p>{empreedimentoData.suites} Suíte</p>
                             </div>
                             <div  className='cardItens'>
-                                <img src={IconCar} alt="" />
+                                <img src={IconCar} alt={"Quantidade de Vagas do apartamento em " + empreedimentoData.seoName}  />
                                 <p>{empreedimentoData.car} Vagas</p>
                             </div>
                             <div  className='cardItens'>
-                                <img src={SizeIcon} alt="" />
+                                <img src={SizeIcon} alt={"Quantidade de M² do apartamento em " + empreedimentoData.seoName}  />
                                 <p>{empreedimentoData.size} m²</p>
                             </div>
                         </div>

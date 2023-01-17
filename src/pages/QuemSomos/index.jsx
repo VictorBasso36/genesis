@@ -22,9 +22,9 @@ function QuemSomos() {
               <Helmet>
                 <title>Quem Somos - Grupo Gênesis - Incorporadora e Construtora.</title>
                 <meta content="Guilherme Luziac, Marcus Vinicius Baldoo, Victor Henrique Basso, Arqué Lab, Ousía Arqué, Arque Bricks, Grupo Gênesis Construtora e Incorporadora, amply" name="author"/>
-                <meta name="description" content="Incorporadora gênesis é uma construtora e incorporadora criada para tornar a vida de seus clientes mais feliz. Seus projetos prezam pelo bem-estar e conforto." />
+                <meta name="description" content="Quem somos - Incorporadora em Santo André, grupo gênesis incorporadora é uma construtora e incorporadora criada para tornar a vida de seus clientes mais feliz. Seus projetos prezam pelo bem-estar e conforto." />
                 <meta name="keywords" content="Construtora, Apartamento na planta, Empreendimento Imobiliário,Empreendimentos Imobiliários, Incorporadora, Incorporação, Construtora, Construção, Engenharia Civil, Imóveis, Residências, Apartamentos, Empreendimentos imobiliários, Residencial, Residencial Altos da Serra, Venda de imóveis, Construção de imóveis, Administração de imóveis, Grupo Gênesis Construtora, Empreendimentos na Planta, predios na planta" data-react-helmet="true" />
-              
+                <link rel="canonical" href="https://grupogenesis.com.br/QuemSomos/" />
                 <meta content="index, follow" name="robots"/>
                 <meta content="Portuguese" name="language"/>
                 <meta content="1 days" name="revisit-after"/>
