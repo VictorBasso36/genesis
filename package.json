@@ -7,15 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "postbuild": "react-snap"
-  },
-  "reactSnap": {
-    "source": "./dist",
-    "inlineCss": true,
-    "minifyHtml": {
-      "collapseWhitespace": false,
-      "removeComments": false
-    }
+
   },
   "dependencies": {
     "animate.css": "^4.1.1",
