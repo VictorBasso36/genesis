@@ -19,7 +19,7 @@ function MainBg() {
   }, [location]);
 
 
-if(location.pathname ==="/Contato"){
+if(location.pathname ==="/Contato/"){
   mybgpath=MainBgimgContato
 
   myCopytag=<h1 className='animate__animated animate__slideInRight'>Seu futuro lar <br className='responsivebrock' />

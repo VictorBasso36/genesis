@@ -15,6 +15,9 @@
     background: #00d45e;
     background: linear-gradient(90deg,rgba(0,212,94,1) 18%,rgba(57,56,49,1) 28%);
 }
+.linkconvert{
+    position: relative;
+}
 .btnConvert:hover{
     background: #efcb09;
     background: linear-gradient(90deg,#efcb09 18%,rgba(57,56,49,1) 28%);
