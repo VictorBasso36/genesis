@@ -12,7 +12,7 @@ import SwiperPlantas from './empreendimentosModules/SwiperPlantas'
 import BuildStatusMolude from './empreendimentosModules/BuildStatus'
 import Lazer from './empreendimentosModules/Lazer'
 import Localizacao from './empreendimentosModules/Localizacao'
-// import ScrollToTop from '../../modules/ScrollToTop'
+import ScrollToTop from '../../modules/ScrollToTop'
 import React from "react";
 import {Helmet} from "react-helmet";
 import DataJSON from '../../../public/empreendimentos.json'
@@ -32,7 +32,7 @@ function Empreedimento () {
               <meta content="Portuguese" name="language"/>
               <meta content="1 days" name="revisit-after"/>
             </Helmet>
-            {/* <ScrollToTop/> */}
+            <ScrollToTop/>
             <Navbar/>
             <BarScrollTop/>
             <MainBanner/>
