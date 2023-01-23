@@ -6,10 +6,15 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
 
+    "postbuild": "react-snap"
   },
-  
+  "reactSnap": {
+    "source": "./dist",
+    "inlineCss": true
+   
+  },
   "dependencies": {
     "animate.css": "^4.1.1",
     "axios": "^1.2.3",
