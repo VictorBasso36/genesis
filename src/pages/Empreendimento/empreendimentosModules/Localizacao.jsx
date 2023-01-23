@@ -7,14 +7,7 @@ import ContactLinks from '../../../../public/contatonumber.json'
 const WhatsappRandom = Math.floor(Math.random() * (ContactLinks[0].whatsapp).length);
 // console.log(ContactLinks[0].whatsapp[WhatsappRandom]);//=> a random element
 
-window.addEventListener('touchstart', function() {
- console.log("passive true")
-}, {passive:true
-});
-window.addEventListener('scroll', function() {
-    console.log("passive true")
-   }, {passive:true
-   });
+
 function Localizacao () {
        
         return (
