@@ -25,4 +25,4 @@ jobs:
       run: mkdir -p ${GITHUB_WORKSPACE}/dist
 
     - name: Build React app
-      run: npm run build -- --output-path ${GITHUB_WORKSPACE}/dist
+      run: npm run build
