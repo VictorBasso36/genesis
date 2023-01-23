@@ -1,11 +1,8 @@
 import { useState, useEffect } from 'react'
-import './mainScrollFixedBar.css'
-import mainLogo from  '../assets/logos/mainLogo.png'
-import { useParams, Link, useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { HashLink  } from 'react-router-hash-link';
 
 import ScrollBarLogo from '../assets/logos/scrollBarGenesis.png'
-import Navbar from './Navbar';
 import './MainScrollFixedBar.css'
 //imgs
 
@@ -14,7 +11,7 @@ import './MainScrollFixedBar.css'
 let menu
 let scrollStylesMargin
 let margintoprefine
-let mydisplay
+
 function mainScrollFixedBar() {
 
 
@@ -97,14 +94,14 @@ window.addEventListener('scroll', function(){
     if(window.scrollY < scrollStylesMargin){
         
             margintoprefine = "-100"
-            mydisplay = "none"
+     
         } else{
             margintoprefine = "0"
         }
     if(window.scrollY > scrollStylesMargin){
         setNavScroll(true)
         margintoprefine = "0"
-        mydisplay = "flex"
+
     } else{
         setNavScroll(false)
         margintoprefine = "-100"
