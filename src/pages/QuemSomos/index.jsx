@@ -29,6 +29,8 @@ function QuemSomos() {
                 <meta content="Portuguese" name="language"/>
                 <meta content="1 days" name="revisit-after"/>
               </Helmet>
+
+              
               <MainScrollFixedBar/>
               <Navbar/>
               
