@@ -12,7 +12,7 @@ import SwiperPlantas from './empreendimentosModules/SwiperPlantas'
 import BuildStatusMolude from './empreendimentosModules/BuildStatus'
 import Lazer from './empreendimentosModules/Lazer'
 import Localizacao from './empreendimentosModules/Localizacao'
-import ScrollToTop from '../../modules/ScrollToTop'
+import ScrollToTop from '../../modules/Scrolltotop.jsx'
 import React from "react";
 import {Helmet} from "react-helmet";
 import DataJSON from '../../../public/empreendimentos.json'
