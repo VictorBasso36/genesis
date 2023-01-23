@@ -50,8 +50,8 @@ function mainScrollFixedBar() {
     <Link to="/">{Lancamentos==false ? <p><span>Home</span></p> : <p>Home</p>}</Link>   
     <HashLink to="/#Lancamentos">{Lancamentos==true  ? <p className='linkLaunch'><span>Lançamentos</span></p> : <p className='linkLaunch'>Lançamento</p> }</HashLink>
     {/* <Link to="/Portifolio">{location.pathname === "/Portifolio" ? <p><span>Portifólio</span></p> : <p>Portifólio</p>}</Link> */}
-    <Link to="/QuemSomos">{location.pathname === "/QuemSomos" ? <p><span>Quem somos</span></p> : <p>Quem somos</p>}</Link>   
-    <Link to="/Contato">{location.pathname === "/Contato" ? <p className='noMargin'><span>Contato</span></p> : <p className='noMargin'>Contato</p>}</Link>
+    <Link to="/QuemSomos/">{location.pathname === "/QuemSomos/" ? <p><span>Quem somos</span></p> : <p>Quem somos</p>}</Link>   
+    <Link to="/Contato/">{location.pathname === "/Contato/" ? <p className='noMargin'><span>Contato</span></p> : <p className='noMargin'>Contato</p>}</Link>
 
 </div>
 } else {  
@@ -94,22 +94,23 @@ window.addEventListener('scroll', function(){
        
     }
 
-
+    if(window.scrollY < scrollStylesMargin){
+        
+            margintoprefine = "-100"
+            mydisplay = "none"
+        } else{
+            margintoprefine = "0"
+        }
     if(window.scrollY > scrollStylesMargin){
         setNavScroll(true)
         margintoprefine = "0"
         mydisplay = "flex"
     } else{
         setNavScroll(false)
+        margintoprefine = "-100"
     } 
     
-    if(window.scrollY < scrollStylesMargin){
-       
-        margintoprefine = "-100"
-        mydisplay = "none"
-    } else{
-      
-    }
+ 
 })
 
 function scrollTo(){
@@ -122,7 +123,7 @@ function scrollTo(){
         <div className='scrollBarMainCotainer'>
             
                 <Link to="/"><div onClick={ScrollToTop()} className='myLogoGenesis'>
-                    <img src={ScrollBarLogo} alt="" />            
+                    <img src={ScrollBarLogo} alt="Logo simplificada genesis" />            
                 </div></Link>
             
             <div className='itemsNavHere'>

@@ -15,12 +15,13 @@ import FullscreenIcon from '../../../assets/logos/fullscreenIcon.png'
 import arrow from '../../../assets/logos/arrow.png'
 //dataTemporary
 
-import DataJSON from '../../../modules/empreendimentos.json'
+import DataJSON from '../../../../public/empreendimentos.json'
 const myLinkWhatsApp = ["https://api.whatsapp.com/send?phone=5511979525548&text=Ol%C3%A1%2C%20quero%20ser%20uma%20das%20primeiras%20pessoas%20a%20saber%20sobre%20o%20projeto%20Altos%20do%20Pinheirinho.", "https://api.whatsapp.com/send?phone=5511976105023&text=Ol%C3%A1%2C%20quero%20ser%20uma%20das%20primeiras%20pessoas%20a%20saber%20sobre%20o%20projeto%20Altos%20do%20Pinheirinho."];
 
-const myLinkWhatsAppRandom = Math.floor(Math.random() * myLinkWhatsApp.length);
-console.log(myLinkWhatsApp[myLinkWhatsAppRandom]);//=> a random element
-//
+import ContactLinks from '../../../../public/contatonumber.json'
+const WhatsappRandom = Math.floor(Math.random() * (ContactLinks[0].whatsapp).length);
+// console.log(ContactLinks[0].whatsapp[WhatsappRandom]);//=> a random element
+
 
 function MainBanner () {
         const [showMenuSlider, setShowMenuSlider] = useState(false);
@@ -61,10 +62,10 @@ function MainBanner () {
 
                     <div className='swiperModalHere'>
                         <div className='ModalnextMain'>
-                            <img src={arrow} alt="" />
+                            <img src={arrow} alt="Principais fotos da genesis empreendimentos" />
                         </div>
                         <div className='ModalprevMain'>
-                            <img src={arrow} alt="" />
+                            <img src={arrow} alt="Principais fotos da genesis empreendimentos" />
                         </div>
                     <Swiper 
                             spaceBetween={0}
@@ -87,7 +88,7 @@ function MainBanner () {
                                 return(
                                 <SwiperSlide className='testethis' key={index}>
                                     <div className='slideMainFull'>
-                                        <img src={url} alt="" />
+                                        <img src={url} alt={'fotos do Apartamento em '+myDataPage.seoName} />
                                     </div>
                                 </SwiperSlide>)
                             })}
@@ -103,7 +104,7 @@ function MainBanner () {
                         <h1>Gênesis<span> { myDataPage.title } </span></h1>
                     </div>
                     <div className='leftPicturesAndPrices'>
-                        <img className='fullscreenIcon' onClick={() => setShowMenuSlider(!showMenuSlider)} src={FullscreenIcon} alt="" />
+                        <img className='fullscreenIcon' onClick={() => setShowMenuSlider(!showMenuSlider)} src={FullscreenIcon} alt={'Foto em tela cheia do apartamento em'+ myDataPage.seoName} />
                         <div className="swiperHere">
                         
                         <Swiper 
@@ -128,7 +129,7 @@ function MainBanner () {
                                 return(
                                 <SwiperSlide key={index}>
                                     <div className='slideMain'>
-                                        <img onClick={() => setShowMenuSlider(!showMenuSlider)} src={url} alt="" />
+                                        <img onClick={() => setShowMenuSlider(!showMenuSlider)} src={url} alt={'Foto do Apartamento em ' + myDataPage.seoName + ' - Genesis incorporadora e construtora'} />
                                     </div>
                                 </SwiperSlide>)
                             })}
@@ -151,8 +152,8 @@ function MainBanner () {
                     </div>
                     <div className='nameAndTexts'>
                         <div className='paddingFornameAndTexts'>
-                                <a href="">
-                                    <img className='myZAPicon' src={IconWhatsApp} alt="" />
+                                <a href={ContactLinks[0].whatsapp[WhatsappRandom]} target="_blank" title="Whatsapp da Grupo genesis incorporadora e construtora ">
+                                    <img className='myZAPicon' src={IconWhatsApp} alt="Whatsapp da Grupo genesis incorporadora e construtora" />
                                 </a>
                                 <h1>Gênesis <span>{myDataPage.title}</span><strong> (2ª fase)</strong></h1>
                                 <div className='scrollText'>
@@ -160,19 +161,19 @@ function MainBanner () {
                                 </div>
                                  <div className='iconsHereGenesis '>
                                     <div>
-                                        <img src={roomIcon} alt="" />
+                                        <img src={roomIcon} alt={'Grupo genesis incoporadora, Numero de quartos do apartamento em '+ myDataPage.seoName} />
                                         <p>{myDataPage.room} Quartos</p>
                                     </div>
                                     <div>
-                                        <img src={suiteIcon} alt="" />
-                                        <p>{myDataPage.suite} Suíte</p>
+                                        <img src={suiteIcon} alt={'Grupo genesis incoporadora, Numero de Suíte do apartamento em '+ myDataPage.seoName} />
+                                        <p>{myDataPage.suites} Suíte</p>
                                     </div>
                                     <div>
-                                        <img src={carIcon} alt="" />
+                                        <img src={carIcon} alt={'Grupo genesis incoporadora, Numero de Vagas do apartamento em '+ myDataPage.seoName} />
                                         <p>{myDataPage.car} Vagas</p>
                                     </div>
                                     <div>
-                                        <img src={sizeIcon} alt="" />
+                                        <img src={sizeIcon} alt={'Grupo genesis incoporadora, Numero de m² do apartamento em '+ myDataPage.seoName} />
                                         <p>{myDataPage.size}m²</p>
                                     </div>
                                 </div>
@@ -182,7 +183,7 @@ function MainBanner () {
                 </div>  
                 {
                     myDataPage.financimanentoCaixa == true ? 
-                    <a href={myLinkWhatsApp[myLinkWhatsAppRandom]} style={{width:"100%"}} target="_blank">
+                    <a href={ContactLinks[0].whatsapp[WhatsappRandom]}  title="Whatsapp da Grupo genesis incorporadora e construtora " style={{width:"100%"}} target="_blank">
                         <div className='tagnameCaixa' >
                             <h1>Entrada <span>Facilitada</span> </h1>
                             <div className='caixaImage'>Financiamento pela     

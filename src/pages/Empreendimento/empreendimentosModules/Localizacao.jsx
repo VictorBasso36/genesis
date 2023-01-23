@@ -2,8 +2,14 @@ import { useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import './Localizacao.css'
 
-function Localizacao () {
 
+import ContactLinks from '../../../../public/contatonumber.json'
+const WhatsappRandom = Math.floor(Math.random() * (ContactLinks[0].whatsapp).length);
+// console.log(ContactLinks[0].whatsapp[WhatsappRandom]);//=> a random element
+
+
+function Localizacao () {
+       
         return (
             <>
 
@@ -98,8 +104,9 @@ function Localizacao () {
                              São Paulo, e ainda no <span>melhor bairro da cidade</span>  de Rio Grande da Serra? Não é 
                              mais um sonho, é a <span>sua nova realidade.</span> </p></pre>
                         <div className='mapsContent'>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.990158025573!2d-46.39365268437485!3d-23.74773037438768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce12dd4c7b7557%3A0xd1e586949d42a30f!2sAv.%20Francisco%20Morais%20Ramos%2C%20333%20-%20Jardim%20Novo%20Horizonte%2C%20Rio%20Grande%20da%20Serra%20-%20SP%2C%2009450-000!5e0!3m2!1spt-BR!2sbr!4v1670248350890!5m2!1spt-BR!2sbr"  style={{border:0}} allowfullscreen="true" loading="lazy" ></iframe>
-                            <a target="_blank" href="https://www.google.com/maps/place/Av.+Francisco+Morais+Ramos,+333+-+Jardim+Novo+Horizonte,+Rio+Grande+da+Serra+-+SP,+09450-000/@-23.747735,-46.391464,16z/data=!4m5!3m4!1s0x94ce12dd4c7b7557:0xd1e586949d42a30f!8m2!3d-23.7477353!4d-46.391464?hl=pt-BR">
+                            <iframe title={"Localização do apartamento"}  className="mapsiframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.990158025573!2d-46.39365268437485!3d-23.74773037438768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce12dd4c7b7557%3A0xd1e586949d42a30f!2sAv.%20Francisco%20Morais%20Ramos%2C%20333%20-%20Jardim%20Novo%20Horizonte%2C%20Rio%20Grande%20da%20Serra%20-%20SP%2C%2009450-000!5e0!3m2!1spt-BR!2sbr!4v1670248350890!5m2!1spt-BR!2sbr"  style={{border:0}} allowullscreen="false" loading="lazy" ></iframe>
+                           
+                            <a target="_blank" title="Endereço genesis incorporadora" href="https://www.google.com/maps/place/Av.+Francisco+Morais+Ramos,+333+-+Jardim+Novo+Horizonte,+Rio+Grande+da+Serra+-+SP,+09450-000/@-23.747735,-46.391464,16z/data=!4m5!3m4!1s0x94ce12dd4c7b7557:0xd1e586949d42a30f!8m2!3d-23.7477353!4d-46.391464?hl=pt-BR">
                                 <div className='aboutMap'>
                                     <p>Rua Francisco Moraes Ramos, 333 - Rio Grande da Serra</p>
                                     <div className='routeMap'>
@@ -113,7 +120,9 @@ function Localizacao () {
                    </div>
                 </div>
             </>
+            
         )
+        
       }
       
 export default Localizacao

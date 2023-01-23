@@ -13,11 +13,11 @@ import MainLogo from '../assets/logos/mainLogoFooter.png'
 import pdfLeft from '../../public/certificadoISO9001-GENESIS.pdf'
 import pdfRight from '../../public/certificadoPBQP-Hfrente-GENESIS.pdf'
 
-const myLinkWhatsApp = ["https://api.whatsapp.com/send?phone=5511979525548&text=Ol%C3%A1%2C%20quero%20ser%20uma%20das%20primeiras%20pessoas%20a%20saber%20sobre%20o%20projeto%20Altos%20do%20Pinheirinho.", "https://api.whatsapp.com/send?phone=5511976105023&text=Ol%C3%A1%2C%20quero%20ser%20uma%20das%20primeiras%20pessoas%20a%20saber%20sobre%20o%20projeto%20Altos%20do%20Pinheirinho."];
+import ContactLinks from '../../public/contatonumber.json'
+const WhatsappRandom = Math.floor(Math.random() * (ContactLinks[0].whatsapp).length);
+// console.log(ContactLinks[0].whatsapp[WhatsappRandom]);//=> a random element
 
-const myLinkWhatsAppRandom = Math.floor(Math.random() * myLinkWhatsApp.length);
-console.log(myLinkWhatsApp[myLinkWhatsAppRandom]);//=> a random element
-//
+// //
 function Footer() {
   return (
     <div className="mainFooter">
@@ -25,12 +25,12 @@ function Footer() {
             <div className='containerFooter'>
                 <div className='logoFooter'>
                 <Link to='/'> 
-                  <img src={MainLogo} alt="" />
+                  <img src={MainLogo} alt="Logo gênesis empreendimentos - construtora e incorporadora" />
                 </Link>
               
                 </div>
-                <div>
-                  <a href={pdfLeft} target = "_blank">
+                <div className='iconsiso'>
+                  <a href={pdfLeft} title="Selo de confiança genesis incorporadora e construtora" target = "_blank">
                     <svg className='leftSelo'
                     xmlns="http://www.w3.org/2000/svg"
                     xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -47,7 +47,7 @@ function Footer() {
                   </svg>
                   </a>
                   
-                  <a href={pdfRight} target = "_blank">
+                  <a href={pdfRight} title="Selo de confiança genesis incorporadora e construtora" target = "_blank">
                     <svg className='rightSelo'
                       xmlns="http://www.w3.org/2000/svg"
                       xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -66,8 +66,8 @@ function Footer() {
 
                 </div>
                 <div className='socialIcons'>
-                    <a title="Instagram grupo genesis" href="https://www.instagram.com/grupogenesisconstrutora/" target="_blank"><img src={Instagram} alt="" /></a>
-                    <a title="Whatsapp grupo genesis" href={myLinkWhatsApp[myLinkWhatsAppRandom]} target="_blank"><img src={WhatsApp} alt="whatsapp " /></a>
+                    <a title="Instagram grupo genesis" href="https://www.instagram.com/grupogenesisconstrutora/" target="_blank"><img src={Instagram} alt="instagram genesis incorporadora e construtora." /></a>
+                    <a title="Whatsapp grupo genesis" href={ContactLinks[0].whatsapp[WhatsappRandom]} target="_blank"><img src={WhatsApp} alt="whatsapp genesis incorporadora e construtora" /></a>
                     {/* <a href=""><img src={Facebook} alt="" /></a>         */}
                 </div>
             </div>
@@ -75,7 +75,7 @@ function Footer() {
        <div className='poweredBy'>
             <p><span>Leandro Pereira de Souza Construtora e Incorporadora LTDA. </span><br /> CNPJ 31.013.315/0001-05<br></br> Rua Macauba, 304 - Santo André - SP </p>
       
-            <a href="http://www.arquebricks.com.br/" target="_blank" className='brickslink'><img src={LogoArque} alt="Arqué Bricks - Marketing Imobiliário" /></a>
+            <a href="http://www.arquebricks.com.br/" target="_blank" title="Arqué Bricks - Marketing Imobiliário" className='brickslink'><img src={LogoArque} alt="Arqué Bricks - Marketing Imobiliário" /></a>
              
           
        </div>

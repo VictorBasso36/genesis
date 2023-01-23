@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useParams, Link, useLocation } from 'react-router-dom'
-import MainBgimg from  '../assets/bgs/bgMain.jpg'
+import MainBgimg from  '../assets/bgs/bgMain.webp'
 import MainBgimgContato from  '../assets/bgs/bgContatoMain.jpg'
 import './MainBg.css';
 import 'animate.css';
@@ -15,11 +15,11 @@ function MainBg() {
 
   useEffect(() => {
 
-    console.log(location)
+    // console.log(location)
   }, [location]);
 
 
-if(location.pathname ==="/Contato"){
+if(location.pathname ==="/Contato/"){
   mybgpath=MainBgimgContato
 
   myCopytag=<h1 className='animate__animated animate__slideInRight'>Seu futuro lar <br className='responsivebrock' />
@@ -38,7 +38,7 @@ if(location.pathname ==="/"){
         <div></div>
         
         {myCopytag}
-        <img className='animate__animated animate__fadeIn' src={mybgpath} alt="" />
+        <img className='animate__animated animate__fadeIn' src={mybgpath} alt="Familia feliz por comprar os empreendimentos e apartamento do grupo genesis" />
       </div>
     )
   }
