@@ -1,1 +1,1 @@
-# G-nesis
+Codigo react do projeto e libs.
