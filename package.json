@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && react-snap",
-    "preview": "vite preview"
-   
+    "build": "vite build",
+    "preview": "vite preview",
+    "postbuild": "react-snap"
   },
   "reactSnap": {
     "source": "./dist",
