@@ -1,4 +1,5 @@
-name: Deploy to Production
+
+name: deploy
 
 on:
   push:
@@ -6,49 +7,19 @@ on:
       - main
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-
-    - name: Install dependencies
-      run: npm ci
-
-
-    - name: Build application
-      run: npm run build
-
-    - name: Check if branch "ProductionBuildMain" exists
-      id: check_branch
-      run: |
-        if git ls-remote --exit-code --heads origin ProductionBuildMain; then
-          echo "Branch exists"
-          echo ::set-output name=branch_exists::true
-        else
-          echo "Branch does not exist"
-          echo ::set-output name=branch_exists::false
-        fi
-
-    - name: Create branch "ProductionBuildMain"
-      if: steps.check_branch.outputs.branch_exists == 'false'
-      run: git branch ProductionBuildMain
-
-    - name: Push build to "ProductionBuildMain"
-      run: |
-        git config --global user.email "victorbasso36@gmail.com"
-        git config --global user.name "VictorBasso36"
-        git add -f dist
-        git commit -m "Initial build commit"
-        git push -u origin ProductionBuildMain
-        git push --force-with-lease --set-upstream origin ProductionBuildMain
-    - name: Update branch "ProductionBuildMain"
-      if: steps.check_branch.outputs.branch_exists == 'true'
-      run: |
-        git config --global user.email "victorbasso36@gmail.com"
-        git config --global user.name "VictorBasso36"
-        git add -f build
-        git commit -m "Update build"
-        git push -u origin ProductionBuildMain
-        git push --force-with-lease --set-upstream origin ProductionBuildMain
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16.x'
+      - name: Build web-app
+        run: |
+          npm ci
+          npm run build
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
