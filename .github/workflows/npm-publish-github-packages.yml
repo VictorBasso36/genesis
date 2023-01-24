@@ -29,10 +29,10 @@ jobs:
         git config --global user.email "victorbasso36@gmail.com"
         git config --global user.name "VictorBasso36"
         git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
-        git push --set-upstream origin ProducaoBranch
+        git push --set-upstream origin gh-pages
         git add -f build
         git add .
         git commit -m "Deploy"
-        git push -f origin ProducaoBranch
+        git push -f origin gh-pages
         
 
