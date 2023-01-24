@@ -38,7 +38,7 @@ jobs:
       run: |
         git config --global user.email "victorbasso36@gmail.com"
         git config --global user.name "VictorBasso36"
-        git add -f build
+        git add -f dist
         git commit -m "Initial build commit"
         git push -u origin ProductionBuildMain
         git push --force-with-lease --set-upstream origin ProductionBuildMain
