@@ -127,8 +127,8 @@ function scrollTo(){
                 <Link to="/">{Lancamentos==false & location.pathname === "/" ? <p><span>Home</span></p> : <p>Home</p>}</Link>   
                 <HashLink to="/#Lancamentos">{Lancamentos==true ? <p className='linkLaunch'><span>Lançamentos</span></p> : <p className='linkLaunch'>Lançamento</p> }</HashLink>
                 {/* <Link to="/Portifolio">{location.pathname === "/Portifolio" ? <p><span>Portifólio</span></p> : <p>Portifólio</p>}</Link> */}
-                <Link to="/QuemSomos">{location.pathname === "/QuemSomos" ? <p><span>Quem somos</span></p> : <p>Quem somos</p>}</Link>   
-                <Link to="/Contato">{location.pathname === "/Contato" ? <p className='noMargin'><span>Contato</span></p> : <p className='noMargin'>Contato</p>}</Link>
+                <Link to="/QuemSomos/">{location.pathname === "/QuemSomos/" ? <p><span>Quem somos</span></p> : <p>Quem somos</p>}</Link>   
+                <Link to="/Contato/">{location.pathname === "/Contato/" ? <p className='noMargin'><span>Contato</span></p> : <p className='noMargin'>Contato</p>}</Link>
             </div>
             <div className='HambScrollBar' onClick={() => setShowMenu(!showMenu)}>
                 <div className='HambScrollBarItem'>

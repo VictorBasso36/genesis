@@ -12,6 +12,7 @@ import Contato from './pages/Contato'
 import Empreendimento from './pages/Empreendimento'
 import ScrollToTop from './modules/Scrolltotop'
 
+import Error404 from './modules/Error404';
 
 import ConvertWhatsapp from './modules/whatsappConvert'
 
@@ -29,7 +30,8 @@ function App() {
           <Route path="/Portifolio/" element={<Portifolio/>} />
           <Route path="/Contato/" element={<Contato/>} />
           <Route path="/Empreendimento/:empreendimentoNome/"  element={<Empreendimento/>} />
-          <Route path="*" element={<Navigate to="/"/>}/>
+          <Route path="*" element={<Error404/>}/>
+          <Route path="/404/" element={<Error404/>}/>
         </Routes>
       </BrowserRouter>
       
