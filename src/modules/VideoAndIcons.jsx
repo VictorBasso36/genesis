@@ -32,7 +32,7 @@ useEffect(() => {
 
 let mybottommargin
 let videoHeree
-if(location.pathname === "/QuemSomos"){
+if(location.pathname === "/QuemSomos/"){
     mybottommargin = "none"
     // console.log("é")
 }else{

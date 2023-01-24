@@ -15,7 +15,7 @@ import {Helmet} from "react-helmet";
 function Home() {
       
         return (
-            <>
+            <> 
                   <Helmet>
                   <meta name="Grupo Gênesis - Construtora e incorporadora para seu empreendimento." content="genesis"/>
                   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
@@ -27,6 +27,7 @@ function Home() {
                   <meta content="index, follow" name="robots"/>
                   <meta content="Portuguese" name="language"/>
                   <meta content="1 days" name="revisit-after"/>
+                  
                   </Helmet>
               <div className="mainBgContainer">
                 <MainScrollFixedBar/>
