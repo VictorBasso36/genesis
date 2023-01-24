@@ -116,7 +116,6 @@ function Lazer () {
                         centeredSlides={true}
                         loop={true}
                         onSlideChange={(swiper) => document.querySelector(".hereHTML").innerHTML=urllazerLegenda[(swiper.realIndex)]}
-                        onSwiper={(swiper) => console.log(swiper)}
                         modules={[Pagination, Navigation]}
                         >
                             { myDataPage.photoslazer && myDataPage.photoslazer.map( (url, index) => {
@@ -131,7 +130,7 @@ function Lazer () {
                         </div>
                         <div className='aboutLazer'>
                             { myDataPage.lazerMainItems && myDataPage.lazerMainItems.map( (url, index) => {
-                                console.log(url)
+                               
                                 return(
                                     <div  key={index}><h1>-</h1><p>{url}</p></div>
                                     )
