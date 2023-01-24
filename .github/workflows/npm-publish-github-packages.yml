@@ -13,8 +13,9 @@ jobs:
     - run: npm ci
     - run: npm run build
     - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@3.8.0
+      uses: JamesIves/github-pages-deploy-action@latest
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        BRANCH: gh-pages
+        BRANCH: producaoBuildado
         FOLDER: build
+        REPO: VictorBasso36/genesis
