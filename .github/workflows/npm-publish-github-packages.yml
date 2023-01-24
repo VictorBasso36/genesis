@@ -1,20 +1,35 @@
 name: Build and Deploy
-on: [push]
+
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - uses: actions/setup-node@v3
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
       with:
         node-version: 16
-    - run: npm ci
-    - run: npm run build
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}    
-        publish_dir: ./build
-        target_branch: gh-pages
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Build
+      run: npm run build
+
+    - name: Deploy
+      run: |
+        git config --global user.email "victorbasso36@gmail.com"
+        git config --global user.name "VictorBasso36"
+        git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+        git checkout ProducaoBranch
+        git add -f build
+        git commit -m "Deploy"
+        git push -f origin ProducaoBranch
