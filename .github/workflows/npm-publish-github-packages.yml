@@ -31,6 +31,7 @@ jobs:
         git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
         git push --set-upstream origin ProducaoBranch
         git add -f build
+        git add .
         git commit -m "Deploy"
         git push -f origin ProducaoBranch
         
