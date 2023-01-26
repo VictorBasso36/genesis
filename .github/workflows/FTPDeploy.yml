@@ -1,6 +1,6 @@
 name: Deploy via ftp
 on:
-  push:
+  dynamic:
     branches:
       - gh-pages
 jobs:
