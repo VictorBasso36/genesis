@@ -11,8 +11,8 @@ jobs:
 
       with:
         ftp-server: ${{ secrets.FTP_SERVER }}
-        user: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
+        ftp-username: ${{ secrets.FTP_USERNAME }}
+        ftp-password: ${{ secrets.FTP_PASSWORD }}
         ftp-port: 21
         localDir: "./public"
         remoteDir: "www"
