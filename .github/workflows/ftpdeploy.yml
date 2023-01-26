@@ -1,6 +1,6 @@
 name: Deployment Event
 on:
-  push:
+  deployment:
     branches:
       - gh-pages
   pull_request:
