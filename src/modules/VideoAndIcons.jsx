@@ -34,6 +34,8 @@ let mybottommargin
 let videoHeree
 if(location.pathname === "/QuemSomos/"){
     mybottommargin = "none"
+
+    
     // console.log("é")
 }else{
     mybottommargin = "flex"
