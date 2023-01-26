@@ -1,7 +1,8 @@
 name: ftp
 on:
   repository_dispatch:
-    branches:
+    types: [gh-pages-updated]
+    braches:
       - gh-pages
 jobs:
   deploy:
