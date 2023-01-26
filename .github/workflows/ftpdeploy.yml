@@ -13,6 +13,8 @@ on:
       - edited
     branches:
       - gh-pages
+    repository_dispatch:
+      types: [gh-pages-updated]
 jobs:
   deploy:
     name: Deploy ftp
