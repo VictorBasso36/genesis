@@ -1,6 +1,6 @@
 name: ftp
 on:
-  issue_comment:
+  repository_dispatch:
     branches:
       - gh-pages
 jobs:
