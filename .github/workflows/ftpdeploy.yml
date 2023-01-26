@@ -1,8 +1,7 @@
-name: ftp
+name: Deployment Event
 on:
-  repository_dispatch:
-    types: [gh-pages-updated]
-    braches:
+  push:
+    branches:
       - gh-pages
 jobs:
   deploy:
