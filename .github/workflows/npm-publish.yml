@@ -1,0 +1,24 @@
+name: Build and Deploy React App
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    steps:
+    - name: Checkout the code
+      uses: actions/checkout@v2
+    - name: Install dependencies
+      run: npm ci
+    - name: Build the React app
+      run: npm run build
+    - name: Deploy the build to ProductionBuildMain
+      run: |
+        git config user.name "GitHub Actions"
+        git config user.email "actions@github.com"
+        git checkout -b ProductionBuildMain
+        git add dist
+        git commit -m "Deploy React app"
+        git push -u origin ProductionBuildMain --force
