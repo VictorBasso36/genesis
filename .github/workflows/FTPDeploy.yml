@@ -8,13 +8,10 @@ jobs:
     name: Deploy ftp
     runs-on: ubuntu-20.04
     steps:
-    
     - uses: actions/checkout@v2
     - name: FTP Deploy update
       uses: SamKirkland/FTP-Deploy-Action@3.1.2
-
       with:
         ftp-server: ${{ secrets.FTP_SERVER }}
         ftp-username: ${{ secrets.FTP_USERNAME }}
         ftp-password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: "./"
