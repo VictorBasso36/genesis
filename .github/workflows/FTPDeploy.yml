@@ -1,6 +1,6 @@
-name: Deploy via ftp
+name: ftp
 on:
-  push:
+  issue_comment:
     branches:
       - gh-pages
 jobs:
