@@ -32,9 +32,8 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           port: 21
-          exclude: 'file-not-found.txt'
           server-dir: /public/
-          protocol: ftps
+
           
 
 
