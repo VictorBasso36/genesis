@@ -1,8 +1,6 @@
 name: Deployment Event ftp
-on: 
-  pull_request_target:
-    paths:
-      - '**'
+on:
+  push:
     branches:
       - ProductionBuildMain
 jobs:
