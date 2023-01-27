@@ -33,14 +33,7 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: 21
           server-dir: /public/
-          exclude: |
-            .git/**
-            .git**
-            .git*/**
-            **/.git*
-            **/.git*/**
-            **/node_modules/**
-            fileToExclude.txt
+          cleanRemote: true
           
 
 
