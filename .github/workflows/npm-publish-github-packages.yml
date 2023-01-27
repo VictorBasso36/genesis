@@ -33,4 +33,4 @@ jobs:
         run: git commit -m "add files"
       
       - name: push to ProductionBuildMain
-        run: git push --force
+        run: git push -u origin ProductionBuildMain --force
