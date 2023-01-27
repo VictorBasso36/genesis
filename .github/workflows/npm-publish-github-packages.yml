@@ -25,6 +25,14 @@ jobs:
           publish_dir: ./dist/
           commit_message: ${{ github.event.head_commit.message }}
 
-          
+      - name: FTP Deploy update
+        uses: SamKirkland/FTP-Deploy-Action@4.3.3
+        with:
+          ftp-server: ${{ secrets.FTP_SERVER }}
+          ftp-username: ${{ secrets.FTP_USERNAME }}
+          ftp-password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist/
+          remote-dir: public
+
 
 
