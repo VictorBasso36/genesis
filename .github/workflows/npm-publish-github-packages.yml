@@ -1,4 +1,4 @@
-name: deploy
+name: deploy build initial
 
 on:
   push:
@@ -16,13 +16,13 @@ jobs:
       - name: Build web-app
         run: |
           npm ci
-          npm run build
+          npm run build --force
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           
-          publish_dir: ./dist/*
+          publish_dir: ./dist/
           commit_message: ${{ github.event.head_commit.message }}
 
           
