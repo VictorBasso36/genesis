@@ -25,7 +25,7 @@ jobs:
           publish_dir: ./dist/*
           commit_message: ${{ github.event.head_commit.message }}
       - name: Deploy to FTP
-        uses: SamKirkland/FTP-Deploy-Action@4.3.1
+        uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
         
           server: ${{ secrets.FTP_SERVER }}
@@ -33,7 +33,7 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: 21
           server-dir: /public/
-          cleanRemote: true
+ 
           
 
 
