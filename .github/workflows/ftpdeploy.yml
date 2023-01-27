@@ -1,20 +1,5 @@
 name: Deployment Event
 on:
-  deployment:
-    branches:
-      - gh-pages
-  pull_request:
-    branches:
-      - gh-pages
-  issues:
-    types:
-      - opened
-      - closed
-      - edited
-    branches:
-      - gh-pages
-    repository_dispatch:
-      types: [gh-pages-updated]
 jobs:
   deploy:
     name: Deploy ftp
