@@ -11,6 +11,7 @@
   },
   "reactSnap": {
     "source": "./dist",
+    "crashOnError": false,
     "inlineCss": false
   },
   "dependencies": {
