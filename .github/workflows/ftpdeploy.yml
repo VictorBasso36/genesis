@@ -1,4 +1,4 @@
-name: Deployment Event
+name: Deployment Event ftp
 on: 
  push:
     branches:
