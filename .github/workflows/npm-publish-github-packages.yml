@@ -24,11 +24,14 @@ jobs:
           
           publish_dir: ./dist/*
           commit_message: ${{ github.event.head_commit.message }}
-      - name: Deploy to FTP
+      - name: Deploy to FTP  
+        run: |
+          cd dist
+      - name : deplou to samkik
+        
         uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
-          run: |
-            cd dist
+        
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
