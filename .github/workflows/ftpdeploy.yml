@@ -1,28 +1,17 @@
-name: Deployment Event
+name: Deployment Event ftp
+
 on:
-  deployment:
+  push:
     branches:
       - gh-pages
-  pull_request:
-    branches:
-      - gh-pages
-  issues:
-    types:
-      - opened
-      - closed
-      - edited
-    branches:
-      - gh-pages
-    repository_dispatch:
-      types: [gh-pages-updated]
 jobs:
-  deploy:
-    name: Deploy ftp
+  my-event:
+    if: contains(github.actor, 'actions-gh-pages')
     runs-on: ubuntu-20.04
     steps:
     - uses: actions/checkout@v2
     - name: FTP Deploy update
-      uses: SamKirkland/FTP-Deploy-Action@3.1.2
+      uses: SamKirkland/FTP-Deploy-Action@4.3.3
       with:
         ftp-server: ${{ secrets.FTP_SERVER }}
         ftp-username: ${{ secrets.FTP_USERNAME }}
