@@ -1,6 +1,6 @@
 name: Deployment Event ftp
 on: 
- push:
+ update:
     branches:
       - ProductionBuildMain
 jobs:
