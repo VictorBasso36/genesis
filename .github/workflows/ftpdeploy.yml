@@ -1,15 +1,12 @@
 name: Deployment Event ftp
+
 on:
-  deployment_status:
+  push:
     branches:
-        - ProductionBuildMain
-  pull_request:
-    branches:
-        - ProductionBuildMain
-       
+      - gh-pages
 jobs:
-  deploy:
-    name: Deploy ftp
+  my-event:
+    if: contains(github.actor, 'actions-gh-pages')
     runs-on: ubuntu-20.04
     steps:
     - uses: actions/checkout@v2
