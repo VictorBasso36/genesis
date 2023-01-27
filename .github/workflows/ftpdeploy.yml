@@ -3,6 +3,9 @@ on:
   deployment_status:
     branches:
         - ProductionBuildMain
+  pull_request:
+    branches:
+        - ProductionBuildMain
        
 jobs:
   deploy:
