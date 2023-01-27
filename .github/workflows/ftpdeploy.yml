@@ -1,7 +1,8 @@
 name: Deployment Event ftp
 on:
-  create:
-    types: [issues]
+  push:
+     branches:
+      - ProductionBuildMain
 jobs:
   deploy:
     name: Deploy ftp
@@ -9,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: FTP Deploy update
-      uses: SamKirkland/FTP-Deploy-Action@3.1.2
+      uses: SamKirkland/FTP-Deploy-Action@4.3.3
       with:
         ftp-server: ${{ secrets.FTP_SERVER }}
         ftp-username: ${{ secrets.FTP_USERNAME }}
