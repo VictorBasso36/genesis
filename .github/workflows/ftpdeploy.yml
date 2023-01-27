@@ -1,8 +1,11 @@
 name: Deployment Event ftp
 on:
-  pull_request:
-     branches:
-      - ProductionBuildMain
+  label:
+    branches:
+        - ProductionBuildMain
+    types:
+      - update
+       
 jobs:
   deploy:
     name: Deploy ftp
