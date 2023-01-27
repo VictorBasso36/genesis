@@ -1,10 +1,7 @@
 name: Deployment Event ftp
 on:
-  push:
-    branches:
-      - ProductionBuildMain
-    paths:
-      - '/**'
+  create:
+    types: [issues]
 jobs:
   deploy:
     name: Deploy ftp
