@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - ProductionBuildMain
+    paths:
+      - '/**'
 jobs:
   deploy:
     name: Deploy ftp
