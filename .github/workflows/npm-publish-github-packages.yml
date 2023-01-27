@@ -27,7 +27,7 @@ jobs:
           git config --global user.name "VictorBasso36"
       
       - name: add files
-        run: git add -A
+        run: git add .
       
       - name: commit files
         run: git commit -m "add files"
