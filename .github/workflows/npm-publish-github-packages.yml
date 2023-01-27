@@ -22,15 +22,23 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           
-          publish_dir: ./dist
+          publish_dir: ./dist/
           commit_message: ${{ github.event.head_commit.message }}
       - name: Deploy to FTP
         uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
+        
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           port: 21
           server-dir: /public/
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            fileToExclude.txt
+
+          
 
 
