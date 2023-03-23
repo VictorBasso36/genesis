@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useParams, Link, useLocation } from 'react-router-dom'
-import MainBgimg from  '../assets/bgs/bgMain.webp'
+
 import MainBgimgContato from  '../assets/bgs/bgContatoMain.jpg'
 import './MainBg.css';
 import 'animate.css';
@@ -26,7 +26,7 @@ if(location.pathname ==="/Contato/"){
   te espera <span>aqui.</span></h1>
 }
 if(location.pathname ==="/"){
-  mybgpath=MainBgimg
+  mybgpath="https://arque.art.br/ousiaarque/genesisemp/allphotos/bgMain.webp"
 
   myCopytag=<h1 className='animate__animated animate__slideInRight'>Carinho e respeito  <br className='responsivebrock' />
   pelo seu <span>sonho.</span></h1>
@@ -44,3 +44,4 @@ if(location.pathname ==="/"){
   }
   
   export default MainBg
+

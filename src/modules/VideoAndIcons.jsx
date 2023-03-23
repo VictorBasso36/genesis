@@ -45,7 +45,7 @@ if(location.pathname === "/QuemSomos/"){
 const [showMenuVideo, setShowMenuVideo] = useState(false);
 if(showMenuVideo){
     displayVideo = "flex"
-    videoHeree=  <video src="https://www.arque.art.br/genesisemp/video/VideoClient.mp4" poster="https://www.arque.art.br/ousiaarque/genesisemp/allphotos/EXTRENO_2%20P-%20Foto.jpg"  className='Iframe' preload="none" controls  loop autoPlay type="video/mp4">
+    videoHeree=  <video src="https://www.arque.art.br/genesisemp/video/VideoClient.mp4" poster="https://www.arque.art.br/ousiaarque/genesisemp/allphotos/EXTRENO_2.webp"  className='Iframe' preload="none" controls  loop autoPlay type="video/mp4">
  
 </video>
 
@@ -74,7 +74,7 @@ return (
             {/* <iframe style={{display:displayVideo}} src="https://youtu.be/XcweXIX2gco?&playversion=3&autoplay=1&loop=1&rel=0&showinfo=0&color=white&iv_load_policy=3" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; loop;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
         </div>
         <div className='videoHere' onClick={() => setShowMenuVideo(!showMenuVideo)}>
-            <video className='myVideo' poster="https://www.arque.art.br/ousiaarque/genesisemp/allphotos/EXTRENO_2%20P-%20Foto.jpg" preload="metadata" loop autoPlay muted type="video/mp4">
+            <video className='myVideo' poster="https://www.arque.art.br/ousiaarque/genesisemp/allphotos/EXTRENO_2.webp" preload="metadata" loop autoPlay muted type="video/mp4">
                 <source src="https://www.arque.art.br/genesisemp/video/VideoClient.mp4" type="video/mp4"/> 
             </video>
             {/* <VideoBg className='myVideo' poster={PlayerVideo}>

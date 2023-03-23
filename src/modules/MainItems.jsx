@@ -115,10 +115,10 @@ function MainItems() {
                                 <img src={RoomIcon} alt={"Quantidade de Quartos do apartamento em " + empreedimentoData.seoName} />
                                 <p>{empreedimentoData.room} Quartos</p>
                             </div>
-                            <div className='cardItens'>
+                            {/* <div className='cardItens'>
                                 <img src={SuiteIcon} alt={"Quantidade de Suites do apartamento em " + empreedimentoData.seoName}  />
                                 <p>{empreedimentoData.suites} Suíte</p>
-                            </div>
+                            </div> */}
                             <div  className='cardItens'>
                                 <img src={IconCar} alt={"Quantidade de Vagas do apartamento em " + empreedimentoData.seoName}  />
                                 <p>{empreedimentoData.car} Vagas</p>

@@ -82,10 +82,10 @@ function SwiperPlantas () {
                                                 <img src={roomIcon} alt={'Quartos do apartamento '+myPlants.seoName+' grupo genesis incorporadora e construtora' } />
                                                 <p>{dataPlants.roomPlant} Quartos</p>
                                             </div>
-                                            <div className='plantIconCard'>
+                                            {/* <div className='plantIconCard'>
                                                 <img src={suiteIcon} alt={'Suites do apartamento '+myPlants.seoName+' grupo genesis incorporadora e construtora' } />
                                                 <p>{dataPlants.suitesPlants} Suítes</p>
-                                            </div>
+                                            </div> */}
                                             <div className='plantIconCard'>
                                                 <img src={carIcon}  alt={'Vagas do apartamento '+myPlants.seoName+' grupo genesis incorporadora e construtora' } />
                                                 <p>{dataPlants.carPlants} Vagas</p>
@@ -125,10 +125,10 @@ function SwiperPlantas () {
                                                 <img src={roomIcon} alt={'Quartos do apartamento '+myPlants.seoName+' grupo genesis incorporadora e construtora' }  />
                                                 <p>{dataPlants.roomPlant} Quartos</p>
                                             </div>
-                                            <div className='plantIconCard'>
+                                            {/* <div className='plantIconCard'>
                                                 <img src={suiteIcon} alt={'Suítes do apartamento '+myPlants.seoName+' grupo genesis incorporadora e construtora' }  />
                                                 <p>{dataPlants.suitesPlants} Suítes</p>
-                                            </div>
+                                            </div> */}
                                             <div className='plantIconCard'>
                                                 <img src={carIcon} alt={'Vaga do apartamento '+myPlants.seoName+' grupo genesis incorporadora e construtora' } />
                                                 <p>{dataPlants.carPlants} Vaga</p>

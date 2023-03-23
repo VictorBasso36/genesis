@@ -8,6 +8,10 @@
     justify-content: center;
     margin-top: 20px;
 }
+
+.bgMain img{
+    height: auto;
+}
 .ctaContainer h1{
     font-size: 5.2vw;
     color: white;
@@ -553,6 +557,12 @@
         justify-content: center;
     }
     /*tagcaixa*/
+
+    .bgMain img {
+        z-index: -1;
+        margin-top: -400px;
+        width: 100vw;
+    }
 }
 
 @media screen and (min-width:550px) and (max-width:650px){
@@ -725,6 +735,15 @@
             justify-content: center;
         }
         /*tagcaixa*/
+
+
+
+        .bgMain img {
+            z-index: -1;
+            margin-top: -400px;
+            width: 120vw
+            
+        }
 }
 @media screen and (min-width:350px) and (max-width:550px){
     .titleResponsive{
@@ -906,6 +925,12 @@
                     justify-content: center;
                 }
                 /*tagcaixa*/
+
+                .bgMain img {
+                    z-index: -1;
+                    margin-top: -180px;
+                    width: 120vw
+                }
 }
 
 @media screen and (min-width:350px) and (max-width:450px) {
@@ -1125,6 +1150,12 @@
                     justify-content: center;
                 }
                 /*tagcaixa*/
+
+                .bgMain img {
+                    z-index: -1;
+                    margin-top: -180px;
+                    width: 120vw
+                }
 }
 
 
@@ -1216,7 +1247,6 @@
 
 
 
-
     
   }
 
@@ -1256,5 +1286,13 @@
         align-items: center;
         justify-content: center;
     }
+
+    .bgMain img {
+        z-index: -1;
+        margin-top: -300px;
+        width: 60vw;
+    }
     
   }
+
+

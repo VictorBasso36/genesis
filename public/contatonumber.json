@@ -1,8 +1,8 @@
 [
     {   
-        "whatsapp":["https://api.whatsapp.com/send?phone=5511979525548&text=%22Ol%C3%A1%2C+gostei+muito+dos+projetos+da+incorporadora+G%C3%AAnesis%2C+gostaria+de+tirar+algumas+d%C3%BAvidas%2C+pode+me+ajudar%3F"],
-        "telefones":["11 97952-5548","11 97610-5023"],
-        "whatsappSite":["https://api.whatsapp.com/send?phone=5511979525548&text=%22Ol%C3%A1%2C+gostei+muito+dos+projetos+da+incorporadora+G%C3%AAnesis%2C+gostaria+de+tirar+algumas+d%C3%BAvidas%2C+pode+me+ajudar%3F"]
+        "whatsapp":["https://wa.me/5511979525548?text=Ol%C3%A1,%20gostei%20muito%20do%20projeto%20Altos%20da%20Serra%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es,%20pode%20me%20ajudar?","https://wa.me/5511985253250?text=Ol%C3%A1,%20gostei%20muito%20do%20projeto%20Altos%20da%20Serra%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es,%20pode%20me%20ajudar?"],
+        "telefones":["11 97952-5548","11 97610-5023", "11 98525-3250"],
+        "whatsappSite":["https://wa.me/5511979525548?text=Ol%C3%A1,%20gostei%20muito%20do%20projeto%20G%C3%AAnesis%20Altos%20da%20Serra,%20gostaria%20de%20tirar%20algumas%20d%C3%BAvidas,%20pode%20me%20ajudar?","https://wa.me/5511985253250?text=Ol%C3%A1,%20gostei%20muito%20dos%20projetos%20da%20incorporadora%20G%C3%AAnesis,%20gostaria%20de%20tirar%20algumas%20d%C3%BAvidas,%20pode%20me%20ajudar?"]
       }
     
     ]

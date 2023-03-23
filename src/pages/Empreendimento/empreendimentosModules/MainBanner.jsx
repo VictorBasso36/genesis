@@ -164,10 +164,10 @@ function MainBanner () {
                                         <img src={roomIcon} alt={'Grupo genesis incoporadora, Numero de quartos do apartamento em '+ myDataPage.seoName} />
                                         <p>{myDataPage.room} Quartos</p>
                                     </div>
-                                    <div>
+                                    {/* <div>
                                         <img src={suiteIcon} alt={'Grupo genesis incoporadora, Numero de Suíte do apartamento em '+ myDataPage.seoName} />
                                         <p>{myDataPage.suites} Suíte</p>
-                                    </div>
+                                    </div> */}
                                     <div>
                                         <img src={carIcon} alt={'Grupo genesis incoporadora, Numero de Vagas do apartamento em '+ myDataPage.seoName} />
                                         <p>{myDataPage.car} Vagas</p>

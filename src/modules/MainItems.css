@@ -242,6 +242,9 @@
 }
 .cardItens img{
     max-height: 2.5vw;
+    width: auto;
+    height: auto;
+    aspect-ratio: attr(2.5vw) / attr(2.5vw);
     margin-bottom: 0.3vw;
 }
 .cardItens p{

@@ -125,7 +125,7 @@
 }
 .iconsCard img{
 
-
+    width: auto;
     height: 120px;
 }
 .iconsCardTitle{
@@ -192,6 +192,8 @@
 .videoHere img{
     transition: all 500ms;
     width: 80px;
+    aspect-ratio: attr(80px) / attr(80px);
+    height: auto;
     z-index: 2;
     cursor: pointer;
 }
@@ -289,7 +291,7 @@
         display: none;
     }
     .iconsCard img {
-      
+        aspect-ratio: attr(90px) / attr(90px);
         height: 90px;
     }
 }
