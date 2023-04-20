@@ -1,20 +1,11 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
-import './index.css'
-import { hydrate, render } from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import './index.css';
 
-
-const APP = (
+ReactDOM.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>
-)
-// ReactDOM.createRoot(document.getElementById('root')).render(
-//   )
-const rootElement = document.getElementById("root")
-if (rootElement.hasChildNodes()) {
-  hydrate(APP, rootElement);
-} else {
-  render(APP, rootElement);
-}
+  </React.StrictMode>,
+  document.getElementById('root')
+);

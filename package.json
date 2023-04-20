@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "postbuild": "react-snap"
+    "preview": "vite preview"
   },
   "reactSnap": {
     "source": "./dist",
@@ -26,7 +25,6 @@
     "react-helmet": "^6.1.0",
     "react-router-dom": "^6.6.2",
     "react-router-hash-link": "^2.4.3",
-    "react-snap": "^1.23.0",
     "reactjs-videobg": "^1.3.0",
     "rollup": "^3.11.0",
     "swiper": "^8.4.3",
