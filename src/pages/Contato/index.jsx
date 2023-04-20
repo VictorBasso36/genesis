@@ -20,6 +20,7 @@ import IconTelBlack from '../../assets/logos/iconTel.png'
 import './linkscontatos.css'
 
 import ContactLinks from '../../../public/contatonumber.json'
+
 const WhatsappRandom = Math.floor(Math.random() * (ContactLinks[0].whatsapp).length);
 // console.log(ContactLinks[0].whatsapp[WhatsappRandom]);//=> a random element
 
@@ -62,7 +63,7 @@ function Contato() {
                                 </a>
                             </div> */}
                             <div className='cardSocialMedia'>
-                                <a href={"tel:+55"+ ContactLinks[0].telefones[WhatsappRandom]}>
+                                <a href={"tel:+55 "+ ContactLinks[0].telefones[WhatsappRandom]}>
                                     <img src={IconTelBlack} alt="Telefone do grupo genesis incorporadora e construtora" />
                                 </a>
                             </div> 
@@ -80,8 +81,8 @@ function Contato() {
                                 <a target="_blank" title="genesis empreendimentos email de contato" href="mailto:contato@grupogenesis.com.br">
                                     <p>contato@grupogenesis.com.br</p>
                                 </a>
-                                <a href={"tel:+55"+ ContactLinks[0].telefones[WhatsappRandom]} title="genesis empreendimentos telefone de contato">
-                                    <p>(11) {ContactLinks[0].telefones[WhatsappRandom]}</p>
+                                <a href={"tel:+55 11985253250"} title="genesis empreendimentos telefone de contato">
+                                    <p>(11) 98525-3250</p>
                                 </a>
                                
                             </div>  

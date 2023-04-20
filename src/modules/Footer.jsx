@@ -14,11 +14,13 @@ import pdfLeft from '../../public/certificadoISO9001-GENESIS.pdf'
 import pdfRight from '../../public/certificadoPBQP-Hfrente-GENESIS.pdf'
 
 import ContactLinks from '../../public/contatonumber.json'
-const WhatsappRandom = Math.floor(Math.random() * (ContactLinks[0].whatsapp).length);
-// console.log(ContactLinks[0].whatsapp[WhatsappRandom]);//=> a random element
+
 
 // //
 function Footer() {
+  const isEmpreendimento = window.location.pathname.includes('/Empreendimento');
+  const WhatsappLinks = isEmpreendimento ? ContactLinks[0].whatsapp : ContactLinks[0].whatsappSite;
+  const WhatsappRandom = Math.floor(Math.random() * WhatsappLinks.length);
   return (
     <div className="mainFooter">
        <div className='bgSocialMedia'>
@@ -67,7 +69,7 @@ function Footer() {
                 </div>
                 <div className='socialIcons'>
                     <a title="Instagram grupo genesis" href="https://www.instagram.com/grupogenesisconstrutora/" target="_blank"><img src={Instagram} alt="instagram genesis incorporadora e construtora." /></a>
-                    <a title="Whatsapp grupo genesis" href={ContactLinks[0].whatsapp[WhatsappRandom]} target="_blank"><img src={WhatsApp} alt="whatsapp genesis incorporadora e construtora" /></a>
+                    <a href={WhatsappLinks[WhatsappRandom]} className="linkconvert" title="Dúvidas sobre seu apartamento?" target="_blank"><img src={WhatsApp} alt="whatsapp genesis incorporadora e construtora" /></a>
                     {/* <a href=""><img src={Facebook} alt="" /></a>         */}
                 </div>
             </div>
@@ -75,8 +77,8 @@ function Footer() {
        <div className='poweredBy'>
             <p><span>Leandro Pereira de Souza Construtora e Incorporadora LTDA. </span><br /> CNPJ 31.013.315/0001-05<br></br> Rua Macauba, 304 - Santo André - SP </p>
       
-            <a href="http://www.arquebricks.com.br/" target="_blank" title="Arqué Bricks - Marketing Imobiliário" className='brickslink'><img src={LogoArque} alt="Arqué Bricks - Marketing Imobiliário" /></a>
-             
+            {/* <a href="http://www.arquebricks.com.br/" target="_blank" title="Arqué Bricks - Marketing Imobiliário" className='brickslink'><img src={LogoArque} alt="Arqué Bricks - Marketing Imobiliário" /></a>
+              */}
           
        </div>
     </div>
