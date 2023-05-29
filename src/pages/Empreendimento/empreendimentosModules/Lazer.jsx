@@ -28,7 +28,7 @@ const WhatsappRandom = Math.floor(Math.random() * (ContactLinks[0].whatsapp).len
 // console.log(ContactLinks[0].whatsapp[WhatsappRandom]);//=> a random element
 
 
-function Lazer () {
+function Lazer (props) {
         const [showLazerSlide, setshowLazerSlide] = useState(false);    
         let displaySwiperLazerFullscreen
         if(showLazerSlide){
@@ -41,10 +41,12 @@ function Lazer () {
 
         }
         const { empreendimentoNome } = useParams();
-        const myDataPage = DataJSON.find( myDataPage => myDataPage.idNomeUrl === empreendimentoNome)
-        const urllazer = myDataPage.photoslazer
-        const urllazerLegenda =  myDataPage.legendaslazer
-        const mainitenscar = myDataPage.lazerMainItems
+        const myDataPage = props.dataemps
+
+        const imagensLazer = props.dataemps.attributes.Lazer.Imagens;
+        const descricoesLazer = imagensLazer.map(imagem => imagem.DescricaoLazer);
+        console.log(descricoesLazer);
+
         return (
             <>
                 {/* modal */}
@@ -88,11 +90,11 @@ function Lazer () {
                             // onSlideChange={() => console.log('slide change')}
                             // onSwiper={(swiper) => console.log(swiper)}
                             >
-                            { myDataPage.photoslazer && myDataPage.photoslazer.map( (url, index) => {
+                            { myDataPage.attributes.Lazer.Imagens && myDataPage.attributes.Lazer.Imagens.map( (url, index) => {
                                 return(
                                 <SwiperSlide className='testethis' key={index}>
                                     <div className='slideMainFull'>
-                                        <img src={url} alt={'Apartamento em '+myDataPage.seoName} />
+                                        <img src={"https://api.grupogenesis.com.br"+url.ImagemLazer.data.attributes.url} alt={'Apartamento em '+myDataPage.attributes.Titulo} />
                                     </div>
                                 </SwiperSlide>)
                             })}
@@ -115,13 +117,13 @@ function Lazer () {
                         slidesPerView={1}
                         centeredSlides={true}
                         loop={true}
-                        onSlideChange={(swiper) => document.querySelector(".hereHTML").innerHTML=urllazerLegenda[(swiper.realIndex)]}
+                        onSlideChange={(swiper) => document.querySelector(".hereHTML").innerHTML=descricoesLazer[swiper.realIndex]}
                         modules={[Pagination, Navigation]}
                         >
-                            { myDataPage.photoslazer && myDataPage.photoslazer.map( (url, index) => {
-                               
+                            { myDataPage.attributes.Lazer.Imagens && myDataPage.attributes.Lazer.Imagens.map( (url, index) => {
+                              
                                 return(
-                                    <SwiperSlide className='mainslide' role="img" aria-label={'Apartamento em '+myDataPage.seoName} style={{backgroundImage: `url('${(url)}')`}}  key={index}></SwiperSlide>
+                                    <SwiperSlide className='mainslide' role="img" aria-label={'Apartamento em '+myDataPage.attributes.Titulo} style={{backgroundImage: `url('${("https://api.grupogenesis.com.br"+url.ImagemLazer.data.attributes.url)}')`}}  key={index}></SwiperSlide>
                                     )
                             })}
                             
@@ -129,10 +131,10 @@ function Lazer () {
                         <div className='legendLazerCarrousel'><h1 className='hereHTML'>Aréa de Lazer</h1></div>
                         </div>
                         <div className='aboutLazer'>
-                            { myDataPage.lazerMainItems && myDataPage.lazerMainItems.map( (url, index) => {
+                            { myDataPage.attributes.TopicosLazer && myDataPage.attributes.TopicosLazer.map( (url, index) => {
                                
                                 return(
-                                    <div  key={index}><h1>-</h1><p>{url}</p></div>
+                                    <div  key={index}><h1>-</h1><p>{url.TextTopico}</p></div>
                                     )
                             })}
                           

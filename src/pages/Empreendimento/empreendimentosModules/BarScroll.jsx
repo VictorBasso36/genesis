@@ -6,7 +6,8 @@ import './BarScroll.css'
 
 
 let scrollStylesMargin
-function BarScroll () {
+function BarScroll (props) {
+    const data = props.dataemps
     const [showMenu, setMargin] = useState(true);
 
       
@@ -47,10 +48,18 @@ function BarScroll () {
             <>
                 <div className='topScrollBar' style={{marginTop: scrollStylesMargin + "px",}} >
                     <a href="#" title="Projeto genesis incorporadora">Projeto</a>
+                    {data.attributes.PlantasExists.PlantasExists &&
                     <a href="#Plantas" title="Plantas genesis incorporadora">Plantas</a>
+                    }
+                    {data.attributes.AreaDeLazer.AreaDeLazer &&
                     <a href="#idhere" title="Lazer genesis incorporadora">Lazer</a>
+                    }
+                    {data.attributes.LocalExits.LocalExists &&
                     <a href="#Localizacao" title="Localização genesis incorporadora">Localização</a>
+                    }
+                    {data.attributes.StatusObraExists.StatusObraExists &&
                     <a href="#ObraScroll" title="Obra genesis incorporadora">Obra</a>
+                    }
                 </div>
            </>
         )

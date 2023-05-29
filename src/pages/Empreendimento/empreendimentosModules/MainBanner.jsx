@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './MainBanner.css'
 import { Link, useParams, Navigate } from 'react-router-dom'
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
@@ -23,28 +23,32 @@ const WhatsappRandom = Math.floor(Math.random() * (ContactLinks[0].whatsapp).len
 // console.log(ContactLinks[0].whatsapp[WhatsappRandom]);//=> a random element
 
 
-function MainBanner () {
-        const [showMenuSlider, setShowMenuSlider] = useState(false);
-        const { empreendimentoNome } = useParams();
-        let displaySwiperFullscreen
-        if(showMenuSlider){
-
-            displaySwiperFullscreen="flex"
-   
-        }else {
-
-            displaySwiperFullscreen="none"
-
+function MainBanner (props) {
+    const [showMenuSlider, setShowMenuSlider] = useState(false);
+    const [randomWhatsapp, setRandomWhatsapp] = useState(null);
+    useEffect(() => {
+        if (props.dataemps && props.dataemps.attributes && props.dataemps.attributes.WhatsAppLink && props.dataemps.attributes.WhatsAppLink.length > 0) {
+          const whatsappLinks = props.dataemps.attributes.WhatsAppLink;
+          const randomIndex = Math.floor(Math.random() * whatsappLinks.length);
+          const randomLink = whatsappLinks[randomIndex].Link;
+          setRandomWhatsapp(randomLink);
         }
-        const myDataPage = DataJSON.find( myDataPage => myDataPage.idNomeUrl === empreendimentoNome)
-        return (
+      }, [props.dataemps]);
+    let displaySwiperFullscreen
+    if(showMenuSlider){
+            displaySwiperFullscreen="flex"
+    }else {
+            displaySwiperFullscreen="none"
+    }
+    const myDataPage = props.dataemps
+
+    return (
             <>       
                 <div className='cta'>
                     <div className='ctaContainer'>
-                        <h1>Apartamento em 
-                            <br />
-                            <span>{ myDataPage.seoName }</span>
-                        </h1>  
+                        <pre dangerouslySetInnerHTML={{ __html: props.dataemps.attributes.Titulo_LP_HTML }}>
+                            
+                       </pre>  
                     </div>
                     
                 </div>
@@ -84,14 +88,13 @@ function MainBanner () {
                             // onSlideChange={() => console.log('slide change')}
                             // onSwiper={(swiper) => console.log(swiper)}
                             >
-                            { myDataPage.photos && myDataPage.photos.map( (url, index) => {
-                                return(
-                                <SwiperSlide className='testethis' key={index}>
-                                    <div className='slideMainFull'>
-                                        <img src={url} alt={'fotos do Apartamento em '+myDataPage.seoName} />
-                                    </div>
-                                </SwiperSlide>)
-                            })}
+                            {myDataPage.attributes.CarrouselUm && myDataPage.attributes.CarrouselUm.Imagens.data.map((item, index) => (
+                            <SwiperSlide className='testethis' key={index}>
+                                <div className='slideMainFull'>
+                                    <img src={`https://api.grupogenesis.com.br${item.attributes.url}`} alt={'fotos do Apartamento em ' + myDataPage.seoName} />
+                                </div>
+                            </SwiperSlide>
+                            ))}
                                 
                              
                         </Swiper>
@@ -101,7 +104,10 @@ function MainBanner () {
                 </div>    
                 <div className='BannerMain' id='Projeto'>
                     <div className='titleResponsive'>
-                        <h1>Gênesis<span> { myDataPage.title } </span></h1>
+                        <h1>
+                            <span>{props.dataemps.attributes.Titulo.split(' ')[0]}</span>
+                            {props.dataemps.attributes.Titulo.replace(props.dataemps.attributes.Titulo.split(' ')[0], '')}
+                        </h1>
                     </div>
                     <div className='leftPicturesAndPrices'>
                         <img className='fullscreenIcon' onClick={() => setShowMenuSlider(!showMenuSlider)} src={FullscreenIcon} alt={'Foto em tela cheia do apartamento em'+ myDataPage.seoName} />
@@ -111,7 +117,7 @@ function MainBanner () {
                         
                             spaceBetween={0}
                             slidesPerView={1}
-                             loop={true}
+                            loop={true}
                             autoplay={{
                                 delay: 2500,
                                 disableOnInteraction: true,
@@ -125,14 +131,14 @@ function MainBanner () {
                             // onSlideChange={() => console.log('slide change')}
                             // onSwiper={(swiper) => console.log(swiper)}
                             >
-                            { myDataPage.photos && myDataPage.photos.map( (url, index) => {
-                                return(
+                         
+                            {myDataPage.attributes.CarrouselUm && myDataPage.attributes.CarrouselUm.Imagens.data.map((item, index) => (
                                 <SwiperSlide key={index}>
                                     <div className='slideMain'>
-                                        <img onClick={() => setShowMenuSlider(!showMenuSlider)} src={url} alt={'Foto do Apartamento em ' + myDataPage.seoName + ' - Genesis incorporadora e construtora'} />
+                                        <img onClick={() => setShowMenuSlider(!showMenuSlider)} src={`https://api.grupogenesis.com.br${item.attributes.url}`} alt={'Foto do Apartamento em ' + myDataPage.seoName + ' - Genesis incorporadora e construtora'} />
                                     </div>
-                                </SwiperSlide>)
-                            })}
+                                </SwiperSlide>
+                            ))}
                                 
                              
                         </Swiper>
@@ -144,7 +150,7 @@ function MainBanner () {
                                 </div>
                             <div className='priceHere'>
                                 <p>Unidades a partir de</p>
-                                <h1>R$ {myDataPage.price} mil</h1> 
+                                <h1>{props.dataemps.attributes.Preco_Destaque}</h1> 
                              
                             </div>
                            
@@ -152,38 +158,38 @@ function MainBanner () {
                     </div>
                     <div className='nameAndTexts'>
                         <div className='paddingFornameAndTexts'>
-                                <a href={ContactLinks[0].whatsapp[WhatsappRandom]} target="_blank" title="Whatsapp da Grupo genesis incorporadora e construtora ">
+                        {randomWhatsapp ? (
+                                <a href={randomWhatsapp} target="_blank" title="Whatsapp da Grupo genesis incorporadora e construtora ">
                                     <img className='myZAPicon' src={IconWhatsApp} alt="Whatsapp da Grupo genesis incorporadora e construtora" />
                                 </a>
-                                <h1>Gênesis <span>{myDataPage.title}</span><strong> (2ª fase)</strong></h1>
+                                ) : (
+                            ''
+                          )}
+                                <h1>
+                                    <span>{props.dataemps.attributes.Titulo.split(' ')[0]}</span>
+                                    {props.dataemps.attributes.Titulo.replace(props.dataemps.attributes.Titulo.split(' ')[0], '')}
+                                </h1>
                                 <div className='scrollText'>
-                                    <p>{myDataPage.TextoLandingPageMain}</p>
+                                    <p>{myDataPage.attributes.DescricaoCompleta}</p>
                                 </div>
                                  <div className='iconsHereGenesis '>
-                                    <div>
-                                        <img src={roomIcon} alt={'Grupo genesis incoporadora, Numero de quartos do apartamento em '+ myDataPage.seoName} />
-                                        <p>{myDataPage.room} Quartos</p>
-                                    </div>
-                                    {/* <div>
-                                        <img src={suiteIcon} alt={'Grupo genesis incoporadora, Numero de Suíte do apartamento em '+ myDataPage.seoName} />
-                                        <p>{myDataPage.suites} Suíte</p>
-                                    </div> */}
-                                    <div>
-                                        <img src={carIcon} alt={'Grupo genesis incoporadora, Numero de Vagas do apartamento em '+ myDataPage.seoName} />
-                                        <p>{myDataPage.car} Vagas</p>
-                                    </div>
-                                    <div>
-                                        <img src={sizeIcon} alt={'Grupo genesis incoporadora, Numero de m² do apartamento em '+ myDataPage.seoName} />
-                                        <p>{myDataPage.size}m²</p>
-                                    </div>
+                                    {myDataPage.attributes.Icones.map((icone, index) => (
+                                        <>
+                                            <div className='cardItens' key={index}>
+                                                <img src={'https://api.grupogenesis.com.br' + icone.Image.data.attributes.url} alt={"Icone Apartamento"} />
+                                                <p>{icone.TextIcon}</p>
+                                            </div>
+                                        </>
+                                    ))}
                                 </div>
                         </div>               
                     </div>      
                 
                 </div>  
                 {
-                    myDataPage.financimanentoCaixa == true ? 
-                    <a href={ContactLinks[0].whatsapp[WhatsappRandom]}  title="Whatsapp da Grupo genesis incorporadora e construtora " style={{width:"100%"}} target="_blank">
+                    myDataPage.attributes.FinanciamentoCaixa && randomWhatsapp && (
+                    
+                    <a href={randomWhatsapp}  title="Whatsapp da Grupo genesis incorporadora e construtora " style={{width:"100%"}} target="_blank">
                         <div className='tagnameCaixa' >
                             <h1>Entrada <span>Facilitada</span> </h1>
                             <div className='caixaImage'>Financiamento pela     
@@ -202,7 +208,7 @@ function MainBanner () {
                                 </div>
                         </div>
                     </a>
-                    : ""
+                    )
                 }
                 <div>
                   
@@ -213,3 +219,5 @@ function MainBanner () {
       }
       
 export default MainBanner
+
+

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './SwiperPlantas.css'
 import { Link, useParams } from 'react-router-dom'
 
@@ -8,9 +8,7 @@ import SwiperCore, { Autoplay, Pagination, Navigation } from 'swiper';
 import 'swiper/css';
 import "swiper/css/pagination";
 //image
-import carIcon from '../../../assets/logos/carIcon.png'
-import sizeIcon from '../../../assets/logos/sizeIcon.png'
-import suiteIcon from '../../../assets/logos/suiteIcon.png'
+
 import roomIcon from '../../../assets/logos/roomIcon.png'
 import arrow from '../../../assets/logos/arrow.png'
 
@@ -22,25 +20,31 @@ import ContactLinks from '../../../../public/contatonumber.json'
 const WhatsappRandom = Math.floor(Math.random() * (ContactLinks[0].whatsapp).length);
 // console.log(ContactLinks[0].whatsapp[WhatsappRandom]);//=> a random element
 
-function SwiperPlantas () {
-
+function SwiperPlantas (props) {
+    const dataPlanta = props.dataPlanta
+    const [randomWhatsapp, setRandomWhatsapp] = useState(null);
+    useEffect(() => {
+        if (props.dataemps && props.dataemps.attributes && props.dataemps.attributes.WhatsAppLink && props.dataemps.attributes.WhatsAppLink.length > 0) {
+          const whatsappLinks = props.dataemps.attributes.WhatsAppLink;
+          const randomIndex = Math.floor(Math.random() * whatsappLinks.length);
+          const randomLink = whatsappLinks[randomIndex].Link;
+          setRandomWhatsapp(randomLink);
+        }
+      }, [props.dataemps]);
+    const myDataPage = props.dataemps   
   
-    const { empreendimentoNome } = useParams();
-   
-    const myPlants = DataJSON.find( myDataPage =>
-                    myDataPage.idNomeUrl === empreendimentoNome)
-    
         return (
             <>
                 <section className='houseplant' id="Plantas">
                     <div className='titlePlantas'>
-                    
-                        <h1>Sacada <span>Gourmet</span><br />
-                         em todas as unidades.</h1>
+                        <h1>
+                                <span>{myDataPage.attributes.TituloPlanta.split(' ')[0]}</span>
+                                {myDataPage.attributes.TituloPlanta.replace(myDataPage.attributes.TituloPlanta.split(' ')[0], '')}
+                       </h1>  
                     </div>
                     <div className='SliderHere'>
                         <div className='HeaderSlider'>
-                    <h1 className='plantPlaceholder' style={{display: myPlants.plants.length == 1 ? 'none' : 'flex'}}></h1>
+                    <h1 className='plantPlaceholder' style={{display: myDataPage.attributes.Planta.length > 1 ? 'flex' : 'none'}}></h1>
                             <div className='ControllerSwiper'>
                                 <div className='prev MyButton '>
                                     <img className='SwiperReturn' src={arrow} alt="" />
@@ -53,7 +57,7 @@ function SwiperPlantas () {
                         <div className="SwiperHere">
                         <Swiper
                             spaceBetween={0}
-                            enabled={myPlants.plants.length == 1 ? false : true}
+                            enabled={myDataPage.attributes.Planta.length > 1 ? true : false}
                             loop={true}
                             autoplay={{
                                 delay: 3200,
@@ -72,74 +76,71 @@ function SwiperPlantas () {
                                  
                             
                             >
-                            { myPlants.plants && myPlants.plants.map( (dataPlants, index) => {
+                            { myDataPage.attributes.Planta && myDataPage.attributes.Planta.map( (dataPlants, index) => {
+   
+                                const imagePlanta = dataPlanta.attributes.Planta[index].ImagePlanta.data.attributes.url;
+                                console.log(imagePlanta)
                                 return(
-                                    <SwiperSlide key={index}>
+                                    
+                                    <SwiperSlide key={index}>   
                                     <div className='SlideHousePlant'>
-                                        <img src={dataPlants.plantImg} alt={"Apartamento em "+myPlants.seoName+" na planta - grupo genesis incorporadora e construtora"} />
+                                        <img src={`https://api.grupogenesis.com.br${imagePlanta}`} alt={"Apartamento em "+myDataPage.attributes.Titulo_LP+" na planta - grupo genesis incorporadora e construtora"} />
                                         <div className='HousePlantIconsHere'>
-                                            <div className='plantIconCard'>
-                                                <img src={roomIcon} alt={'Quartos do apartamento '+myPlants.seoName+' grupo genesis incorporadora e construtora' } />
-                                                <p>{dataPlants.roomPlant} Quartos</p>
-                                            </div>
-                                            {/* <div className='plantIconCard'>
-                                                <img src={suiteIcon} alt={'Suites do apartamento '+myPlants.seoName+' grupo genesis incorporadora e construtora' } />
-                                                <p>{dataPlants.suitesPlants} Suítes</p>
-                                            </div> */}
-                                            <div className='plantIconCard'>
-                                                <img src={carIcon}  alt={'Vagas do apartamento '+myPlants.seoName+' grupo genesis incorporadora e construtora' } />
-                                                <p>{dataPlants.carPlants} Vagas</p>
-                                            </div>
-                                            <div className='plantIconCard'>
-                                                <img src={sizeIcon}  alt={'m² do apartamento '+myPlants.seoName+' grupo genesis incorporadora e construtora' } />
-                                                <p>{dataPlants.sizePlants} m²</p>
-                                            </div>
+                                            {
+                                                dataPlants.Icones && dataPlants.Icones.map((item, index) => {
+                                                return (
+                                                    <div className='plantIconCard' key={index}>
+                                                        <img src={`https://api.grupogenesis.com.br${item.Imagem.data.attributes.url}`} alt={'' + myDataPage.attributes.Titulo_LP + ' grupo genesis incorporadora e construtora'} />
+                                                        <p>{item.IconeText}</p>
+                                                    </div>
+                                                );
+                                                })
+                                            }
                                         </div>
                                         <div className='HousePlantData'>
                                             <div className='HousePlantasLeft'>
                                                     <div className='valueDiv'>
-                                                        <p>Apartamentos de {dataPlants.sizePlant}m² por</p>
-                                                        <h1><span>R$ {dataPlants.pricePlant} mil</span></h1>
+                                                        <p>{dataPlants.MetragemPlanta}</p>
+                                                        <h1><span>{dataPlants.PrecoPlanta}</span></h1>
                                                     </div>
 
-
-                                                    <a href={ContactLinks[0].whatsapp[WhatsappRandom]} target="_blank" title="Contato do grupo genesis empreendimentos">
+                                                    {randomWhatsapp &&
+                                                    <a href={randomWhatsapp} target="_blank" title="Contato do grupo genesis empreendimentos">
                                                     <div className='LinkPlantsHere'>
                                                         <div className='LinkPlantsHereDiv'>
                                                             <p>Adorei! quero este apartamento.</p>
                                                         </div>
                                                        
                                                     </div> 
-                                                    </a>
+                                                    </a>}
                                                 </div>
                                             <div className='HousePlantasRight'>
                                                 <div className='TextAndValues'>
                                                     <div className='textHerePlants'>
                                             
-                                                         <p>{dataPlants.textPlant}</p>
+                                                         <p>{dataPlants.descricaoPlanta}</p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div className='HousePlantIconsHere twoicons'>
-                                            <div className='plantIconCard '>
-                                                <img src={roomIcon} alt={'Quartos do apartamento '+myPlants.seoName+' grupo genesis incorporadora e construtora' }  />
-                                                <p>{dataPlants.roomPlant} Quartos</p>
-                                            </div>
-                                            {/* <div className='plantIconCard'>
-                                                <img src={suiteIcon} alt={'Suítes do apartamento '+myPlants.seoName+' grupo genesis incorporadora e construtora' }  />
-                                                <p>{dataPlants.suitesPlants} Suítes</p>
-                                            </div> */}
-                                            <div className='plantIconCard'>
-                                                <img src={carIcon} alt={'Vaga do apartamento '+myPlants.seoName+' grupo genesis incorporadora e construtora' } />
-                                                <p>{dataPlants.carPlants} Vaga</p>
-                                            </div>
-                                            <div className='plantIconCard'>
-                                                <img src={sizeIcon} alt={'m² do apartamento '+myPlants.seoName+' grupo genesis incorporadora e construtora' } />
-                                                <p>{dataPlants.sizePlants} m²</p>
-                                            </div>
+                                                 {/*<div className='plantIconCard '>
+                                                    <img src={roomIcon} alt={'Quartos do apartamento '+myPlants.seoName+' grupo genesis incorporadora e construtora' }  />
+                                                    <p>{dataPlants.roomPlant} Quartos</p>
+                                                </div>
+                                                <div className='plantIconCard'>
+                                                    <img src={suiteIcon} alt={'Suítes do apartamento '+myPlants.seoName+' grupo genesis incorporadora e construtora' }  />
+                                                    <p>{dataPlants.suitesPlants} Suítes</p>
+                                                </div> 
+                                                <div className='plantIconCard'>
+                                                    <img src={carIcon} alt={'Vaga do apartamento '+myPlants.seoName+' grupo genesis incorporadora e construtora' } />
+                                                    <p>{dataPlants.carPlants} Vaga</p>
+                                                </div>
+                                                <div className='plantIconCard'>
+                                                    <img src={sizeIcon} alt={'m² do apartamento '+myPlants.seoName+' grupo genesis incorporadora e construtora' } />
+                                                    <p>{dataPlants.sizePlants} m²</p>
+                                                </div>*/}
                                         </div>
                                         </div>
-                                   
                                     </div>
                                 </SwiperSlide>
                                 )

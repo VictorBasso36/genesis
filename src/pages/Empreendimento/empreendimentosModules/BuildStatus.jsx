@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import './BuildStatus.css'
 
@@ -8,28 +8,39 @@ const WhatsappRandom = Math.floor(Math.random() * (ContactLinks[0].whatsapp).len
 // console.log(ContactLinks[0].whatsapp[WhatsappRandom]);//=> a random element
 
 
-function BuildStatus () {
-    const { empreendimentoNome } = useParams();
-    const myStatus = DataJSON.find( myDataPage =>
-                    myDataPage.idNomeUrl === empreendimentoNome)
+function BuildStatus (props) {
+
+    
+const myStatus = props.dataemps
+const [randomWhatsapp, setRandomWhatsapp] = useState(null);
+useEffect(() => {
+    if (props.dataemps && props.dataemps.attributes && props.dataemps.attributes.WhatsAppLink && props.dataemps.attributes.WhatsAppLink.length > 0) {
+      const whatsappLinks = props.dataemps.attributes.WhatsAppLink;
+      const randomIndex = Math.floor(Math.random() * whatsappLinks.length);
+      const randomLink = whatsappLinks[randomIndex].Link;
+      setRandomWhatsapp(randomLink);
+    }
+  }, [props.dataemps]);
         return (
             <>
-            <a href={ContactLinks[0].whatsapp[WhatsappRandom]}  className="linkcta" target="_blank" title="Se busca ajuda da genesis empreemdimentos clique aqui !">
+            {randomWhatsapp &&
+            <a href={randomWhatsapp}  className="linkcta" target="_blank" title="Se busca ajuda da genesis empreemdimentos clique aqui !">
                 <div className="ctalazer"><h1>Perfeito né? <span>Clique aqui.</span> para conversar conosco.</h1>
                 </div>
             </a>
+            }
             <div className='BuildStatus' id="ObraScroll">
                 <div className='BuildStatusTitle'>
                     <h1>Acompanhe sua <span>obra.</span></h1>
                 </div>
                 <div className='statusHere'>
-                { myStatus.projectProgress && myStatus.projectProgress.map( (dataStatus, index) => {
+                { myStatus.attributes.StatusObra && myStatus.attributes.StatusObra.map( (dataStatus, index) => {
                 return(
                     <div className='StatuParameter' key={index}>
-                        <p>{dataStatus.NameProgress}</p>
+                        <p>{dataStatus.ItemObra}</p>
                         <div className='ParameterBar'>
                             <div className='Progress'></div>
-                            <div style={{"width" : dataStatus.status + "%"}} className='StatusProgress'><p>{dataStatus.status == 0 ?  "" : dataStatus.status+"%" }</p></div>
+                            <div style={{"width" : dataStatus.Porcentagem + "%"}} className='StatusProgress'><p>{dataStatus.Porcentagem == 0 ?  "" : dataStatus.Porcentagem+"%" }</p></div>
                             {/* <p style={{marginLeft:50 + "%" }} className='Percent'></p> */}
                         </div>
                     </div>

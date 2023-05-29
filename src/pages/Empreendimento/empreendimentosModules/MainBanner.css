@@ -12,13 +12,13 @@
 .bgMain img{
     height: auto;
 }
-.ctaContainer h1{
+.ctaContainer pre h1{
     font-size: 5.2vw;
     color: white;
     text-align: center;
 
 }
-.ctaContainer h1 span{
+.ctaContainer pre h1 span{
     font-size: 5.2vw;
     height: 100%;
 }
